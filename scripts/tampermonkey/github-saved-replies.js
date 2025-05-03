@@ -86,7 +86,9 @@
 					simulateInput(bodyArea, r.body);
 
 					let tries = 0;
-					while (submitBtn.disabled && tries++ < 30) await delay(100);
+					const maxRetries = 30; // Parameterize this value if needed
+					const retryDelay = 100; // Parameterize this value if needed
+					while (submitBtn.disabled && tries++ < maxRetries) await delay(retryDelay);
 
 					if (!submitBtn.disabled) {
 						localStorage.setItem(
