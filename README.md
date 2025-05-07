@@ -40,7 +40,7 @@ Other:   Docker / Git / Nginx / TrueNAS / Nextcloud
 
 > Nope. -->
 
-![Metrics](https://raw.githubusercontent.com/kjanat/kjanat/master/github-metrics.svg)
+[![Metrics](https://raw.githubusercontent.com/kjanat/kjanat/master/github-metrics.svg)](https://github.com/kjanat)
 
 <!-- Links -->
 [Metrics Workflow]: https://github.com/kjanat/kjanat/actions/workflows/metrics.yml
