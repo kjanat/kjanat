@@ -8,7 +8,7 @@
 
 ## Skyline
 
-[![Skyline](https://raw.githubusercontent.com/kjanat/kjanat/master/assets/images/readme/skyline.svg)][My Profile]
+<!-- [![Skyline](https://raw.githubusercontent.com/kjanat/kjanat/master/assets/images/readme/skyline.svg)][My Profile] -->
 
 <!-- Links -->
 [My Profile]: https://github.com/kjanat
