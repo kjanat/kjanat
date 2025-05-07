@@ -3,8 +3,8 @@ name: Metrics
 on:
   # Schedule updates (each hour, from 6 to 23 UTC and midnight to 2 UTC)
   schedule:
-    - cron: '0 6-23 * * *'
-    - cron: '0 0-2 * * *'
+    - cron: "0 6-23 * * *"
+    - cron: "0 0-2 * * *"
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: { branches: ['master', 'main'] }
@@ -74,7 +74,7 @@ jobs:
           plugin_languages_analysis_timeout_repositories: 7.5
           plugin_languages_categories: markup, programming
           plugin_languages_colors: github
-          plugin_languages_indepth: yes
+          # plugin_languages_indepth: yes
           plugin_languages_limit: 8
           plugin_languages_other: yes
           plugin_languages_recent_categories: markup, programming
@@ -149,6 +149,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_skyline: yes
-          plugin_skyline_frames: 120
-          plugin_skyline_quality: 1
+          plugin_skyline_frames: 30
+          plugin_skyline_quality: 0.5
           plugin_skyline_year: ${{ env.YEAR }}
