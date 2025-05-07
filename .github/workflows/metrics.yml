@@ -10,18 +10,27 @@ on:
   push: { branches: ['master', 'main'] }
 concurrency:
   group: ${{ github.workflow }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
-  metrics:
-    name: GitHub
+  github-metrics:
+    name: GitHub Metrics
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: assets/images/readme/metrics.svg
+          # Your GitHub token
+          # The following scopes are required:
+          #  - public_access (default scope)
+          #  - repo
+          # The following additional scopes may be required:
+          #  - read:org      (for organization related metrics)
+          #  - read:user     (for user related data)
+          #  - read:packages (for some packages related data)
+          #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
+          filename: assets/images/readme/metrics.svg
 
           # Options
           user: kjanat
@@ -33,7 +42,8 @@ jobs:
           config_timezone: Europe/Amsterdam
           config_twemoji: yes
           plugin_achievements: yes
-          plugin_achievements_display: detailed
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 3
           plugin_achievements_secrets: yes
           plugin_achievements_threshold: X
           plugin_activity: yes
@@ -100,6 +110,7 @@ jobs:
           plugin_people: yes
           plugin_people_identicons: yes
           plugin_people_limit: 24
+          plugin_people_shuffle: yes
           plugin_people_size: 28
           plugin_people_types: followers, following
           plugin_reactions: yes
@@ -136,22 +147,3 @@ jobs:
           plugin_wakatime_token: ${{ secrets.WAKAPI_KEY }}
           plugin_wakatime_url: https://wakapi.dev/api
           plugin_wakatime_user: kjanat
-  # skyline:
-  #   name: Skyline
-  #   if: false
-  #   needs: metrics
-  #   runs-on: ubuntu-latest
-  #   permissions:
-  #     contents: write
-  #   steps:
-  #     - name: Get year
-  #       run: echo "YEAR=$(date +%Y)" >> $GITHUB_ENV
-  #     - uses: lowlighter/metrics@latest
-  #       with:
-  #         filename: assets/images/readme/skyline.svg
-  #         token: ${{ secrets.METRICS_TOKEN }}
-  #         base: ""
-  #         plugin_skyline: yes
-  #         plugin_skyline_frames: 30
-  #         plugin_skyline_quality: 0.5
-  #         plugin_skyline_year: ${{ env.YEAR }}
