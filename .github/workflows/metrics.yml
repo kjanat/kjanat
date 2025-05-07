@@ -82,7 +82,7 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
-          plugin_leetcode: yes
+          plugin_leetcode: no
           plugin_leetcode_limit_recent: 2
           plugin_leetcode_limit_skills: 10
           plugin_leetcode_sections: solved
@@ -106,11 +106,11 @@ jobs:
           plugin_reactions_limit_discussions: 100
           plugin_reactions_limit_discussions_comments: 100
           plugin_reactions_limit_issues: 100
-          plugin_stargazers: yes
-          plugin_stargazers_charts: yes
+          plugin_stargazers: no
+          plugin_stargazers_charts: no
           plugin_stargazers_charts_type: classic
           plugin_stargazers_days: 14
-          plugin_starlists: yes
+          plugin_starlists: no
           plugin_starlists_limit: 2
           plugin_starlists_limit_languages: 8
           plugin_starlists_limit_repositories: 2
@@ -131,12 +131,12 @@ jobs:
           plugin_wakatime_limit: 5
           plugin_wakatime_repositories_visibility: all
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
-          plugin_wakatime_url: https://wakatime.com
+          plugin_wakatime_token: ${{ secrets.WAKAPI_KEY }}
+          plugin_wakatime_url: https://wakapi.dev/api
           plugin_wakatime_user: kjanat
   skyline:
     name: Skyline
-    needs: metrics
+    # needs: metrics
     runs-on: ubuntu-latest
     permissions:
       contents: write
