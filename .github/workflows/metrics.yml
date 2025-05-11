@@ -104,7 +104,7 @@ jobs:
           plugin_leetcode_user: .user.login
           plugin_leetcode: yes
           plugin_lines_history_limit: 1
-          plugin_lines_repositories_limit: 4
+          plugin_lines_repositories_limit: 2
           plugin_lines_sections: base
           plugin_lines: yes
           plugin_notable_from: all
