@@ -14,6 +14,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - run: echo "YEAR=$(date +'%Y')" >> $GITHUB_ENV
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
@@ -26,6 +27,7 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
+          filename: assets/images/readme/metrics.svg
 
           # Options
           user: kjanat
@@ -122,7 +124,7 @@ jobs:
               "wait": 1,
               "hide": "button, footer, a"
             }
-          plugin_skyline_year: 0
+          plugin_skyline_year: ${{ env.YEAR }}
           plugin_stargazers: yes
           plugin_stargazers_charts: yes
           plugin_stargazers_charts_type: classic
@@ -140,6 +142,7 @@ jobs:
           plugin_steam_playtime_threshold: 5
           plugin_steam_recent_games_limit: 1
           plugin_steam_sections: player, most-played, recently-played
+          plugin_steam_token: ${{ secrets.STEAM_API_KEY }}
           plugin_steam_user: kjanat
           plugin_traffic: yes
           plugin_wakatime: yes
@@ -147,8 +150,8 @@ jobs:
           plugin_wakatime_limit: 5
           plugin_wakatime_repositories_visibility: all
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_url: https://wakatime.com
-          plugin_wakatime_user: current
+          plugin_wakatime_url: https://wakapi.kjanat.com/api
+          plugin_wakatime_user: kjanat
 
 # # Visit https://github.com/lowlighter/metrics#-documentation for full reference
 # name: Metrics
