@@ -1,0 +1,52 @@
+name: autofix.ci
+
+on:
+  pull_request:
+  push:
+    branches: [ "main", "master" ]
+
+permissions:
+  contents: read
+
+jobs:
+  autofix:
+    name: Run Code Formatters and Linters
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Setup Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+
+      # Install Node.js dependencies if package.json exists
+      - name: Install Node.js dependencies (if any)
+        run: |
+          if [ -f package.json ]; then
+            npm ci
+          fi
+
+      # Run Prettier to format code
+      - name: Run Prettier
+        run: npx prettier --write .
+
+      # Setup uv for consistent Python tooling
+      - name: Setup uv
+        uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb
+        with:
+          version: "latest"
+
+      # Run Ruff to fix lint errors
+      - name: Fix Python lint errors
+        run: uv run ruff check --fix-only .
+
+      # Format Python code with Ruff
+      - name: Format Python code
+        run: uv run ruff format .
+
+      # Commit and push any autofixes
+      - name: Commit autofixes
+        uses: autofix-ci/action@551dded8c6cc8a1054039c8bc0b8b48c51dfc6ef
