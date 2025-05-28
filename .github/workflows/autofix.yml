@@ -41,11 +41,11 @@ jobs:
 
       # Run Ruff to fix lint errors
       - name: Fix Python lint errors
-        run: uvx ruff check --fix-only . --ignore .github
+        run: uvx ruff check --fix-only . --exclude .github
 
       # Format Python code with Ruff
       - name: Format Python code
-        run: uvx ruff format . --ignore .github
+        run: uvx ruff format . --exclude .github
 
       # Commit and push any autofixes
       - name: Commit autofixes
