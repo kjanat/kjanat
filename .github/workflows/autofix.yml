@@ -31,7 +31,7 @@ jobs:
 
       # Run Prettier to format code
       - name: Run Prettier
-        run: npx prettier . "!.github/*" --write
+        run: npx prettier . "!**/.github/**" --write
 
       # Setup uv for consistent Python tooling
       - name: Setup uv
