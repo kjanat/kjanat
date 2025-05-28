@@ -6,7 +6,7 @@ on:
     branches: [ "main", "master" ]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   autofix:
@@ -31,21 +31,34 @@ jobs:
 
       # Run Prettier to format code
       - name: Run Prettier
-        run: npx prettier --write .
+        run: npx prettier . "!**/.github/**" --write
+        
+      - name: Check for Python files
+        id: python_files_check
+        run: |
+          python_files=$(find . -type f -name "*.py" ! -path "./.github/*")
+          if [ -z "$python_files" ]; then
+            echo "py_found=false" >> $GITHUB_ENV
+          else
+            echo "py_found=true" >> $GITHUB_ENV
+          fi
 
       # Setup uv for consistent Python tooling
       - name: Setup uv
         uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb
+        if: env.py_found == 'true'
         with:
           version: "latest"
 
       # Run Ruff to fix lint errors
       - name: Fix Python lint errors
-        run: uvx ruff check --fix-only .
+        if: env.py_found == 'true'
+        run: uvx ruff check --fix-only . --exclude .github
 
       # Format Python code with Ruff
       - name: Format Python code
-        run: uvx ruff format .
+        if: env.py_found == 'true'
+        run: uvx ruff format . --exclude .github
 
       # Commit and push any autofixes
       - name: Commit autofixes
