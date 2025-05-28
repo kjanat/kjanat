@@ -31,7 +31,7 @@ jobs:
 
       # Run Prettier to format code
       - name: Run Prettier
-        run: npx prettier --write .
+        run: npx prettier . "!.github/*" --write
 
       # Setup uv for consistent Python tooling
       - name: Setup uv
@@ -41,15 +41,12 @@ jobs:
 
       # Run Ruff to fix lint errors
       - name: Fix Python lint errors
-        run: uvx ruff check --fix-only .
+        run: uvx ruff check --fix-only . --ignore .github
 
       # Format Python code with Ruff
       - name: Format Python code
-        run: uvx ruff format .
+        run: uvx ruff format . --ignore .github
 
       # Commit and push any autofixes
       - name: Commit autofixes
         uses: autofix-ci/action@551dded8c6cc8a1054039c8bc0b8b48c51dfc6ef
-        with:
-          paths-ignore: |
-            .github/**
