@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="3955" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="3670" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.field.warning{color:#d79533}.field.warning svg{fill:#d79533}.row{display:flex}.horizontal .field,.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.center{justify-content:center}.horizontal{justify-content:space-around}.horizontal-wrap{flex-wrap:wrap}.no-wrap{white-space:nowrap}#metrics-end,.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.organization.avatar{border-radius:15%}.organization.name{white-space:nowrap}.organization.contributions{margin:0 8px;flex-wrap:wrap}.contribution.organization{display:flex;border:1px solid #959da5;border-radius:6px;padding:2px 6px 2px 0;margin:2px;font-size:12px;background-color:#959da520}.contribution.organization.s{color:#eb355e;background-color:#eb355e26;border-color:#eb355e}.contribution.organization.a{color:#d79533;background-color:#e7bd6926;border-color:#e7bd69}.contribution.organization.b{color:#9d8fff;background-color:#9e91ff26;border-color:#9e91ff}.contribution .gauge-arc,.contribution .gauge-base{stroke:currentColor;stroke-width:4}.contribution .gauge text{fill:currentColor;font-size:13px}.contribution .gauge{margin:0 6px;color:inherit;transform:scale(1.4) translateY(1px)}.contribution .icon{fill:currentColor;width:10px;height:10px;margin-left:-9px;margin-top:8px;color:inherit;filter:brightness(.5)}.contribution.organization .avatar{margin:0 4px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.habits .facts{margin:0;list-style-type:none;padding-left:37px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.categories,.category{display:flex;align-items:center}.categories{justify-content:space-around;margin-top:4px}.category{flex-direction:column;flex:1 1 0}.gauge{stroke-linecap:round;fill:none}.gauge.low{color:#e53935}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text,.gauge text.secondary{fill:currentColor;font-family:monospace;text-anchor:middle}.gauge text{font-size:40px;font-weight:600}.gauge text.secondary{font-size:25px}.gauge .title{font-size:18px;color:#777}.audit.text{min-width:42px}.audit svg{margin:0}.audit.low{fill:#e53935}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry,.repository{display:flex;flex-direction:column}.chart-bars .entry{flex-grow:1;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.chart-bars.horizontal{flex-direction:column;height:100%}.chart-bars.horizontal .entry{align-items:center;flex-direction:row;width:100%;min-height:1rem}.chart-bars.horizontal .entry .name{flex-shrink:0;text-align:right;width:34%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chart-bars .entry .bottom{margin-bottom:-1rem;line-height:1rem}.chart-bars.horizontal .bar{height:7px;width:auto;margin:0 6px}.repository{width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.repository .description{display:block;width:440px;white-space:normal}.repository .description,.repository .infos{color:#666;margin-left:38px;font-size:13px}.repository .infos&gt;div{display:flex;align-items:center;margin-right:16px}.repository .infos svg{margin:0 4px 0 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .commit .sha,.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,.activity .commit .sha,span.code{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code,span.code{background-color:#7777771f;padding:1px 5px;font-size:80%;border-radius:6px;color:#777;margin:0 4px -3px}.activity .user{font-weight:600}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .commit .sha{margin-right:4px}.activity .commit .message{overflow:hidden;text-overflow:ellipsis;width:360px;white-space:nowrap}.activity .details&gt;.comment{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-top:6px;border-left:3px solid #777777b2;padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.added{color:#3fb950}.deleted{color:#da3633}.people{padding:0 10px}.people .avatar{margin:0 2px}.starlist{padding-left:28px;width:460px}.starlist&gt;.count,.starlist&gt;.description{margin-left:32px}.starlist&gt;.count{font-size:12px;color:#666}.starlist .repositories{margin-left:-5px;margin-bottom:20px}.starlist .repository{margin:6px 0 0}.starlist .repository .description,.starlist .repository .infos{font-size:11px}.starlist .repository .name{font-size:14px}.starlist .languages{margin-top:6px;padding-left:13px}.starlist .languages svg.bar{margin-left:18px}.field.license.details{display:flex;justify-content:space-between}.introduction{white-space:normal;margin:0 13px 2px}.leetcode .count,.leetcode .infos .date{font-size:10px;color:#666}.leetcode .easy.gauge .gauge-arc{color:#2cbb5d}.leetcode .medium.gauge .gauge-arc{color:#ffc01e}.leetcode .hard.gauge .gauge-arc{color:#ef4743}.leetcode .all.gauge .gauge-arc{color:#ffa116}.leetcode{align-items:flex-start}.leetcode .infos{margin-bottom:3px}.snippet .body{padding-left:12px}.snippet .language-diff{font-size:77%}.snippet.additions{color:#336543}.snippet.deletions{color:#9a5256}.snippet .token.prefix.unchanged{visibility:hidden}.markdown b,code{display:inline-block}.markdown b{width:97%}.markdown p{margin:8px 0}.markdown ul{padding-left:24px}.markdown a{color:#58a6ff;text-decoration:none}code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}code[class^=language-]{white-space:pre-wrap;width:97%;margin-top:4px}.token.comment{color:#690}.token.number,.token.string{color:#2777aa}.token.coord{color:#d2a8ff;font-weight:700}.token.inserted:not(.prefix){color:#aad0b4dc;background-color:#336543dc}.token.deleted:not(.prefix){color:#eed2d0dc;background-color:#9a5256dc}.space{margin-left:7px}.blue{color:#58a6ff}.twemoji{height:1em;width:1em;margin-bottom:-.125em}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex}.horizontal .field,.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.center{justify-content:center}.horizontal{justify-content:space-around}.horizontal-wrap{flex-wrap:wrap}.no-wrap{white-space:nowrap}#metrics-end,.fill-width{width:100%}.margin-bottom{margin-bottom:16px}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.organization.avatar{border-radius:15%}.organization.name{white-space:nowrap}.organization.contributions{margin:0 8px;flex-wrap:wrap}.contribution.organization{display:flex;border:1px solid #959da5;border-radius:6px;padding:2px 6px 2px 0;margin:2px;font-size:12px;background-color:#959da520}.contribution.organization.s{color:#eb355e;background-color:#eb355e26;border-color:#eb355e}.contribution.organization.a{color:#d79533;background-color:#e7bd6926;border-color:#e7bd69}.contribution.organization.b{color:#9d8fff;background-color:#9e91ff26;border-color:#9e91ff}.contribution .gauge-arc,.contribution .gauge-base{stroke:currentColor;stroke-width:4}.contribution .gauge text{fill:currentColor;font-size:13px}.contribution .gauge{margin:0 6px;color:inherit;transform:scale(1.4) translateY(1px)}.contribution.organization .avatar{margin:0 4px}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.habits .facts{margin:0;list-style-type:none;padding-left:37px}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.categories,.category{display:flex;align-items:center}.categories{justify-content:space-around;margin-top:4px}.category{flex-direction:column;flex:1 1 0}.gauge{stroke-linecap:round;fill:none}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text,.gauge text.secondary{fill:currentColor;font-family:monospace;text-anchor:middle}.gauge text{font-size:40px;font-weight:600}.gauge text.secondary{font-size:25px}.gauge .title{font-size:18px;color:#777}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry,.repository{display:flex;flex-direction:column}.chart-bars .entry{flex-grow:1;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.chart-bars.horizontal{flex-direction:column;height:100%}.chart-bars.horizontal .entry{align-items:center;flex-direction:row;width:100%;min-height:1rem}.chart-bars.horizontal .entry .name{flex-shrink:0;text-align:right;width:34%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chart-bars .entry .bottom{margin-bottom:-1rem;line-height:1rem}.chart-bars.horizontal .bar{height:7px;width:auto;margin:0 6px}.repository{width:100%;margin:6px 0}.repository .name{display:flex;align-items:center;justify-content:space-between;width:440px}.repository .name span:first-child{color:#58a6ff}.repository .name span:last-child{color:#666;font-size:10px}.repository .description{display:block;width:440px;white-space:normal}.repository .description,.repository .infos{color:#666;margin-left:38px;font-size:13px}.repository .infos&gt;div{display:flex;align-items:center;margin-right:16px}.repository .infos svg{margin:0 4px 0 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .commit .sha,.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,.activity .commit .sha,span.code{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code,span.code{background-color:#7777771f;padding:1px 5px;font-size:80%;border-radius:6px;color:#777;margin:0 4px -3px}.activity .user{font-weight:600}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .commit .sha{margin-right:4px}.activity .commit .message{overflow:hidden;text-overflow:ellipsis;width:360px;white-space:nowrap}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.added{color:#3fb950}.deleted{color:#da3633}.people{padding:0 10px}.people .avatar{margin:0 2px}.starlist{padding-left:28px;width:460px}.starlist&gt;.count,.starlist&gt;.description{margin-left:32px}.starlist&gt;.count{font-size:12px;color:#666}.starlist .repositories{margin-left:-5px;margin-bottom:20px}.starlist .repository{margin:6px 0 0}.starlist .repository .description,.starlist .repository .infos{font-size:11px}.starlist .repository .name{font-size:14px}.starlist .languages{margin-top:6px;padding-left:13px}.starlist .languages svg.bar{margin-left:18px}.field.license.details{display:flex;justify-content:space-between}.introduction{white-space:normal;margin:0 13px 2px}.leetcode .count{font-size:10px;color:#666}.leetcode .easy.gauge .gauge-arc{color:#2cbb5d}.leetcode .medium.gauge .gauge-arc{color:#ffc01e}.leetcode .hard.gauge .gauge-arc{color:#ef4743}.leetcode .all.gauge .gauge-arc{color:#ffa116}.leetcode{align-items:flex-start}.leetcode .infos{margin-bottom:3px}.snippet .body{padding-left:12px}.snippet .language-diff{font-size:77%}.snippet.additions{color:#336543}.snippet.deletions{color:#9a5256}.snippet .token.prefix.unchanged{visibility:hidden}.markdown b,code{display:inline-block}.markdown b{width:97%}.markdown p{margin:8px 0}.markdown ul{padding-left:24px}.markdown a{color:#58a6ff;text-decoration:none}code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}code[class^=language-]{white-space:pre-wrap;width:97%;margin-top:4px}.token.coord{color:#d2a8ff;font-weight:700}.token.inserted:not(.prefix){color:#aad0b4dc;background-color:#336543dc}.token.deleted:not(.prefix){color:#eed2d0dc;background-color:#9a5256dc}.space{margin-left:7px}.blue{color:#58a6ff}.twemoji{height:1em;width:1em;margin-bottom:-.125em}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -191,7 +191,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V4.664a.25.25 0 00-.073-.177l-2.914-2.914a.25.25 0 00-.177-.073H2.75zM1 1.75C1 .784 1.784 0 2.75 0h7.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V1.75zm7 1.5a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0V7h-1.5a.75.75 0 010-1.5h1.5V4A.75.75 0 018 3.25zm-3 8a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75z"/>
                                     </svg>
-                                    44.4k added, 512 removed
+                                    80.6k added, 23.8k removed
                                 </div>
                             </section>
                             <section>
@@ -223,7 +223,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"/>
                                     </svg>
-                                    751 views in last two weeks
+                                    741 views in last two weeks
                                 </div>
                             </section>
                         </div>
@@ -587,12 +587,12 @@
                         <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
                     </svg>
                     Recent coding habits
-                    <small class="h-details">(computed from last 85 commits)</small>
+                    <small class="h-details">(computed from last 86 commits)</small>
                 </h2>
                 <div class="row">
                     <ul class="facts">
                         <li>Uses spaces for indentation</li>
-                        <li>Has approximately 30.8 characters per line of code written</li>
+                        <li>Has approximately 30.9 characters per line of code written</li>
                         <li>Mostly pushes code around 03:00</li>
                         <li>Mostly active on Wednesday</li>
                     </ul>
@@ -613,8 +613,8 @@
                             01
                         </div>
                         <div class="entry">
-                            <span class="value">5</span>
-                            <div class="bar" style="height: 19.230769230769234px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                            <span class="value">6</span>
+                            <div class="bar" style="height: 23.076923076923077px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                             02
                         </div>
                         <div class="entry">
@@ -730,37 +730,37 @@
                         <div class="chart-bars">
                             <div class="entry">
                                 <span class="value">13</span>
-                                <div class="bar" style="height: 30.952380952380953px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
+                                <div class="bar" style="height: 29.545454545454547px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
                                 Sun
                             </div>
                             <div class="entry">
                                 <span class="value">7</span>
-                                <div class="bar" style="height: 16.666666666666664px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                                <div class="bar" style="height: 15.909090909090908px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                                 Mon
                             </div>
                             <div class="entry">
                                 <span class="value">9</span>
-                                <div class="bar" style="height: 21.428571428571427px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                                <div class="bar" style="height: 20.454545454545457px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                                 Tue
                             </div>
                             <div class="entry">
-                                <span class="value">21</span>
+                                <span class="value">22</span>
                                 <div class="bar" style="height: 50px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
                                 Wed
                             </div>
                             <div class="entry">
                                 <span class="value">2</span>
-                                <div class="bar" style="height: 4.761904761904762px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="height: 4.545454545454546px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 Thu
                             </div>
                             <div class="entry">
                                 <span class="value">17</span>
-                                <div class="bar" style="height: 40.476190476190474px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                                <div class="bar" style="height: 38.63636363636363px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
                                 Fri
                             </div>
                             <div class="entry">
                                 <span class="value">16</span>
-                                <div class="bar" style="height: 38.095238095238095px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                                <div class="bar" style="height: 36.36363636363637px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
                                 Sat
                             </div>
                         </div>
@@ -770,42 +770,42 @@
                         <div class="chart-bars horizontal">
                             <div class="entry">
                                 <span class="name">TSX</span>
-                                <div class="bar" style="width: 24.40868812634108%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                                <div class="bar" style="width: 24.536767520512534%; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
                                 <span class="value">31%</span>
                             </div>
                             <div class="entry">
                                 <span class="name">TypeScript</span>
-                                <div class="bar" style="width: 19.852381633192188%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="width: 19.70777758020262%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 <span class="value">25%</span>
                             </div>
                             <div class="entry">
                                 <span class="name">Go</span>
-                                <div class="bar" style="width: 1.0503555725786382%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="width: 1.042519439497766%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 <span class="value">1%</span>
                             </div>
                             <div class="entry">
                                 <span class="name">Python</span>
-                                <div class="bar" style="width: 0.33888093628523%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="width: 0.33635272947162465%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 <span class="value">0%</span>
                             </div>
                             <div class="entry">
                                 <span class="name">JavaScript</span>
-                                <div class="bar" style="width: 0.32198336954660745%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="width: 0.31958122631105473%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 <span class="value">0%</span>
                             </div>
                             <div class="entry">
                                 <span class="name">MDX</span>
-                                <div class="bar" style="width: 0.2400254640211855%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="width: 0.23823476425439077%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 <span class="value">0%</span>
                             </div>
                             <div class="entry">
                                 <span class="name">CSS</span>
-                                <div class="bar" style="width: 0.18490833128879836%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="width: 0.2015617002403312%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 <span class="value">0%</span>
                             </div>
                             <div class="entry">
                                 <span class="name">Shell</span>
-                                <div class="bar" style="width: 0.07463876450075398%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                                <div class="bar" style="width: 0.07408192517235027%; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                                 <span class="value">0%</span>
                             </div>
                         </div>
@@ -3605,7 +3605,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>g-plane/pnpm-shell-completion</span>
-                                        <span>starred 3 hours ago</span>
+                                        <span>starred 11 hours ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">Complete your pnpm command fastly.</div>
@@ -3658,7 +3658,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>bitcomplete/labs-viewports</span>
-                                        <span>starred 7 days ago</span>
+                                        <span>starred 8 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">List of viewports and devices, along with metadata associated with them, for use with the Viewport Tester product.</div>
@@ -3779,7 +3779,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                         </svg>
-                                        670
+                                        671
                                     </div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -3827,11 +3827,11 @@
                                                 <path fill-rule="evenodd" d="M4 5.75C4 4.784 4.784 4 5.75 4h4.5c.966 0 1.75.784 1.75 1.75v4.5A1.75 1.75 0 0110.25 12h-4.5A1.75 1.75 0 014 10.25v-4.5zm1.75-.25a.25.25 0 00-.25.25v4.5c0 .138.112.25.25.25h4.5a.25.25 0 00.25-.25v-4.5a.25.25 0 00-.25-.25h-4.5z"/>
                                             </svg>
                                             <div class="name">
-                                                <span>open-webui/open-webui</span>
+                                                <span>upstash/context7</span>
                                                 <span></span>
                                             </div>
                                         </div>
-                                        <div class="field description">User-friendly AI Interface (Supports Ollama, OpenAI API, ...)</div>
+                                        <div class="field description">Context7 MCP Server -- Up-to-date code documentation for LLMs and AI code editors</div>
                                         <div class="field infos">
                                             <div class="language">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -3843,7 +3843,7 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="11" height="11">
                                                     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                                 </svg>
-                                                105k
+                                                24.2k
                                             </div>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="11" height="11">
@@ -3861,23 +3861,24 @@
                                                 <path fill-rule="evenodd" d="M4 5.75C4 4.784 4.784 4 5.75 4h4.5c.966 0 1.75.784 1.75 1.75v4.5A1.75 1.75 0 0110.25 12h-4.5A1.75 1.75 0 014 10.25v-4.5zm1.75-.25a.25.25 0 00-.25.25v4.5c0 .138.112.25.25.25h4.5a.25.25 0 00.25-.25v-4.5a.25.25 0 00-.25-.25h-4.5z"/>
                                             </svg>
                                             <div class="name">
-                                                <span>openai/openai-go</span>
+                                                <span>grll/claude-code-action</span>
                                                 <span></span>
                                             </div>
                                         </div>
-                                        <div class="field description">The official Go library for the OpenAI API</div>
+                                        <div class="field description">
+                                        </div>
                                         <div class="field infos">
                                             <div class="language">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                                    <path fill="#00add8" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                                    <path fill="#3178c6" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                                 </svg>
-                                                Go
+                                                TypeScript
                                             </div>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="11" height="11">
                                                     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                                 </svg>
-                                                2.14k
+                                                420
                                             </div>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="11" height="11">
@@ -4148,6 +4149,94 @@
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Pushed 3 commits in
+                                        <span class="repo">kjanat/vet-med-tracker</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">development</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#5e2534b</div>
+                                        <div class="message">refactor(landing): optimize styles and component architecture
+
+## Summary
+Refactored landing page for improved performance and maintainability with unified design system
+
+## Changes
+
+### Style System Refactoring
+- Replace JSX inline styles with Tailwind v4 utility classes in legal pages
+- Remove duplicate styled-jsx blocks across privacy, terms, and cookies pages
+- Add design tokens to globals.css for consistent spacing and animations
+- Implement new animation utilities (float, pulse-subtle) for micro-interactions
+
+### Component Architecture
+- Create reusable primitive components:
+  - AnimatedBackground: Unified animated orb system with variants
+  - Section: Consistent section wrapper with spacing/variant options
+  - SectionHeader: Standardized section headers with alignment options
+- Extract content components for better organization:
+  - CtaButtons: Centralized CTA logic with auth state handling
+  - FeatureHighlights: Modular feature badges with animations
+  - StatsGrid: Reusable stats display component
+
+### Performance Improvements
+- Add unified AnimatedBackground to layout (single instance vs multiple)
+- Consolidate animation logic with CSS custom properties
+- Reduce component duplication across sections
+- Optimize animation durations with CSS variables
+
+### Visual Enhancements
+- Add hover effects to feature highlights and CTA sections
+- Implement progressive animation delays for visual hierarchy
+- Add shadow effects to improve depth perception
+- Enhance gradient overlays for better visual cohesion
+
+### SEO &amp; Accessibility
+- Move robots configuration to dedicated robots.ts file
+- Add scroll-smooth class for better anchor navigation
+- Add scroll-mt-20 to sections for proper header offset
+- Improve button hover states and focus indicators
+
+## Technical Notes
+- All changes maintain full backward compatibility
+- No breaking changes to public API or component interfaces
+- Follows existing Tailwind v4 patterns and conventions
+- Reduces CSS bundle size through utility class consolidation</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#64f3a76</div>
+                                        <div class="message">docs(a11y): add aria labels to buttons</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#a9b2c77</div>
+                                        <div class="message">chore(deps): update minors</div>
+                                    </div>
+                                </div>
+                                <div class="timestamp">6 Aug 2025, 02:39:13</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Starred
+                                        <span class="repo">g-plane/pnpm-shell-completion</span>
+                                    </div>
+                                </div>
+                                <div class="timestamp">6 Aug 2025, 00:01:17</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
                                     </svg>
                                     <div class="content">
@@ -4176,365 +4265,6 @@
                                     </div>
                                 </div>
                                 <div class="timestamp">5 Aug 2025, 21:48:19</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Pushed 22 commits in
-                                        <span class="repo">kjanat/vet-med-tracker</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>on branch <span class="code">development</span></div>
-                                    <div class="commit">
-                                        <div class="sha">#e021947</div>
-                                        <div class="message">fix: add dependency installation step to Neon workflow
-
-- Install pnpm dependencies before running migrations
-- Prevents "drizzle-kit: not found" error in CI
-- Use pnpm install instead of --frozen-lockfile for flexibility</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#bac7580</div>
-                                        <div class="message">refactor: reorganize routes and improve UI/performance
-
-- Move admin/record from standalone to app layout for consistency
-- Restructure settings into dedicated sub-pages (data-privacy, household, notifications, preferences)
-- Reorganize reports structure and move audit under settings/data-privacy
-- Add database performance indexes for better query optimization
-- Enhance viewport testing tools with improved controls and shortcuts
-- Fix TypeScript errors and remove unused imports across components
-- Update mobile/tablet success layouts and medication card UI
-- Improve error handling in API routers and middleware
-- Add class-variants utility for consistent styling
-- Update manifest with proper icon declarations</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#a65c16d</div>
-                                        <div class="message">feat: enhance navigation UX and expand app infrastructure
-
-- Implement sidebar navigation improvements with loading states and mobile auto-close
-- Add comprehensive error handling with global error boundaries and 404 pages  
-- Create database seeding infrastructure for medications and test data
-- Expand animal reports section with new pages and loading states
-- Add household management page for multi-tenant support
-- Update UI components (buttons, regimens) for better user experience
-- Enhance PWA service worker with improved caching strategies
-- Improve TypeScript configuration and build tooling</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#6f50986</div>
-                                        <div class="message">fix: add checkout to branch creation</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#6b660c9</div>
-                                        <div class="message">fix: resolve database query spam and memory leaks
-
-- Add caching and rate limiting to health check endpoint
-- Fix circuit breaker memory leak from duplicate event listeners
-- Disable adaptive throttling to prevent repeated health check queries
-- Document known issues and workarounds in DEVELOPMENT_NOTES.md</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#cdf7146</div>
-                                        <div class="message">feat: implement comprehensive viewport tester improvements
-
-- Fix mobile viewport to use full screen height with fixed layout
-- Enable scrolling when not zoomed, disable when zoomed for better UX
-- Implement proper double tap to reset zoom with dynamic scale calculation
-- Improve mobile layout with better spacing and touch-friendly controls
-- Add theme switching with proper isolation from main app
-- Remove overlay blocking clicks/taps on buttons and links in iframe
-- Add next-themes integration for main app theme management
-- Implement theme propagation to iframe via postMessage
-- Fix hydration warnings with suppressHydrationWarning
-- Ensure viewport theme controls don't affect surrounding app
-- Add proper touch gesture handling for pinch zoom and pan
-- Implement mobile-optimized toolbar with bottom sheet pattern
-- Add zoom indicator and contextual touch hints
-- Support both light/dark/system themes with proper Tailwind v4 integration</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#a75e805</div>
-                                        <div class="message">feat: add curated PhyloPic animal silhouettes
-
-- Implement random curator selecting 2 silhouettes per animal type
-- Reduce from 242 files to just 15 committed files (14 SVGs + index.json)
-- Add PhyloPic curated fetch script with CC0 1.0 licensed silhouettes
-- Update hero section with scrolling animal silhouettes
-- Support both light and dark mode with dark:invert
-- Add proper attribution tracking in index.json
-- Refactor fetch script to reduce cognitive complexity
-- Use Next.js Image component for better performance</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#8e3a07a</div>
-                                        <div class="message">fix(ui): improve hero section background and animations
-
-- Fix invalid animation delay syntax (delay-1000 → [animation-delay:1000ms])
-- Add missing scroll animation definition in globals.css
-- Increase background blob opacity from 10% to 20% for better visibility
-- Add third animated blob for more visual depth
-- Remove broken pet silhouettes section with invalid SVG paths</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#1a035a2</div>
-                                        <div class="message">fix(ui): improve How It Works section visual design
-
-- Replace overlapping number/icon layout with cleaner badge design
-- Icons are now the primary visual element in circles
-- Step numbers displayed as small badges in top-right corner
-- Adjust connection line positioning for new layout
-- Fix animation delay syntax for Tailwind v4</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#9d2b341</div>
-                                        <div class="message">feat(navigation): implement segment-based navigation system
-
-BREAKING CHANGE: Navigation system refactored to use useSelectedLayoutSegment
-
-Navigation Enhancements:
-- Add segment-based active state detection using useSelectedLayoutSegment
-- Implement breadcrumb navigation with shadcn/ui components
-- Create modular NavMainItem component for better code organization
-- Add contextual PageHeaderEnhanced with route-specific information
-
-Performance Optimizations:
-- Implement HoverPrefetchLink for resource-efficient prefetching
-- Add loading states for dynamic routes (animals/[id])
-- Create reusable loading skeleton components
-- Add fade-in animation for smooth transitions
-
-Developer Experience:
-- Add navigation guard hooks for unsaved changes protection
-- Create form example with navigation blocking
-- Add comprehensive nav-demo page for testing all navigation patterns
-- Fix TypeScript type constraints in search params utilities
-
-Layout Improvements:
-- Create layout files for route segments to enable segment detection
-- Add tab navigation for settings page using segment-based routing
-- Enhance app sidebar with improved segment integration
-
-Testing &amp; Quality:
-- Update useHistoryFilters test to handle ReadonlyURLSearchParams
-- Fix envConfig.ts for proper environment loading
-- Add proper biome-ignore comments for loading skeletons
-
-This refactor improves navigation UX with automatic active states, better performance through intelligent prefetching, and enhanced developer experience with type-safe navigation patterns aligned with Next.js 15 best practices.</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#0d75e55</div>
-                                        <div class="message">feat: add type-safe query parameters system
-
-- Create comprehensive type-safe query parameter utilities in lib/search-params.ts
-  - Add typed interfaces for History, Settings, Insights, and Record pages
-  - Implement Zod validation schemas for runtime parameter validation
-  - Create utility functions: createTypedQueryString, parseTypedSearchParams, etc.
-  - Add type guards and validation helpers for all parameter types
-
-- Refactor all hooks to use Next.js recommended patterns
-  - useHistoryFilters: Use usePathname and createQueryString helper
-  - useSettingsTabs: Implement same pattern for tab navigation
-  - Add new useInsightsFilters hook with date range management
-  - Add new useRecordParams hook for record page state
-  - Create generic useTypedSearchParams hook for reusability
-
-- Optimize performance with improved memoization
-  - Remove unnecessary dependencies from useCallback hooks
-  - Memoize validation functions and default objects
-  - Use granular searchParams.toString() dependencies
-  - Document performance optimizations with clear comments
-
-- Add comprehensive test coverage
-  - Create search-params.test.ts with 26 tests covering all utilities
-  - Add useHistoryFilters.test.tsx for hook testing
-  - Ensure backward compatibility with existing code
-
-- Create extensive documentation
-  - Add search-params.README.md with usage examples and migration guide
-  - Create server-components-migration.md analyzing SSR opportunities
-  - Document memoization optimizations in MEMOIZATION_OPTIMIZATIONS.md
-
-- Fix all TypeScript warnings
-  - Replace 'as any' with vi.mocked() in tests
-  - Constrain generics to Record&lt;string, string | undefined&gt;
-  - Remove unused imports and improve type safety
-
-- Update components to use new patterns
-  - compliance-heatmap.tsx: Add createQueryString helper
-  - summary-cards.tsx: Remove unused pathname import
-  - nav-user.tsx: Add Route type import for typed routes
-
-This refactoring improves type safety, performance, and developer experience
-while maintaining full backward compatibility. All tests pass and no linting warnings.</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#bdb4fc8</div>
-                                        <div class="message">feat: implement typed routes for type-safe navigation
-
-- Enable Next.js experimental typedRoutes feature
-- Update all Link components and router.push calls to use typed routes
-- Fix navigation routes to match actual app structure
-- Add tests for footer navigation with absolute hash links
-- Ensure type safety for all internal navigation</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#ae47baf</div>
-                                        <div class="message">fix(quality): resolve linting and TypeScript errors across codebase
-
-- Refactor complex functions to reduce cognitive complexity
-  - Extract helper functions in animal-form-provider (handleSave split into 6 functions)
-  - Extract helper functions in households router (getPendingMeds split into 8 functions)
-  - Extract helper functions in insights router (generateSuggestions split into 5 functions)
-  - Extract UI components in member-list (6 new focused components)
-
-- Fix TypeScript errors
-  - Add missing members prop to settings page MemberList
-  - Update InviteForm to support onSuccess callback prop
-  - Add optional chaining for potentially undefined timezone values
-  - Fix type incompatibilities in households router
-  - Add type assertion for readonly array in timezone helpers
-
-- Code quality improvements
-  - Remove unused imports in drizzle.ts and reports.ts
-  - Rename unused variable with underscore prefix
-  - Sort CSS classes according to linting rules
-  - Add biome-ignore comment for false positive a11y warning
-
-All changes maintain existing functionality while improving code maintainability
-and type safety. The codebase now passes both linting and type checking.</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#89506fe</div>
-                                        <div class="message">feat: implement core veterinary medication tracking functionality
-
-- Add comprehensive administration recording with status tracking
-  - Record medication administrations with automatic status calculation
-  - Support co-signing for high-risk medications
-  - Implement undo functionality for recent administrations (30 min window)
-  - Include idempotency for offline sync support
-
-- Enhance animal management with veterinary-specific fields
-  - Add timezone support per animal for accurate scheduling
-  - Include veterinary contact information
-  - Support allergies and medical conditions tracking
-  - Implement soft delete for data preservation
-
-- Create robust regimen management system
-  - Support fixed and PRN (as-needed) medication schedules
-  - Calculate doses based on weight with automatic unit conversion
-  - Track active/paused/completed regimens
-  - Support co-sign requirements for controlled substances
-
-- Implement household member management
-  - Role-based access control (OWNER, CAREGIVER, VETREADONLY)
-  - Invitation system with email-based member addition
-  - Audit logging for all member changes
-  - Notification queue for member updates
-
-- Add inventory tracking with expiration management
-  - Track medication lots with expiration dates
-  - Support in-use status and opened dates
-  - Calculate days of supply based on usage patterns
-  - Assign inventory to specific animals
-
-- Create insights and analytics system
-  - Generate smart suggestions for medication compliance
-  - Track administration patterns with heatmap data
-  - Provide actionable insights for schedule optimization
-  - Monitor low inventory levels
-
-- Build comprehensive reporting framework
-  - Generate compliance reports by animal
-  - Track adherence percentages and streaks
-  - List notable events and adverse reactions
-  - Support date range filtering
-
-- UI improvements across all modules
-  - Update member list components with invite management
-  - Enhance regimen list with schedule visualization
-  - Improve inventory cards with days-of-supply display
-  - Add loading states to async data fetches
-
-- Remove .env.local.example to prevent accidental commits
-
-This foundation enables comprehensive medication tracking for veterinary
-use cases with multi-household support, offline capabilities, and
-professional-grade compliance monitoring.</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#27b7db3</div>
-                                        <div class="message">feat(timezone): implement searchable timezone picker with auto-detection
-
-- Add TimezoneCombobox component with search functionality
-- Auto-detect browser timezone on mount using Intl API
-- Mobile-responsive design (hide UTC offset/time on small screens)
-- Replace all Select-based timezone pickers with new component
-- Add timezone-helpers utilities using modern Intl APIs
-- Support all IANA timezones offered by the browser
-- Update components: animal-form, welcome-flow, vet-med-preferences</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#b46a309</div>
-                                        <div class="message">fix(build): resolve build errors and improve user sync
-
-This commit addresses two issues: a syntax error in the AnimalForm component that was breaking the build, and an inefficient user sync mechanism that was making repeated database calls. The AnimalForm component is now fixed, and the user sync has been optimized to only occur when a new user is created. This also removes the `dotenv` dependency in favor of `@next/env` to unify environment variable handling.</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#b548d52</div>
-                                        <div class="message">fix(auth): prevent user sync on every request
-
-Modified the `setupAuthenticatedUser` function to first check if a user exists in the database before attempting to sync their data from Clerk. This ensures that the expensive database sync operation is only performed once for new users, improving performance and reducing redundant database queries.</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#45aaea8</div>
-                                        <div class="message">fix(ci): simplify code quality workflow
-
-Removes the redundant `reviewdog` action in favor of the official Biome `reporter=github` option. This simplifies the workflow and uses the native GitHub integration for reporting linting and formatting issues. Also corrects the `secrets.github_token` to `secrets.GITHUB_TOKEN`.</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#7b247a1</div>
-                                        <div class="message">refactor(action): bring back the neon workflow to the sample</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#b6d5dc9</div>
-                                        <div class="message">chore: fix tRPC setup and improve overall code quality
-
-- Fix tRPC import path in _app.ts for proper auth initialization
-- Add centralized tRPC export in server/api/trpc.ts
-- Fix package.json name typo: vet-met-tracker → vet-med-tracker
-
-- Add type-safe environment variable definitions (types/env.d.ts)
-- Add service worker types for PWA support (types/service-worker.d.ts)
-- Clean up commented code in drizzle.config.ts and layout.tsx
-- Replace 'any' with 'unknown' for better type safety
-- Apply Biome auto-formatting and import organization</div>
-                                    </div>
-                                </div>
-                                <div class="timestamp">5 Aug 2025, 21:26:19</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Created new
-                      branch
-                                        <span class="code">development</span>
-                                        in
-                                        <span class="repo">kjanat/vet-med-tracker</span>
-                                    </div>
-                                </div>
-                                <div class="timestamp">5 Aug 2025, 21:15:10</div>
                             </section>
                         </div>
                     </section>
@@ -4742,7 +4472,7 @@ Removes the redundant `reviewdog` action in favor of the official Biome `reporte
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"/>
                             </svg>
-                            On 4 Aug 2025, 06:59:49
+                            On 3 Aug 2025, 15:29:55
                         </div>
                     </section>
                 </div>
@@ -4752,26 +4482,72 @@ Removes the redundant `reviewdog` action in favor of the official Biome `reporte
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            feat: enhance navigation UX and expand app infrastructure
+                            feat: comprehensive Clerk auth integration with database safeguards and monitoring
 
-- Implement sidebar navigation improvements with loading states and mobile auto-close
-- Add comprehensive error handling with global error boundaries and 404 pages  
-- Create database seeding infrastructure for medications and test data
-- Expand animal reports section with new pages and loading states
-- Add household management page for multi-tenant support
-- Update UI components (buttons, regimens) for better user experience
-- Enhance PWA service worker with improved caching strategies
-- Improve TypeScript configuration and build tooling
+BREAKING CHANGES:
+- Migrated from manual auth to Clerk authentication
+- Restructured database connection handling with connection pooling
+- Added circuit breaker pattern for database resilience
+
+Authentication &amp; Authorization:
+- Integrated Clerk for user authentication and session management
+- Added clerk-auth test pages and trpc demo components
+- Updated all protected routes to use Clerk auth context
+- Implemented user sync endpoint for Clerk webhook integration
+- Added proper auth provider with Clerk integration
+
+Database Infrastructure:
+- Implemented connection pooling with separate query/transaction queues
+- Added circuit breaker for automatic failure recovery
+- Added comprehensive timeout handling (30s default, 60s transactions)
+- Implemented rate limiting to prevent connection exhaustion
+- Added connection middleware for monitoring and safety
+
+Monitoring &amp; Error Handling:
+- Added production monitoring with metrics tracking
+- Implemented error boundaries at multiple levels
+- Added health check and breaker status endpoints
+- Created load testing infrastructure with comprehensive results
+- Added connection monitoring and alerting
+
+UI/Component Updates:
+- Updated all pages to remove semicolons per linting rules
+- Fixed loading states across all pages
+- Added IndexedDB status component for offline tracking
+- Updated user menu components for Clerk integration
+- Enhanced error boundary components with better fallbacks
+
+Testing Infrastructure:
+- Added load testing scripts with configurable scenarios
+- Created test helpers for TRPC context with Clerk
+- Added database connection testing utilities
+- Implemented safeguard demonstration scripts
+
+Documentation:
+- Added comprehensive auth implementation guide
+- Created monitoring quick reference
+- Documented connection pooling strategy
+- Added load test results and analysis
+- Created production deployment checklist
+
+Performance Improvements:
+- Reduced connection timeout from 300s to 30s
+- Implemented connection queue management
+- Added request deduplication
+- Optimized database query patterns
+
+This commit represents a major architectural improvement focusing on
+production readiness, reliability, and scalability.
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"/>
                             </svg>
-                            <span class="code">a65c16dc</span>
-                            <span class="code">components/settings/animals/animal-list.tsx</span>
+                            <span class="code">822cdd8b</span>
+                            <span class="code">app/api/sync-user/route.ts</span>
                             <span class="code">
-                                <span class="snippet additions">++1</span>
-                                <span class="snippet deletions">--1</span>
+                                <span class="snippet additions">++2</span>
+                                <span class="snippet deletions">--2</span>
                             </span>
                         </div>
                     </section>
@@ -4779,7 +4555,7 @@ Removes the redundant `reviewdog` action in favor of the official Biome `reporte
                 <div class="row">
                     <section class="snippet">
                         <div class="body markdown">
-                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -97,7 +97,7 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">};<br /></span><span class="token prefix unchanged">·</span><span class="token line"><br /></span><span class="token prefix unchanged">·</span><span class="token line">const handleEmergencyCard = (animalId: string) =&gt; {<br /></span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line">	window.open(`/animals/${animalId}/emergency`, "_blank");<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">	window.open(`/manage/animals/${animalId}/emergency`, "_blank");<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">};<br /></span><span class="token prefix unchanged">·</span><span class="token line"><br /></span><span class="token prefix unchanged">·</span><span class="token line">return (</span></span></code>
+                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -72,8 +72,8 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">}<br /></span><span class="token prefix unchanged">·</span><span class="token line"><br /></span><span class="token prefix unchanged">·</span><span class="token line">// Check if user exists in database<br /></span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line">const { db } = await import("@/server/db");<br /></span><span class="token prefix deleted">-</span><span class="token line">const { users } = await import("@/server/db/schema/users");<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">const { db } = await import("@/db/drizzle");<br /></span><span class="token prefix inserted">+</span><span class="token line">const { users } = await import("@/db/schema");<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">const { eq } = await import("drizzle-orm");<br /></span><span class="token prefix unchanged">·</span><span class="token line"><br /></span><span class="token prefix unchanged">·</span><span class="token line">const existingUser = await db</span></span></code>
                         </div>
                     </section>
                 </div>
@@ -4794,14 +4570,14 @@ Removes the redundant `reviewdog` action in favor of the official Biome `reporte
                 <div class="row">
                     <section class="largeable-column-fields">
                         <div class="field" style="padding-left: 31px">
-                            <b style="color: #16F174">Your fortune: （　´_ゝ`）ﾌｰﾝ </b>
+                            <b style="color: #6023F8">Your fortune: Outlook good</b>
                         </div>
                     </section>
                 </div>
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 6 Aug 2025, 02:25:06 (timezone Europe/Amsterdam) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 6 Aug 2025, 10:08:33 (timezone Europe/Amsterdam) with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
