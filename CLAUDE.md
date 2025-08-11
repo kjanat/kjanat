@@ -35,6 +35,7 @@ This is Kaj Kowalski's GitHub profile repository, containing profile visualizati
 Since this is primarily a GitHub profile repository without a traditional build system:
 
 ### Code Quality
+
 ```bash
 # Format JavaScript/JSON files
 npx prettier . "!**/.github/**" --write
@@ -45,6 +46,7 @@ uvx ruff format . --exclude .github
 ```
 
 ### Git Workflow
+
 ```bash
 # The repository auto-commits metrics updates with "[Skip GitHub Action]" to prevent loops
 # Manual commits trigger both workflows
@@ -53,16 +55,19 @@ uvx ruff format . --exclude .github
 ## Working with Components
 
 ### Modifying Metrics
+
 - Edit `.github/workflows/metrics.yml` to change plugins or schedule
 - Token `METRICS_TOKEN` requires repo and user read permissions
 - Changes to master/main branch auto-trigger metrics regeneration
 
 ### GitHub Saved Replies
+
 - Template replies are in `.github/saved-replies.json`
 - The Tampermonkey script auto-fetches from the raw GitHub URL
 - Script handles progressive import with page reload between items
 
 ### Adding New Automation
+
 - Place browser scripts in `scripts/tampermonkey/`
 - GitHub Actions go in `.github/workflows/`
 - Keep automation focused on GitHub profile/workflow improvements
