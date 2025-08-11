@@ -11,7 +11,7 @@
   "use strict";
 
   const JSON_SOURCE_URL =
-    "https://raw.githubusercontent.com/kjanat/kjanat/refs/heads/master/.github/saved-replies.json";
+    "https://raw.githubusercontent.com/kjanat/kjanat/refs/heads/master/scripts/tampermonkey/saved-replies.json";
 
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
