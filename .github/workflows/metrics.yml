@@ -12,12 +12,45 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Job 1: Profile Overview - Basic profile information and languages
-  profile-metrics:
+  # Setup job - Creates a branch for all metrics updates
+  setup:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      branch: ${{ steps.branch.outputs.name }}
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create metrics branch
+        id: branch
+        run: |
+          BRANCH_NAME="metrics/update-${{ github.run_number }}-$(date +%s)"
+          echo "name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b $BRANCH_NAME
+          git push origin $BRANCH_NAME
+          echo "✅ Created branch: $BRANCH_NAME"
+
+  # Job 1: Profile Overview - Basic profile information and languages
+  profile-metrics:
+    needs: setup
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    continue-on-error: true
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout metrics branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.setup.outputs.branch }}
+          fetch-depth: 0
+
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -58,12 +91,30 @@ jobs:
           plugin_achievements_threshold: C
           plugin_achievements: no
 
+      - name: Commit profile metrics
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/readme/metrics-profile.svg
+          git diff --staged --quiet || git commit -m "Update profile metrics [Skip GitHub Action]"
+          git push origin ${{ needs.setup.outputs.branch }}
+
   # Job 2: Contribution Activity - Development and coding activity
   contributions-metrics:
+    needs: [setup, profile-metrics]
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    continue-on-error: true
     permissions:
       contents: write
     steps:
+      - name: Checkout metrics branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.setup.outputs.branch }}
+          fetch-depth: 0
+
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -120,12 +171,30 @@ jobs:
           plugin_wakatime_user: kjanat
           plugin_wakatime: yes
 
+      - name: Commit contributions metrics
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/readme/metrics-contributions.svg
+          git diff --staged --quiet || git commit -m "Update contributions metrics [Skip GitHub Action]"
+          git push origin ${{ needs.setup.outputs.branch }}
+
   # Job 3: Community & Social - Stars, people, discussions, and engagement
   community-metrics:
+    needs: [setup, contributions-metrics]
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    continue-on-error: true
     permissions:
       contents: write
     steps:
+      - name: Checkout metrics branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.setup.outputs.branch }}
+          fetch-depth: 0
+
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -180,3 +249,83 @@ jobs:
           plugin_steam_token: ${{ secrets.STEAM_API_KEY }}
           plugin_steam_user: kjanat
           plugin_steam: no
+
+      - name: Commit community metrics
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/images/readme/metrics-community.svg
+          git diff --staged --quiet || git commit -m "Update community metrics [Skip GitHub Action]"
+          git push origin ${{ needs.setup.outputs.branch }}
+
+  # Finalization job - Creates PR and merges to master
+  finalize:
+    needs: [setup, profile-metrics, contributions-metrics, community-metrics]
+    runs-on: ubuntu-latest
+    if: always()
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup GitHub CLI
+        run: |
+          gh auth setup-git
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check if branch has commits
+        id: check
+        run: |
+          git fetch origin ${{ needs.setup.outputs.branch }}
+          COMMITS=$(git rev-list origin/master..origin/${{ needs.setup.outputs.branch }} --count)
+          echo "has_commits=$([[ $COMMITS -gt 0 ]] && echo 'true' || echo 'false')" >> $GITHUB_OUTPUT
+          echo "📊 Branch has $COMMITS new commits"
+
+      - name: Create and merge PR
+        if: steps.check.outputs.has_commits == 'true'
+        run: |
+          # Create PR
+          PR_URL=$(gh pr create \
+            --base master \
+            --head ${{ needs.setup.outputs.branch }} \
+            --title "Update GitHub profile metrics (run #${{ github.run_number }})" \
+            --body "Automated update of GitHub profile metrics.
+
+          - Profile metrics: ${{ needs.profile-metrics.result }}
+          - Contributions metrics: ${{ needs.contributions-metrics.result }}
+          - Community metrics: ${{ needs.community-metrics.result }}
+
+          This PR will be automatically merged." \
+            --label "automated" 2>&1 | tail -1)
+
+          echo "✅ Created PR: $PR_URL"
+
+          # Wait a moment for PR to be ready
+          sleep 5
+
+          # Merge PR with squash
+          gh pr merge $PR_URL \
+            --squash \
+            --delete-branch \
+            --subject "Update GitHub profile metrics (run #${{ github.run_number }})" \
+            --body "Automated metrics update from workflow run #${{ github.run_number }}"
+
+          echo "✅ PR merged successfully"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cleanup on failure
+        if: failure() || steps.check.outputs.has_commits == 'false'
+        run: |
+          echo "🧹 Cleaning up branch ${{ needs.setup.outputs.branch }}"
+          git push origin --delete ${{ needs.setup.outputs.branch }} || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
