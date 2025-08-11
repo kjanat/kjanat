@@ -32,7 +32,7 @@ jobs:
       # Run Prettier to format code
       - name: Run Prettier
         run: npx prettier . "!**/.github/**" --write
-        
+
       - name: Check for Python files
         id: python_files_check
         run: |
