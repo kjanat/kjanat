@@ -45,7 +45,7 @@ jobs:
 
       # Setup uv for consistent Python tooling
       - name: Setup uv
-        uses: astral-sh/setup-uv@bd01e18f51369d5a26f1651c3cb451d3417e3bba
+        uses: astral-sh/setup-uv@v6
         if: env.py_found == 'true'
         with:
           version: "latest"
@@ -62,4 +62,4 @@ jobs:
 
       # Commit and push any autofixes
       - name: Commit autofixes
-        uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27
+        uses: autofix-ci/action@v1
