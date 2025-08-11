@@ -40,21 +40,14 @@ jobs:
   profile-metrics:
     needs: setup
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     continue-on-error: true
-    permissions:
-      contents: write
     steps:
-      - name: Checkout metrics branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ needs.setup.outputs.branch }}
-          fetch-depth: 0
-
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: assets/images/readme/metrics-profile.svg
+          filename: metrics-profile.svg
+          output_action: none
 
           # Core configuration
           user: kjanat
@@ -91,35 +84,27 @@ jobs:
           plugin_achievements_threshold: C
           plugin_achievements: no
 
-      - name: Commit profile metrics
+      - name: Upload profile metrics artifact
         if: success()
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/images/readme/metrics-profile.svg
-          git diff --staged --quiet || git commit -m "Update profile metrics [Skip GitHub Action]"
-          git push origin ${{ needs.setup.outputs.branch }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics-profile
+          path: /metrics_renders/metrics-profile.svg
+          retention-days: 1
+          if-no-files-found: ignore
 
   # Job 2: Contribution Activity - Development and coding activity
   contributions-metrics:
-    needs: [setup, profile-metrics]
-    if: always() && needs.setup.result == 'success'
+    needs: setup
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     continue-on-error: true
-    permissions:
-      contents: write
     steps:
-      - name: Checkout metrics branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ needs.setup.outputs.branch }}
-          fetch-depth: 0
-
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: assets/images/readme/metrics-contributions.svg
+          filename: metrics-contributions.svg
+          output_action: none
 
           # Core configuration
           user: kjanat
@@ -172,35 +157,27 @@ jobs:
           plugin_wakatime_user: kjanat
           plugin_wakatime: yes
 
-      - name: Commit contributions metrics
+      - name: Upload contributions metrics artifact
         if: success()
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/images/readme/metrics-contributions.svg
-          git diff --staged --quiet || git commit -m "Update contributions metrics [Skip GitHub Action]"
-          git push origin ${{ needs.setup.outputs.branch }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics-contributions
+          path: /metrics_renders/metrics-contributions.svg
+          retention-days: 1
+          if-no-files-found: ignore
 
   # Job 3: Community & Social - Stars, people, discussions, and engagement
   community-metrics:
-    needs: [setup, contributions-metrics]
-    if: always() && needs.setup.result == 'success'
+    needs: setup
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     continue-on-error: true
-    permissions:
-      contents: write
     steps:
-      - name: Checkout metrics branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ needs.setup.outputs.branch }}
-          fetch-depth: 0
-
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          filename: assets/images/readme/metrics-community.svg
+          filename: metrics-community.svg
+          output_action: none
 
           # Core configuration
           user: kjanat
@@ -252,16 +229,16 @@ jobs:
           plugin_steam_user: kjanat
           plugin_steam: no
 
-      - name: Commit community metrics
+      - name: Upload community metrics artifact
         if: success()
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/images/readme/metrics-community.svg
-          git diff --staged --quiet || git commit -m "Update community metrics [Skip GitHub Action]"
-          git push origin ${{ needs.setup.outputs.branch }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics-community
+          path: /metrics_renders/metrics-community.svg
+          retention-days: 1
+          if-no-files-found: ignore
 
-  # Finalization job - Creates PR and merges to master
+  # Finalization job - Downloads artifacts and creates PR
   finalize:
     needs: [setup, profile-metrics, contributions-metrics, community-metrics]
     runs-on: ubuntu-latest
@@ -270,29 +247,46 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - name: Checkout repository
+      - name: Checkout metrics branch
         uses: actions/checkout@v4
         with:
+          ref: ${{ needs.setup.outputs.branch }}
           fetch-depth: 0
 
-      - name: Setup GitHub CLI
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: /tmp/metrics
+          
+      - name: Move metrics to correct location
         run: |
-          gh auth setup-git
+          mkdir -p assets/images/readme
+          # Move each metric file if it exists
+          [ -f /tmp/metrics/metrics-profile/metrics-profile.svg ] && mv /tmp/metrics/metrics-profile/metrics-profile.svg assets/images/readme/metrics-profile.svg
+          [ -f /tmp/metrics/metrics-contributions/metrics-contributions.svg ] && mv /tmp/metrics/metrics-contributions/metrics-contributions.svg assets/images/readme/metrics-contributions.svg
+          [ -f /tmp/metrics/metrics-community/metrics-community.svg ] && mv /tmp/metrics/metrics-community/metrics-community.svg assets/images/readme/metrics-community.svg
+          # List what we have
+          echo "📊 Available metrics:"
+          ls -la assets/images/readme/*.svg 2>/dev/null || echo "No metrics files found"
+          
+      - name: Commit all metrics
+        id: commit
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Check if branch has commits
-        id: check
-        run: |
-          git fetch origin ${{ needs.setup.outputs.branch }}
-          COMMITS=$(git rev-list origin/master..origin/${{ needs.setup.outputs.branch }} --count)
-          echo "has_commits=$([[ $COMMITS -gt 0 ]] && echo 'true' || echo 'false')" >> $GITHUB_OUTPUT
-          echo "📊 Branch has $COMMITS new commits"
+          git add assets/images/readme/*.svg || true
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "❌ No metrics were generated"
+          else
+            git commit -m "Update GitHub profile metrics [Skip GitHub Action]"
+            git push origin ${{ needs.setup.outputs.branch }}
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ Committed metrics to branch"
+          fi
 
       - name: Create and merge PR
-        if: steps.check.outputs.has_commits == 'true'
+        if: steps.commit.outputs.has_changes == 'true'
         run: |
           # Create PR
           PR_URL=$(gh pr create \
@@ -325,7 +319,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cleanup on failure
-        if: failure() || steps.check.outputs.has_commits == 'false'
+        if: failure() || steps.commit.outputs.has_changes == 'false'
         run: |
           echo "🧹 Cleaning up branch ${{ needs.setup.outputs.branch }}"
           git push origin --delete ${{ needs.setup.outputs.branch }} || true
