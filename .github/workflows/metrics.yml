@@ -103,6 +103,7 @@ jobs:
   # Job 2: Contribution Activity - Development and coding activity
   contributions-metrics:
     needs: [setup, profile-metrics]
+    if: always() && needs.setup.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     continue-on-error: true
@@ -183,6 +184,7 @@ jobs:
   # Job 3: Community & Social - Stars, people, discussions, and engagement
   community-metrics:
     needs: [setup, contributions-metrics]
+    if: always() && needs.setup.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     continue-on-error: true
@@ -263,7 +265,7 @@ jobs:
   finalize:
     needs: [setup, profile-metrics, contributions-metrics, community-metrics]
     runs-on: ubuntu-latest
-    if: always()
+    if: always() && needs.setup.result == 'success'
     permissions:
       contents: write
       pull-requests: write
