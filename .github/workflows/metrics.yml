@@ -288,7 +288,7 @@ jobs:
       - name: Create and merge PR
         if: steps.commit.outputs.has_changes == 'true'
         run: |
-          # Create PR
+          # Create PR (without label since it doesn't exist)
           PR_URL=$(gh pr create \
             --base master \
             --head ${{ needs.setup.outputs.branch }} \
@@ -299,16 +299,19 @@ jobs:
           - Contributions metrics: ${{ needs.contributions-metrics.result }}
           - Community metrics: ${{ needs.community-metrics.result }}
 
-          This PR will be automatically merged." \
-            --label "automated" 2>&1 | tail -1)
+          This PR will be automatically merged.")
 
           echo "✅ Created PR: $PR_URL"
 
           # Wait a moment for PR to be ready
           sleep 5
 
-          # Merge PR with squash
-          gh pr merge $PR_URL \
+          # Extract PR number from URL
+          PR_NUMBER=$(echo "$PR_URL" | grep -oE '[0-9]+$')
+          echo "📝 PR Number: $PR_NUMBER"
+
+          # Merge PR with squash using PR number
+          gh pr merge "$PR_NUMBER" \
             --squash \
             --delete-branch \
             --subject "Update GitHub profile metrics (run #${{ github.run_number }})" \
