@@ -21,7 +21,7 @@ jobs:
       branch: ${{ steps.branch.outputs.name }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -248,16 +248,16 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout metrics branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: ${{ needs.setup.outputs.branch }}
           fetch-depth: 0
 
       - name: Download all artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           path: /tmp/metrics
-          
+
       - name: Move metrics to correct location
         run: |
           mkdir -p assets/images/readme
@@ -268,7 +268,7 @@ jobs:
           # List what we have
           echo "📊 Available metrics:"
           ls -la assets/images/readme/*.svg 2>/dev/null || echo "No metrics files found"
-          
+
       - name: Commit all metrics
         id: commit
         run: |
@@ -288,7 +288,7 @@ jobs:
       - name: Create and merge PR
         if: steps.commit.outputs.has_changes == 'true'
         run: |
-          # Create PR (without label since it doesn't exist)
+          # Create PR using METRICS_TOKEN for proper permissions
           PR_URL=$(gh pr create \
             --base master \
             --head ${{ needs.setup.outputs.branch }} \
@@ -319,7 +319,7 @@ jobs:
 
           echo "✅ PR merged successfully"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
 
       - name: Cleanup on failure
         if: failure() || steps.commit.outputs.has_changes == 'false'
@@ -327,4 +327,4 @@ jobs:
           echo "🧹 Cleaning up branch ${{ needs.setup.outputs.branch }}"
           git push origin --delete ${{ needs.setup.outputs.branch }} || true
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
