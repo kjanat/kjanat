@@ -15,6 +15,10 @@ jobs:
   # Setup job - Creates a branch for all metrics updates
   setup:
     runs-on: ubuntu-latest
+    # Skip if this is a metrics update commit
+    if: |
+      !contains(github.event.head_commit.message, 'Update GitHub profile metrics') &&
+      !contains(github.event.head_commit.message, '[Skip GitHub Action]')
     permissions:
       contents: write
     outputs:
