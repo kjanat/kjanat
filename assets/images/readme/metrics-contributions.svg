@@ -109,14 +109,14 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#pr-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="6.8863261943986815" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="6.8863261943986815" y="0" width="27.545304777594726" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="34.43163097199341" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="34.06919275123558" y="0" width="0.3624382207578254" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="34.43163097199341" y="0" width="12.685337726523889" height="8" fill="#da3633"/>
-                            <rect mask="url(#issues-bar)" x="47.1169686985173" y="0" width="81.18616144975289" height="8" fill="#ff7b72"/>
-                            <rect mask="url(#issues-bar)" x="128.30313014827018" y="0" width="66.68863261943986" height="8" fill="#8957e5"/>
-                            <rect mask="url(#issues-bar)" x="194.99176276771004" y="0" width="25.00823723228995" height="8" fill="#d2a8ff"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="6.875" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="6.875" y="0" width="27.5" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="34.375" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="34.01315789473684" y="0" width="0.36184210526315785" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="34.375" y="0" width="12.664473684210526" height="8" fill="#da3633"/>
+                            <rect mask="url(#issues-bar)" x="47.03947368421053" y="0" width="81.05263157894737" height="8" fill="#ff7b72"/>
+                            <rect mask="url(#issues-bar)" x="128.0921052631579" y="0" width="66.9407894736842" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="195.03289473684208" y="0" width="24.967105263157897" height="8" fill="#d2a8ff"/>
                         </svg>
                         <div class="field blue fill-width">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -135,7 +135,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" fill-rule="evenodd" d="M5 3.254V3.25v.005a.75.75 0 110-.005v.004zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                 </svg>
-                                <span class="no-wrap">253 <small>merged</small></span>
+                                <span class="no-wrap">254 <small>merged</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -3163,23 +3163,6 @@
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
-                                    </svg>
-                                    <div class="content">
-                                        Deleted
-                      branch
-                                        <span class="code">metrics/update-435-1756224338</span>
-                                        in
-                                        <span class="repo">kjanat/kjanat</span>
-                                    </div>
-                                </div>
-                                <div class="timestamp">26 Aug 2025, 18:15:59</div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                                     </svg>
                                     <div class="content">
@@ -3190,13 +3173,30 @@
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#62c0a13</div>
-                                        <div class="message">Update GitHub profile metrics (run #435)
+                                        <div class="sha">#196543c</div>
+                                        <div class="message">Update GitHub profile metrics (run #437)
 
-Automated metrics update from workflow run #435</div>
+Automated metrics update from workflow run #437</div>
                                     </div>
                                 </div>
-                                <div class="timestamp">26 Aug 2025, 18:15:59</div>
+                                <div class="timestamp">27 Aug 2025, 02:31:09</div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"/>
+                                    </svg>
+                                    <div class="content">
+                                        Deleted
+                      branch
+                                        <span class="code">metrics/update-437-1756254055</span>
+                                        in
+                                        <span class="repo">kjanat/kjanat</span>
+                                    </div>
+                                </div>
+                                <div class="timestamp">27 Aug 2025, 02:31:09</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -3207,14 +3207,14 @@ Automated metrics update from workflow run #435</div>
                                     </svg>
                                     <div class="content">
                                         Merged
-                                        <span class="issue">#57 Update GitHub profile metrics (run #435)</span>
+                                        <span class="issue">#58 Update GitHub profile metrics (run #437)</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div> in <span class="repo">kjanat/kjanat</span></div>
-                                    <div>3 files changed <span class="code">++69 --93</span></div>
+                                    <div>3 files changed <span class="code">++79 --73</span></div>
                                 </div>
-                                <div class="timestamp">26 Aug 2025, 18:15:59</div>
+                                <div class="timestamp">27 Aug 2025, 02:31:08</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -3225,14 +3225,14 @@ Automated metrics update from workflow run #435</div>
                                     </svg>
                                     <div class="content">
                                         Opened
-                                        <span class="issue">#57 Update GitHub profile metrics (run #435)</span>
+                                        <span class="issue">#58 Update GitHub profile metrics (run #437)</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div> in <span class="repo">kjanat/kjanat</span></div>
-                                    <div>3 files changed <span class="code">++69 --93</span></div>
+                                    <div>3 files changed <span class="code">++79 --73</span></div>
                                 </div>
-                                <div class="timestamp">26 Aug 2025, 18:15:52</div>
+                                <div class="timestamp">27 Aug 2025, 02:31:02</div>
                             </section>
                         </div>
                     </section>
