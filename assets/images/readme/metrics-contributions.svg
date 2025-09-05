@@ -109,14 +109,14 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#pr-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="6.500777604976672" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="6.500777604976672" y="0" width="26.687402799377917" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="33.18818040435459" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="32.846034214618975" y="0" width="0.3421461897356143" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="33.18818040435459" y="0" width="11.975116640746501" height="8" fill="#da3633"/>
-                            <rect mask="url(#issues-bar)" x="45.16329704510109" y="0" width="79.72006220839813" height="8" fill="#ff7b72"/>
-                            <rect mask="url(#issues-bar)" x="124.88335925349922" y="0" width="71.5085536547434" height="8" fill="#8957e5"/>
-                            <rect mask="url(#issues-bar)" x="196.3919129082426" y="0" width="23.608087091757387" height="8" fill="#d2a8ff"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="6.470588235294118" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="6.470588235294118" y="0" width="26.904024767801857" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="33.37461300309597" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="33.034055727554176" y="0" width="0.3405572755417957" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="33.37461300309597" y="0" width="11.91950464396285" height="8" fill="#da3633"/>
+                            <rect mask="url(#issues-bar)" x="45.294117647058826" y="0" width="79.3498452012384" height="8" fill="#ff7b72"/>
+                            <rect mask="url(#issues-bar)" x="124.64396284829722" y="0" width="71.85758513931889" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="196.5015479876161" y="0" width="23.4984520123839" height="8" fill="#d2a8ff"/>
                         </svg>
                         <div class="field blue fill-width">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -129,13 +129,13 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#238636" fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                 </svg>
-                                <span class="no-wrap">97 <small>open</small></span>
+                                <span class="no-wrap">98 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" fill-rule="evenodd" d="M5 3.254V3.25v.005a.75.75 0 110-.005v.004zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                 </svg>
-                                <span class="no-wrap">278 <small>merged</small></span>
+                                <span class="no-wrap">280 <small>merged</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -162,7 +162,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#56d364" fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                 </svg>
-                                <span class="no-wrap">78 <small>open</small></span>
+                                <span class="no-wrap">79 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -197,7 +197,7 @@
                 </h2>
                 <div class="row">
                     <ul class="facts">
-                        <li>Mostly pushes code around 02:00</li>
+                        <li>Mostly pushes code around 18:00</li>
                         <li>Mostly active on Monday</li>
                     </ul>
                 </div>
@@ -208,7 +208,7 @@
                     <div class="chart-bars">
                         <div class="entry">
                             <span class="value">12</span>
-                            <div class="bar" style="height: 50px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                            <div class="bar" style="height: 46.15384615384615px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
                             02
                         </div>
                         <div class="entry">
@@ -247,8 +247,8 @@
                             09
                         </div>
                         <div class="entry">
-                            <span class="value">10</span>
-                            <div class="bar" style="height: 41.66666666666667px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                            <span class="value">9</span>
+                            <div class="bar" style="height: 34.61538461538461px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
                             10
                         </div>
                         <div class="entry">
@@ -287,7 +287,7 @@
                             17
                         </div>
                         <div class="entry">
-                            <span class="value">12</span>
+                            <span class="value">13</span>
                             <div class="bar" style="height: 50px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
                             18
                         </div>
@@ -303,7 +303,7 @@
                         </div>
                         <div class="entry">
                             <span class="value">1</span>
-                            <div class="bar" style="height: 4.166666666666666px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <div class="bar" style="height: 3.8461538461538463px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             21
                         </div>
                     </div>
@@ -372,7 +372,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M7.998 14.5c2.832 0 5-1.98 5-4.5 0-1.463-.68-2.19-1.879-3.383l-.036-.037c-1.013-1.008-2.3-2.29-2.834-4.434-.322.256-.63.579-.864.953-.432.696-.621 1.58-.046 2.73.473.947.67 2.284-.278 3.232-.61.61-1.545.84-2.403.633a2.788 2.788 0 01-1.436-.874A3.21 3.21 0 003 10c0 2.53 2.164 4.5 4.998 4.5zM9.533.753C9.496.34 9.16.009 8.77.146 7.035.75 4.34 3.187 5.997 6.5c.344.689.285 1.218.003 1.5-.419.419-1.54.487-2.04-.832-.173-.454-.659-.762-1.035-.454C2.036 7.44 1.5 8.702 1.5 10c0 3.512 2.998 6 6.498 6s6.5-2.5 6.5-6c0-2.137-1.128-3.26-2.312-4.438-1.19-1.184-2.436-2.425-2.653-4.81z"/>
                             </svg>
-                            Current streak 25 days
+                            Current streak 26 days
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -396,7 +396,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"/>
                             </svg>
-                            Average per day at ~6.76
+                            Average per day at ~6.75
                         </div>
                     </section>
                 </div>
@@ -2361,6 +2361,11 @@
                                 <path fill="#30a14e" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.2625 0,1.2625 z"/>
                                 <path fill="#30a14e" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.2625 1.7,2.2625 z"/>
                             </g>
+                            <g transform="translate(-6.8, 9.775)">
+                                <path fill="#30a14e" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
+                                <path fill="#30a14e" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.225 0,1.225 z"/>
+                                <path fill="#30a14e" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.225 1.7,2.225 z"/>
+                            </g>
                         </g>
                     </g>
                 </svg>
@@ -2695,6 +2700,7 @@
                                     <rect class="day" x="0" y="19" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                                     <rect class="day" x="0" y="34" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
                                     <rect class="day" x="0" y="49" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
+                                    <rect class="day" x="0" y="64" width="11" height="11" fill="#30a14e" rx="2" ry="2"/>
                                 </g>
                             </g>
                             <g transform="translate(0, 144)">
@@ -3198,13 +3204,13 @@
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#e412d74</div>
-                                        <div class="message">Update GitHub profile metrics (run #483)
+                                        <div class="sha">#eb2ab0f</div>
+                                        <div class="message">Update GitHub profile metrics (run #489)
 
-Automated metrics update from workflow run #483</div>
+Automated metrics update from workflow run #489</div>
                                     </div>
                                 </div>
-                                <div class="timestamp">3 Sept 2025, 18:26:29</div>
+                                <div class="timestamp">4 Sept 2025, 18:26:43</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -3216,12 +3222,12 @@ Automated metrics update from workflow run #483</div>
                                     <div class="content">
                                         Deleted
                       branch
-                                        <span class="code">metrics/update-483-1756915551</span>
+                                        <span class="code">metrics/update-489-1757001962</span>
                                         in
                                         <span class="repo">kjanat/kjanat</span>
                                     </div>
                                 </div>
-                                <div class="timestamp">3 Sept 2025, 18:26:29</div>
+                                <div class="timestamp">4 Sept 2025, 18:26:43</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -3232,14 +3238,14 @@ Automated metrics update from workflow run #483</div>
                                     </svg>
                                     <div class="content">
                                         Merged
-                                        <span class="issue">#81 Update GitHub profile metrics (run #483)</span>
+                                        <span class="issue">#84 Update GitHub profile metrics (run #489)</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div> in <span class="repo">kjanat/kjanat</span></div>
-                                    <div>2 files changed <span class="code">++12 --13</span></div>
+                                    <div>2 files changed <span class="code">++17 --17</span></div>
                                 </div>
-                                <div class="timestamp">3 Sept 2025, 18:26:28</div>
+                                <div class="timestamp">4 Sept 2025, 18:26:42</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -3250,14 +3256,14 @@ Automated metrics update from workflow run #483</div>
                                     </svg>
                                     <div class="content">
                                         Opened
-                                        <span class="issue">#81 Update GitHub profile metrics (run #483)</span>
+                                        <span class="issue">#84 Update GitHub profile metrics (run #489)</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div> in <span class="repo">kjanat/kjanat</span></div>
-                                    <div>2 files changed <span class="code">++12 --13</span></div>
+                                    <div>2 files changed <span class="code">++17 --17</span></div>
                                 </div>
-                                <div class="timestamp">3 Sept 2025, 18:26:22</div>
+                                <div class="timestamp">4 Sept 2025, 18:26:37</div>
                             </section>
                         </div>
                     </section>
