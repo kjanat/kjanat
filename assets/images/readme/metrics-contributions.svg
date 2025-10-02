@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1963" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1733" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;color:#777}h2,h3{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400}h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3,svg{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.no-wrap,.organization.name{white-space:nowrap}#metrics-end,.fill-width{width:100%}.no-margin-top{margin-top:0}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.habits .facts{margin:0;list-style-type:none;padding-left:37px}.audit.text{min-width:42px}.audit svg{margin:0}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry{flex-grow:1;display:flex;flex-direction:column;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .commit .sha,.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,span.code{background-color:#7777771f;padding:1px 5px;font-size:80%;border-radius:6px;color:#777;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;margin:0 4px -3px}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .commit .sha,code{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .commit .sha{margin-right:4px}.activity .commit .message{overflow:hidden;text-overflow:ellipsis;width:360px;white-space:nowrap}.activity .details&gt;.comment{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-top:6px;border-left:3px solid #777777b2;padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.deleted{color:#da3633}.snippet .body{padding-left:12px}.snippet .language-diff{font-size:77%}.snippet.additions{color:#336543}.snippet.deletions{color:#9a5256}.snippet .token.prefix.unchanged{visibility:hidden}.markdown ul{padding-left:24px}.markdown a{color:#58a6ff;text-decoration:none}code{background-color:#7777771f;display:inline-block;border-radius:6px;color:#777;padding:1px 5px;font-size:80%}code[class^=language-]{white-space:pre-wrap;width:97%;margin-top:4px}.token.comment{color:#690}.token.string{color:#2777aa}.token.property{color:#48428a}.token.coord{color:#d2a8ff;font-weight:700}.token.inserted:not(.prefix){color:#aad0b4dc;background-color:#336543dc}.token.deleted:not(.prefix){color:#eed2d0dc;background-color:#9a5256dc}.space{margin-left:7px}.blue{color:#58a6ff}.twemoji{height:1em;width:1em;margin-bottom:-.125em}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;color:#777}h2,h3{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400}h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3,svg{font-size:14px}.h-details{margin:0 4px;padding-top:4px;font-size:.8rem}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field.wrap,.row{flex-wrap:wrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.center{justify-content:center}.no-wrap{white-space:nowrap}#metrics-end,.fill-width{width:100%}.no-margin-top{margin-top:0}.calendar.field{margin:4px 0 4px 7px}.calendar .day{outline:1px solid rgba(27,31,35,.04);outline-offset:-1px}svg.bar{margin:4px 0}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}.habits .facts{margin:0;list-style-type:none;padding-left:37px}.audit.text{min-width:42px}.audit svg{margin:0}.chart{padding:0 8px}.chart-bars{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin:8px 0 4px;flex-grow:1;min-height:70px}.chart-bars .entry{flex-grow:1;display:flex;flex-direction:column;align-items:center;font-size:10px;color:#666}.chart-bars .entry .value{font-size:6px}.chart-bars .entry .empty{width:100%;text-align:center}.chart-bars .bar{width:7px;background-color:var(--color-calendar-graph-day-bg);border:1px solid var(--color-calendar-graph-day-border);border-radius:5px}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .commit .sha,.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,span.code{background-color:#7777771f;padding:1px 5px;font-size:80%;border-radius:6px;color:#777;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;margin:0 4px -3px}.activity .user{font-weight:600}.activity .details,.activity .timestamp{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .timestamp{font-size:10px;margin-top:4px}.activity .commit{display:flex;align-items:center}.activity .commit .sha,code{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .commit .sha{margin-right:4px}.activity .commit .message{overflow:hidden;text-overflow:ellipsis;width:360px;white-space:nowrap}svg.calendar{margin-left:13px;margin-top:4px}svg.calendar text{font-size:18px;fill:currentColor}.added{color:#3fb950}.deleted{color:#da3633}.snippet .body{padding-left:12px}.snippet .language-diff{font-size:77%}.snippet.additions{color:#336543}.snippet.deletions{color:#9a5256}.snippet .token.prefix.unchanged{visibility:hidden}.markdown ul{padding-left:24px}.markdown a{color:#58a6ff;text-decoration:none}code{background-color:#7777771f;display:inline-block;border-radius:6px;color:#777;padding:1px 5px;font-size:80%}code[class^=language-]{white-space:pre-wrap;width:97%;margin-top:4px}.token.string{color:#2777aa}.token.property{color:#48428a}.token.coord{color:#d2a8ff;font-weight:700}.token.inserted:not(.prefix){color:#aad0b4dc;background-color:#336543dc}.token.deleted:not(.prefix){color:#eed2d0dc;background-color:#9a5256dc}.space{margin-left:7px}.blue{color:#58a6ff}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -23,15 +23,15 @@
                             <mask id="issues-bar">
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="107.6595744680851" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="107.6595744680851" y="0" width="18.72340425531915" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="126.38297872340425" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="126.38297872340425" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="126.38297872340425" y="0" width="65.53191489361701" height="8" fill="#8957e5"/>
-                            <rect mask="url(#issues-bar)" x="191.91489361702128" y="0" width="28.085106382978722" height="8" fill="#d2a8ff"/>
-                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="220" height="8" fill="#d1d5da"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="0" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#d2a8ff"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#c9d1d9"/>
                         </svg>
                         <div class="field blue fill-width">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -45,14 +45,14 @@
                                     <path fill="#238636" d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                     <path fill="#238636" fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                                 </svg>
-                                <span class="no-wrap">27 <small>open</small></span>
+                                <span class="no-wrap">0 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
                                     <path fill="#8957e5" fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
                                 </svg>
-                                <span class="no-wrap">20 <small>closed</small></span>
+                                <span class="no-wrap">0 <small>closed</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -79,14 +79,14 @@
                                     <path fill="#56d364" d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
                                     <path fill="#56d364" fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
                                 </svg>
-                                <span class="no-wrap">4 <small>open</small></span>
+                                <span class="no-wrap">0 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#d2a8ff" d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
                                     <path fill="#d2a8ff" fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
                                 </svg>
-                                <span class="no-wrap">6 <small>closed</small></span>
+                                <span class="no-wrap">0 <small>closed</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -108,15 +108,15 @@
                             <mask id="pr-bar">
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
-                            <rect mask="url(#pr-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="5.583756345177665" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="5.583756345177665" y="0" width="26.243654822335024" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="31.82741116751269" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="31.548223350253807" y="0" width="0.27918781725888325" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="31.82741116751269" y="0" width="10.609137055837563" height="8" fill="#da3633"/>
-                            <rect mask="url(#issues-bar)" x="42.43654822335025" y="0" width="77.05583756345177" height="8" fill="#ff7b72"/>
-                            <rect mask="url(#issues-bar)" x="119.49238578680203" y="0" width="81.24365482233503" height="8" fill="#8957e5"/>
-                            <rect mask="url(#issues-bar)" x="200.73604060913706" y="0" width="19.263959390862944" height="8" fill="#d2a8ff"/>
+                            <rect mask="url(#pr-bar)" x="0" y="0" width="220" height="8" fill="#d1d5da"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="0" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#da3633"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#ff7b72"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="NaN" y="0" width="0" height="8" fill="#d2a8ff"/>
                         </svg>
                         <div class="field blue fill-width">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -129,13 +129,13 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#238636" fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                 </svg>
-                                <span class="no-wrap">114 <small>open</small></span>
+                                <span class="no-wrap">0 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" fill-rule="evenodd" d="M5 3.254V3.25v.005a.75.75 0 110-.005v.004zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                 </svg>
-                                <span class="no-wrap">360 <small>merged</small></span>
+                                <span class="no-wrap">0 <small>merged</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -148,7 +148,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#da3633" fill-rule="evenodd" d="M10.72 1.227a.75.75 0 011.06 0l.97.97.97-.97a.75.75 0 111.06 1.061l-.97.97.97.97a.75.75 0 01-1.06 1.06l-.97-.97-.97.97a.75.75 0 11-1.06-1.06l.97-.97-.97-.97a.75.75 0 010-1.06zM12.75 6.5a.75.75 0 00-.75.75v3.378a2.251 2.251 0 101.5 0V7.25a.75.75 0 00-.75-.75zm0 5.5a.75.75 0 100 1.5.75.75 0 000-1.5zM2.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.25 1a2.25 2.25 0 00-.75 4.372v5.256a2.251 2.251 0 101.5 0V5.372A2.25 2.25 0 003.25 1zm0 11a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                 </svg>
-                                <span class="no-wrap">314 <small>closed</small></span>
+                                <span class="no-wrap">0 <small>closed</small></span>
                             </div>
                         </div>
                         <div class="field blue fill-width">
@@ -162,26 +162,26 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#56d364" fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                 </svg>
-                                <span class="no-wrap">94 <small>open</small></span>
+                                <span class="no-wrap">0 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#d2a8ff" fill-rule="evenodd" d="M5 3.254V3.25v.005a.75.75 0 110-.005v.004zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                 </svg>
-                                <span class="no-wrap">69 <small>merged</small></span>
+                                <span class="no-wrap">0 <small>merged</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#c9d1d9" d="M2.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.25 1a2.25 2.25 0 00-.75 4.372v5.256a2.251 2.251 0 101.5 0V5.372A2.25 2.25 0 003.25 1zm0 11a.75.75 0 100 1.5.75.75 0 000-1.5zm9.5 3a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5zm0-3a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                     <path d="M14 7.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zm0-4.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z"/>
                                 </svg>
-                                <span class="no-wrap">1 <small>draft</small></span>
+                                <span class="no-wrap">0 <small>drafts</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#ff7b72" fill-rule="evenodd" d="M10.72 1.227a.75.75 0 011.06 0l.97.97.97-.97a.75.75 0 111.06 1.061l-.97.97.97.97a.75.75 0 01-1.06 1.06l-.97-.97-.97.97a.75.75 0 11-1.06-1.06l.97-.97-.97-.97a.75.75 0 010-1.06zM12.75 6.5a.75.75 0 00-.75.75v3.378a2.251 2.251 0 101.5 0V7.25a.75.75 0 00-.75-.75zm0 5.5a.75.75 0 100 1.5.75.75 0 000-1.5zM2.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.25 1a2.25 2.25 0 00-.75 4.372v5.256a2.251 2.251 0 101.5 0V5.372A2.25 2.25 0 003.25 1zm0 11a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                 </svg>
-                                <span class="no-wrap">276 <small>closed</small></span>
+                                <span class="no-wrap">0 <small>closed</small></span>
                             </div>
                         </div>
                     </section>
@@ -193,7 +193,7 @@
                         <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
                     </svg>
                     Recent coding habits
-                    <small class="h-details">(computed from last 43 commits)</small>
+                    <small class="h-details">(computed from last 45 commits)</small>
                 </h2>
                 <div class="row">
                     <ul class="facts">
@@ -257,8 +257,8 @@
                             09
                         </div>
                         <div class="entry">
-                            <span class="value">10</span>
-                            <div class="bar" style="height: 41.66666666666667px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                            <span class="value">11</span>
+                            <div class="bar" style="height: 45.83333333333333px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
                             10
                         </div>
                         <div class="entry">
@@ -267,8 +267,8 @@
                             11
                         </div>
                         <div class="entry">
-                            <span class="value">1</span>
-                            <div class="bar" style="height: 4.166666666666666px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
+                            <span class="value">2</span>
+                            <div class="bar" style="height: 8.333333333333332px; background-color: var(--color-calendar-graph-day-L1-bg)"></div>
                             12
                         </div>
                         <div class="entry">
@@ -323,8 +323,8 @@
                                 Tue
                             </div>
                             <div class="entry">
-                                <span class="value">3</span>
-                                <div class="bar" style="height: 18.75px; background-color: var(--color-calendar-graph-day-L2-bg)"></div>
+                                <span class="value">5</span>
+                                <div class="bar" style="height: 31.25px; background-color: var(--color-calendar-graph-day-L3-bg)"></div>
                                 Wed
                             </div>
                             <div class="entry">
@@ -367,13 +367,13 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M7.998 14.5c2.832 0 5-1.98 5-4.5 0-1.463-.68-2.19-1.879-3.383l-.036-.037c-1.013-1.008-2.3-2.29-2.834-4.434-.322.256-.63.579-.864.953-.432.696-.621 1.58-.046 2.73.473.947.67 2.284-.278 3.232-.61.61-1.545.84-2.403.633a2.788 2.788 0 01-1.436-.874A3.21 3.21 0 003 10c0 2.53 2.164 4.5 4.998 4.5zM9.533.753C9.496.34 9.16.009 8.77.146 7.035.75 4.34 3.187 5.997 6.5c.344.689.285 1.218.003 1.5-.419.419-1.54.487-2.04-.832-.173-.454-.659-.762-1.035-.454C2.036 7.44 1.5 8.702 1.5 10c0 3.512 2.998 6 6.498 6s6.5-2.5 6.5-6c0-2.137-1.128-3.26-2.312-4.438-1.19-1.184-2.436-2.425-2.653-4.81z"/>
                             </svg>
-                            Current streak 52 days
+                            Current streak 53 days
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/>
                             </svg>
-                            Best streak 52 days
+                            Best streak 53 days
                         </div>
                         <h3 class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -391,7 +391,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"/>
                             </svg>
-                            Average per day at ~7.66
+                            Average per day at ~7.65
                         </div>
                     </section>
                 </div>
@@ -2351,6 +2351,11 @@
                                 <path fill="#216e39" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,4.325 0,3.325 z"/>
                                 <path fill="#216e39" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,3.325 1.7,4.325 z"/>
                             </g>
+                            <g transform="translate(-5.1, 8.775)">
+                                <path fill="#9be9a8" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.225 0,1.225 z"/>
+                                <path fill="#9be9a8" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.225 1.7,2.225 z"/>
+                            </g>
                         </g>
                     </g>
                 </svg>
@@ -2720,6 +2725,7 @@
                                     <rect class="day" x="0" y="4" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="0" y="19" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                     <rect class="day" x="0" y="34" width="11" height="11" fill="#216e39" rx="2" ry="2"/>
+                                    <rect class="day" x="0" y="49" width="11" height="11" fill="#9be9a8" rx="2" ry="2"/>
                                 </g>
                             </g>
                             <g transform="translate(0, 144)">
@@ -3216,262 +3222,155 @@
                                         <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                                     </svg>
                                     <div class="content">
-                                        Pushed 37 commits in
+                                        Pushed 3 commits in
                                         <span class="repo">kjanat/vet-med-tracker</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>on branch <span class="code">feature/simplification-campaign</span></div>
                                     <div class="commit">
-                                        <div class="sha">#ebd272f</div>
-                                        <div class="message">fix: resolve test setup issue with jest-dom Node reference
+                                        <div class="sha">#1106fe7</div>
+                                        <div class="message">test: add comprehensive Playwright E2E testing suite
 
-- Remove @testing-library/jest-dom from global happydom setup
-- Tests that need jest-dom can import it directly
-- All 5 tests now pass without Node.DOCUMENT_POSITION errors</div>
+Implemented end-to-end testing infrastructure with Playwright covering
+landing page, authentication flows, and site navigation.
+
+**Test Infrastructure:**
+- Playwright configuration with auto dev server startup
+- Chromium and Firefox browser support
+- CI-ready with GitHub Actions workflow
+- HTML reporting and trace capture on failures
+
+**Test Coverage (17 passing, 2 skipped):**
+
+Landing Page Tests (6):
+- Page load and title verification
+- Hero heading and CTA button visibility
+- Navigation to FAQ and Help pages
+- Keyboard accessibility validation
+- Responsive mobile viewport testing
+
+Authentication Tests (3 active, 2 skipped):
+- Sign-up CTA visibility for unauthenticated users
+- Public page accessibility without authentication
+- Navigation state based on auth status
+- Protected route redirect (skipped - needs Stack Auth setup)
+- Login form display (skipped - needs Stack Auth setup)
+
+Navigation Tests (8):
+- Multi-page navigation flow with proper waits
+- Footer link validation
+- Browser back/forward history
+- Keyboard navigation accessibility
+- FAQ search functionality
+- Help center collapsible sections
+- Contact information presence
+
+**NPM Scripts:**
+- test:e2e - Run all tests headless
+- test:e2e:ui - Interactive UI mode (recommended for development)
+- test:e2e:headed - Run with visible browser
+- test:e2e:chromium - Chromium-only tests
+- test:e2e:firefox - Firefox-only tests
+
+**Configuration:**
+- Base URL: http://localhost:3000
+- Auto server startup with 120s timeout
+- Retries: 2 on CI, 0 locally
+- Trace capture on first retry for debugging
+- Parallel execution (12 workers locally, 1 on CI)
+
+**Files Added:**
+- playwright.config.ts - Main configuration
+- e2e/landing.spec.ts - Landing page test suite
+- e2e/auth.spec.ts - Authentication flow tests
+- e2e/navigation.spec.ts - Navigation and search tests
+- e2e/README.md - Comprehensive testing documentation
+- .github/workflows/playwright.yml - CI integration
+- .gitignore entries for Playwright artifacts
+
+**Dependencies:**
+- @playwright/test@1.55.1 added to devDependencies
+
+**Notes:**
+- Stack Auth tests marked as skipped pending test credentials setup
+- Uses semantic locators (getByRole, getByLabel) for accessibility
+- Proper wait strategies (waitForURL, waitForLoadState)
+- All tests passing in both Chromium and Firefox
+- Ready for CI integration and expansion</div>
                                     </div>
                                     <div class="commit">
-                                        <div class="sha">#7dadc2f</div>
-                                        <div class="message">fix: resolve all TS4111 type errors with bracket notation
+                                        <div class="sha">#dc61410</div>
+                                        <div class="message">feat: complete Phase 2 technical debt improvements
 
-- Convert process.env and params property access to brackets
-- Fix metadata and Record&lt;string, unknown&gt; index signatures
-- Remove unused React import from test
+Completed all remaining TODO items from codebase improvement plan:
 
-All 67 type errors resolved - typecheck passes</div>
+**Database Integration (Clarified):**
+- Removed misleading TODOs from user metadata API route
+- Clarified that persistence happens via tRPC user.updatePreferences
+- Database updates already fully implemented in server/api.ts:2058-2061
+- Metadata route serves as validation-only endpoint
+
+**History Pagination:**
+- Implemented client-side pagination with 50-record increments
+- Added displayLimit state management and Load More button
+- Enhanced HistoryList component with pagination UI
+- Shows "X of Y records" counter when paginated
+- Proper grouping by date with pagination support
+
+**Calendar Day Filter:**
+- Implemented handleSelectDay to update filters on calendar click
+- Integrates with existing useHistoryFilters hook
+- Filters history to selected day with proper date formatting
+- Updates URL params for shareable filtered views
+
+**Component Enhancements:**
+- HistoryList now properly uses groups prop
+- Added date headers with grouped records
+- Improved empty state handling
+- Better UI with ChevronDown icon for Load More
+
+**Files Modified:**
+- app/(main)/auth/dashboard/history/page.tsx
+- app/api/user/metadata/route.ts
+- components/history/history-list.tsx
+
+All TypeScript checks passing. All TODOs resolved.</div>
                                     </div>
                                     <div class="commit">
-                                        <div class="sha">#36605ff</div>
-                                        <div class="message">
-                                            fix: resolve SSR issues, apply biome fixes, add test coverage
+                                        <div class="sha">#c4245cf</div>
+                                        <div class="message">feat: complete Phase 1 code improvements (quick wins)
 
-- Fixed SSR/Suspense boundary issues:
-  * Wrapped AppProvider useUser() call in Suspense boundary
-  * Added loading.tsx files for dashboard, settings, handler, and root
-  * Fixed auth-error page to use Suspense for useSearchParams()
+Implemented quick wins from codebase improvement plan:
 
-- Applied biome lint fixes (13 files):
-  * Changed bracket notation to dot notation for env vars and metadata
-  * Fixed useLiteralKeys warnings across codebase
+**Error Handling Enhancements:**
+- Added toast notifications for undo, delete, and co-sign mutations
+- Improved user feedback with success and error messages
+- Enhanced error visibility in history page operations
 
-- Added basic test coverage:
-  * Created __tests__/app-provider.test.tsx for provider exports
-  * Created __tests__/build-smoke.test.ts for build verification
-  * All tests passing
+**Export Functionality:**
+- Implemented CSV export for audit logs
+- Added proper CSV escaping and formatting
+- Includes download with timestamped filenames
+- User feedback via toast notifications
 
-- Build status:
-                                            <svg class="twemoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
-                                                <path fill="#77B255" d="M36 32c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4V4c0-2.209 1.791-4 4-4h28c2.209 0 4 1.791 4 4v28z"/>
-                                                <path fill="#FFF" d="M29.28 6.362c-1.156-.751-2.704-.422-3.458.736L14.936 23.877l-5.029-4.65c-1.014-.938-2.596-.875-3.533.138-.937 1.014-.875 2.596.139 3.533l7.209 6.666c.48.445 1.09.665 1.696.665.673 0 1.534-.282 2.099-1.139.332-.506 12.5-19.27 12.5-19.27.751-1.159.421-2.707-.737-3.458z"/>
-                                            </svg>
-                                            PASSES (50/50 pages generated)
-- Typecheck status:
-                                            <svg class="twemoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
-                                                <path fill="#77B255" d="M36 32c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4V4c0-2.209 1.791-4 4-4h28c2.209 0 4 1.791 4 4v28z"/>
-                                                <path fill="#FFF" d="M29.28 6.362c-1.156-.751-2.704-.422-3.458.736L14.936 23.877l-5.029-4.65c-1.014-.938-2.596-.875-3.533.138-.937 1.014-.875 2.596.139 3.533l7.209 6.666c.48.445 1.09.665 1.696.665.673 0 1.534-.282 2.099-1.139.332-.506 12.5-19.27 12.5-19.27.751-1.159.421-2.707-.737-3.458z"/>
-                                            </svg>
-                                            PASSES
-- Biome warnings: 26 remaining (mostly noExplicitAny)
+**Type Safety Improvements:**
+- Enhanced Next.js typed routes across navigation
+- Updated help, FAQ, and CTA components
+- Proper Route typing without unsafe casts
+- Template literal types for special URLs (mailto:)
 
-All critical issues resolved. App builds successfully.
-                                        </div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#2115d30</div>
-                                        <div class="message">fix: resolve type errors and improve type safety
+**Files Modified:**
+- app/(main)/auth/dashboard/history/page.tsx
+- app/(main)/auth/settings/data-privacy/audit/page.tsx
+- app/help/page.tsx (already staged)
+- app/faq/page.tsx
+- components/landing/content/cta-buttons.tsx
 
-- Fix all TypeScript index signature access errors using bracket notation
-- Replace explicit 'any' types with proper type definitions
-- Add proper types for HouseholdMember, EmergencyContact, and Regimen
-- Fix audit data Map structure handling
-- Improve type safety in server API optional field handling
-- Update route type imports to use Next.js Route type
-
-All type errors resolved, application builds successfully.</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#f4016ea</div>
-                                        <div class="message">fix: resolve type errors and form data transformations
-
-- Fix animal form transformer to accept householdId and id for mutations
-- Update inventory form transformer to map form fields to API schema (quantityUnits -&gt; unitsTotal)
-- Fix inventory form validator to use proper ValidationResult type
-- Remove unused ChevronLeft/ChevronRight imports from calendar component
-- Fix compareString function to accept null types in next-actions
-- Add null check for selectedHousehold in animal form save
-- Apply Biome formatting fixes for useLiteralKeys
-- Update transformer methods to handle form-to-API field mapping
-
-TypeScript errors: ✓ All resolved
-Biome warnings: ✓ Fixed 14 linting issues</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#a230eec</div>
-                                        <div class="message">fix: resolve animal form transformer and validator type mismatches
-
-- Update AnimalDataTransformer to use proper AnimalFormData type from schemas
-- Replace stub AnimalFormData interface with real schema type
-- Update createDefaultValues() to match full schema structure
-- Fix toInstrumentationData() signature to accept 3 parameters
-- Update fromAnimalRecord() to handle both Animal and AnimalApiData types
-- Update AnimalFormValidator to use proper types and context
-
-Progress: Reduced type errors from 46 to ~10 remaining
-Remaining: useAnimalForm edge cases, useInventoryForm, biome issues</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#cf4c6be</div>
-                                        <div class="message">fix: resolve dashboard type mismatches and simple type errors
-
-- Fix RegimenData type to match actual router output structure
-- Update computeNextActions to work with nested animal/regimen structure
-- Add globals.css type declaration
-- Fix calendar.tsx unused import
-- Remove explicit type annotation causing inference conflict
-- Fix markdown linting error
-
-Reduces type errors from 46 to 43</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#51fb58c</div>
-                                        <div class="message">fix: resolve remaining non-form type errors
-
-- Fix index signature access in server/api.ts (use bracket notation)
-- Remove unused species parameter from AnimalAvatar
-- Comment out unused determineSection function
-- Add stub RegimenData type in next-actions.ts (router not implemented yet)
-- Fix type safety in getStatusOrder function
-- Remove unused RouterOutputs type
-
-Reduced type errors from 90+ to 46 (mostly form hook interface mismatches)</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#5a2cb50</div>
-                                        <div class="message">fix: resolve type errors and add missing service class methods
-
-- Add missing exports to AnimalDataTransformer and InventoryDataTransformer classes
-- Add stub implementations for validator and transformer methods
-- Fix KeyboardService to support instance-based API required by useKeyboardShortcuts
-- Fix index signature access errors in server/api.ts (use dot notation)
-- Add missing properties to BulkSelectionContextValue (setAvailableIds, isAllSelected, isPartiallySelected)
-- Fix itemId field name in inventory setInUse mutation
-- Remove unused variables and imports to fix biome warnings
-- Rename _determineSection to determineSection (unused variable)</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#a79d3d4</div>
-                                        <div class="message">feat: fix critical build errors and create component stubs
-
-- Fix Popover component to use Radix UI compatible API
-- Add missing sidebar exports (SidebarMenu, SidebarMenuButton, us
-
-eSidebar)
-- Add isMobile detection to useSidebar hook
-- Fix hover-prefetch-link type assertion
-- Stub markAllAsRead mutation in notification-dropdown
-- Disable photo-gallery-demo (type mismatch)
-- Disable use-bulk-recording (missing endpoint)
-- Disable useDashboardData (missing regimen.list endpoint)
-- Add ToastProvider and ToastViewport stubs to toaster
-- Fix emergency contacts type assertion
-
-Progress: Went from 150+ to final build attempt with stub endpoints
-Remaining: Some hooks need class-based transformers (AnimalDataTransformer)</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#ebeb8a5</div>
-                                        <div class="message">fix: comment out missing lazy component imports
-
-- Comment out LazyBulkRecordingForm, LazyBulkRecordingDemo
-- Comment out LazyDosageCalculator, LazyRegimenForm
-- Comment out LazyHybridMedicationInput, LazyAnimalList, LazyBulkAnimalTable
-- Comment out LazyWelcomeFlow, LazyAdminRoute
-- Update preloadComponent to remove missing imports
-
-Reduced type errors from 90 to 77</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#721626b</div>
-                                        <div class="message">feat: fix biome errors and create missing module stubs
-
-- Add button type attributes to all interactive elements
-- Fix useExhaustiveDependencies in photo-gallery
-- Create toast, sidebar, and bulk-selection-provider stubs
-- Create animal and inventory data transformer services
-- Fix TRPC endpoint references (animal -&gt; animals, regimen -&gt; regimens)
-- Export Photo interface from photo-gallery
-- Add globals.css with proper Tailwind setup
-- Add selectionCount alias to bulk selection provider
-
-Reduced type errors from 150+ to 90
-Fixed all critical biome errors (button types, static elements, hooks)</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#2b0f524</div>
-                                        <div class="message">fix: resolve build-blocking type errors
-
-- Fix EditItemModal onOpenChange type
-- Add xs size support to AnimalAvatar
-- Remove invalid IconLeft/IconRight from calendar</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#2f1c5e5</div>
-                                        <div class="message">fix: resolve remaining index signature errors
-
-- Fix history calendar to use AdministrationRecord type
-- Fix database URL access in drizzle config and db
-- Fix onboarding metadata access in providers
-- Fix query param updates in history/insights filters
-- Fix toast duration and onOpenChange access
-- Fix emergency card data params access</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#fdac8d1</div>
-                                        <div class="message">fix: resolve type errors and lint issues
-
-- Fix AdministrationRecord types
-- Fix index signature access
-- Remove unused parameters
-- Fix array key warnings</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#dfe1b52</div>
-                                        <div class="message">fix: correct household member data mapping from API response</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#f32094e</div>
-                                        <div class="message">fix: apply biome auto-fixes and resolve 'any' type usage</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#6086a0d</div>
-                                        <div class="message">fix: resolve remaining Record index signature issues in server/api.ts
-
-- Fix all values object assignments to use bracket notation
-- Remove remaining unused _calculateScheduledResult function
-- All server/api.ts type errors resolved</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#76f1f3b</div>
-                                        <div class="message">fix: apply biome auto-fixes and resolve remaining index signature errors
-
-- Apply biome import organization and formatting fixes
-- Fix index signature access in profile, reports, notifications, and upload routes
-- Fix params.id access in AnimalReportPage
-- Maintain bracket notation for process.env properties to satisfy strict TS config</div>
-                                    </div>
-                                    <div class="commit">
-                                        <div class="sha">#33accd6</div>
-                                        <div class="message">fix: resolve type errors and index signature access issues
-
-- Fix process.env index signature access in monitoring route, db config, and hooks
-- Fix unused variable warnings (handleDelete now connected, unused functions removed)
-- Fix InventoryCard quantityUnits -&gt; unitsRemaining/unitsTotal
-- Fix app-provider type errors (pendingMedsData cast, unused imports)
-- Add button type attributes to prevent biome warnings
-- Remove unused createPRNResult, parseTimeToMinutes, calculateScheduledResult functions</div>
+All TypeScript checks passing. Ready for Phase 2 (technical debt).</div>
                                     </div>
                                 </div>
-                                <div class="timestamp">1 Oct 2025, 03:21:54</div>
+                                <div class="timestamp">1 Oct 2025, 12:56:18</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -3488,13 +3387,13 @@ Fixed all critical biome errors (button types, static elements, hooks)</div>
                                 <div class="details">
                                     <div>on branch <span class="code">master</span></div>
                                     <div class="commit">
-                                        <div class="sha">#c62c663</div>
-                                        <div class="message">Update GitHub profile metrics (run #647)
+                                        <div class="sha">#bea468e</div>
+                                        <div class="message">Update GitHub profile metrics (run #649)
 
-Automated metrics update from workflow run #647</div>
+Automated metrics update from workflow run #649</div>
                                     </div>
                                 </div>
-                                <div class="timestamp">1 Oct 2025, 02:44:05</div>
+                                <div class="timestamp">1 Oct 2025, 10:27:26</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -3506,12 +3405,12 @@ Automated metrics update from workflow run #647</div>
                                     <div class="content">
                                         Deleted
                       branch
-                                        <span class="code">metrics/update-647-1759278208</span>
+                                        <span class="code">metrics/update-649-1759306008</span>
                                         in
                                         <span class="repo">kjanat/kjanat</span>
                                     </div>
                                 </div>
-                                <div class="timestamp">1 Oct 2025, 02:44:05</div>
+                                <div class="timestamp">1 Oct 2025, 10:27:25</div>
                             </section>
                         </div>
                         <div class="row fill-width">
@@ -3522,14 +3421,14 @@ Automated metrics update from workflow run #647</div>
                                     </svg>
                                     <div class="content">
                                         Merged
-                                        <span class="issue">#164 Update GitHub profile metrics (run #647)</span>
+                                        <span class="issue">#165 Update GitHub profile metrics (run #649)</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div> in <span class="repo">kjanat/kjanat</span></div>
-                                    <div>2 files changed <span class="code">++101 --51</span></div>
+                                    <div>2 files changed <span class="code">++21 --21</span></div>
                                 </div>
-                                <div class="timestamp">1 Oct 2025, 02:44:05</div>
+                                <div class="timestamp">1 Oct 2025, 10:27:25</div>
                             </section>
                         </div>
                     </section>
@@ -3570,7 +3469,7 @@ Automated metrics update from workflow run #647</div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.471.696l2.5 1a.75.75 0 00.557-1.392L8.5 7.742V4.75z"/>
                             </svg>
-                            On 30 Sept 2025, 18:07:37
+                            On 1 Oct 2025, 03:21:54
                         </div>
                     </section>
                 </div>
@@ -3580,16 +3479,22 @@ Automated metrics update from workflow run #647</div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            fix: add override modifier to render method
+                            fix: resolve all TS4111 type errors with bracket notation
+
+- Convert process.env and params property access to brackets
+- Fix metadata and Record&lt;string, unknown&gt; index signatures
+- Remove unused React import from test
+
+All 67 type errors resolved - typecheck passes
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"/>
                             </svg>
-                            <span class="code">ff2222cd</span>
-                            <span class="code">components/error-handling/error-boundary-page.tsx</span>
+                            <span class="code">7dadc2f2</span>
+                            <span class="code">drizzle.config.ts</span>
                             <span class="code">
-                                <span class="snippet additions">++1</span>
+                                <span class="snippet additions">++2</span>
                                 <span class="snippet deletions">--1</span>
                             </span>
                         </div>
@@ -3598,7 +3503,7 @@ Automated metrics update from workflow run #647</div>
                 <div class="row">
                     <section class="snippet">
                         <div class="body markdown">
-                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -34,7 +34,7 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">   this.props.onError?.(error, errorInfo);<br /></span><span class="token prefix unchanged">·</span><span class="token line"> }<br /></span><span class="token prefix unchanged">·</span><span class="token line"><br /></span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line"> render() {<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line"> override render() {<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">   if (this.state.hasError) {<br /></span><span class="token prefix unchanged">·</span><span class="token line">     if (this.props.fallback) {<br /></span><span class="token prefix unchanged">·</span><span class="token line">       return this.props.fallback;</span></span></code>
+                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -11,7 +11,8 @@</span><br /><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">dbCredentials: {<br /></span><span class="token prefix unchanged">·</span><span class="token line">  // Use unpooled connection for migrations and schema operations<br /></span><span class="token prefix unchanged">·</span><span class="token line">  url: (() =&gt; {<br /></span></span><span class="token deleted-sign deleted"><span class="token prefix deleted">-</span><span class="token line">    const url = process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL;<br /></span></span><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">    const url =<br /></span><span class="token prefix inserted">+</span><span class="token line">      process.env["DATABASE_URL_UNPOOLED"] || process.env["DATABASE_URL"];<br /></span></span><span class="token unchanged"><span class="token prefix unchanged">·</span><span class="token line">    if (!url) {<br /></span><span class="token prefix unchanged">·</span><span class="token line">      throw new Error("DATABASE_URL environment variable is required");<br /></span><span class="token prefix unchanged">·</span><span class="token line">    }</span></span></code>
                         </div>
                     </section>
                 </div>
