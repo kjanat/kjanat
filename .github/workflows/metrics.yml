@@ -90,7 +90,7 @@ jobs:
 
       - name: Upload profile metrics artifact
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: metrics-profile
           path: /metrics_renders/metrics-profile.svg
@@ -163,7 +163,7 @@ jobs:
 
       - name: Upload contributions metrics artifact
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: metrics-contributions
           path: /metrics_renders/metrics-contributions.svg
@@ -235,7 +235,7 @@ jobs:
 
       - name: Upload community metrics artifact
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: metrics-community
           path: /metrics_renders/metrics-community.svg
