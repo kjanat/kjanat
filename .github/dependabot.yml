@@ -4,12 +4,31 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-updates:
-  - package-ecosystem: 'github-actions'
-    directory: '/'
+
+multi-ecosystem-groups:
+  all-dependencies:
     schedule:
       interval: 'weekly'
       day: 'tuesday'
       time: '03:00'
       timezone: 'Europe/Amsterdam'
     open-pull-requests-limit: 10
+
+updates:
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    patterns:
+      - "*"
+    multi-ecosystem-group: 'all-dependencies'
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    patterns:
+      - "*"
+    multi-ecosystem-group: 'all-dependencies'
+
+  - package-ecosystem: 'docker'
+    directory: '/'
+    patterns:
+      - "*"
+    multi-ecosystem-group: 'all-dependencies'
