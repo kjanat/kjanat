@@ -293,7 +293,7 @@ jobs:
         run: |
           # Create PR using METRICS_TOKEN for proper permissions
           PR_URL=$(gh pr create \
-            --base metrics \
+            --base auto-metrics \
             --head ${{ needs.setup.outputs.branch }} \
             --title "Update GitHub profile metrics (run #${{ github.run_number }})" \
             --body "Automated update of GitHub profile metrics.

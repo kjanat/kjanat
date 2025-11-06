@@ -14,14 +14,14 @@
 ## 📊 GitHub Stats & Profile Overview
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kjanat/kjanat/metrics/assets/images/readme/metrics-profile.svg" alt="Profile Overview" />
+  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/assets/images/readme/metrics-profile.svg" alt="Profile Overview" />
 </div>
 
 <details>
 <summary><b>💻 Development Activity & Contributions</b></summary>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kjanat/kjanat/metrics/assets/images/readme/metrics-contributions.svg" alt="Contribution Activity" />
+  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/assets/images/readme/metrics-contributions.svg" alt="Contribution Activity" />
 </div>
 
 </details>
@@ -30,7 +30,7 @@
 <summary><b>🌟 Community & Social Engagement</b></summary>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kjanat/kjanat/metrics/assets/images/readme/metrics-community.svg" alt="Community Metrics" />
+  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/assets/images/readme/metrics-community.svg" alt="Community Metrics" />
 </div>
 
 </details>
@@ -40,7 +40,7 @@
 <summary><b>🏔️ GitHub Skyline</b></summary>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kjanat/kjanat/metrics/assets/images/readme/skyline.svg" alt="GitHub Skyline" />
+  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/assets/images/readme/skyline.svg" alt="GitHub Skyline" />
 </div>
 
 </details>
