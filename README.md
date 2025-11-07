@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 👋 Hello, my peeps!
+# 👋 Hello, my peeps
 
 [![CI](https://github.com/kjanat/kjanat/actions/workflows/metrics.yml/badge.svg?branch=master)][CI: Metrics Workflow]
 [![Profile Views](https://komarev.com/ghpvc/?username=kjanat&color=brightgreen&style=flat)][My Profile]
@@ -14,14 +14,14 @@
 ## 📊 GitHub Stats & Profile Overview
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/assets/images/readme/metrics-profile.svg" alt="Profile Overview" />
+  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/.profile.svg" alt="Profile Overview" />
 </div>
 
 <details>
 <summary><b>💻 Development Activity & Contributions</b></summary>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/assets/images/readme/metrics-contributions.svg" alt="Contribution Activity" />
+  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/.contributions.svg" alt="Contribution Activity" />
 </div>
 
 </details>
@@ -30,7 +30,7 @@
 <summary><b>🌟 Community & Social Engagement</b></summary>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/assets/images/readme/metrics-community.svg" alt="Community Metrics" />
+  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/.community.svg" alt="Community Metrics" />
 </div>
 
 </details>
@@ -40,7 +40,7 @@
 <summary><b>🏔️ GitHub Skyline</b></summary>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/assets/images/readme/skyline.svg" alt="GitHub Skyline" />
+  <img src="https://raw.githubusercontent.com/kjanat/kjanat/auto-metrics/.skyline.svg" alt="GitHub Skyline" />
 </div>
 
 </details>
@@ -56,3 +56,10 @@
 
 [My Profile]: https://github.com/kjanat
 [CI: Metrics Workflow]: https://github.com/kjanat/kjanat/actions/workflows/metrics.yml
+
+<!-- markdownlint-configure-file
+{
+  "no-inline-html": false,
+  "first-line-heading": false
+}
+-->
