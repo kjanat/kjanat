@@ -8,8 +8,8 @@
 			"**/.vscode/*.json",
 			"**/.zed/*.json",
 			"**/tsconfig*.json",
-			"!**/biome.jsonc"
-		]
+			"!**/biome.jsonc",
+		],
 	},
 	"markdown": { "textWrap": "maintain", "emphasisKind": "asterisks", "lineWidth": 8000 },
 	"dockerfile": { "associations": ["Dockerfile", "Dockerfile.*"] },
@@ -17,7 +17,7 @@
 		"preview": true,
 		"lineLength": 88,
 		"indentWidth": 4,
-		"indentStyle": "space"
+		"indentStyle": "space",
 	},
 	"jupyter": {},
 	"malva": {},
@@ -31,8 +31,8 @@
 			{ "command": "just --dump --justfile {{file_path}}", "fileNames": ["justfile"] },
 			{ "command": "rustfmt", "exts": ["rs"] },
 			{ "command": "sort-package-json --stdin", "fileNames": ["package.json"] },
-			{ "command": "svgo --indent -1 --multipass --pretty -q -i - -o -", "exts": ["svg"] }
-		]
+			{ "command": "svgo --indent -1 --multipass --pretty -q -i - -o -", "exts": ["svg"] },
+		],
 	},
 	"excludes": ["**/node_modules", "**/*-lock.json", "**/.venv", "**/bun.lock*", "**/worker-configuration.d.ts"],
 	"plugins": [
@@ -47,6 +47,6 @@
 		"https://plugins.dprint.dev/g-plane/pretty_yaml-v0.6.0.wasm",
 		"https://plugins.dprint.dev/g-plane/pretty_graphql-v0.2.3.wasm",
 		"https://plugins.dprint.dev/exec-0.6.0.json@a054130d458f124f9b5c91484833828950723a5af3f8ff2bd1523bd47b83b364",
-		"https://plugins.dprint.dev/biome-0.11.14.wasm"
-	]
+		"https://plugins.dprint.dev/biome-0.11.14.wasm",
+	],
 }
