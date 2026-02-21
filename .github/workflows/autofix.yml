@@ -1,69 +1,24 @@
+---
 name: autofix.ci
-
 on:
   pull_request:
-  push:
-    branches: [ "main", "master" ]
-
-permissions:
-  contents: write
-
+  push: { branches: ["master"] }
+permissions: { contents: write }
 jobs:
   autofix:
-    name: Run Code Formatters and Linters
     runs-on: ubuntu-latest
-    # Skip if this is a metrics update commit
-    if: |
-      !contains(github.event.head_commit.message, 'Update GitHub profile metrics') &&
-      !contains(github.event.head_commit.message, '[Skip GitHub Action]')
-
     steps:
-      # Checkout the repository
-      - name: Checkout code
-        uses: actions/checkout@v5
+      - uses: actions/checkout@v6
+      - uses: kjanat/install-dprint@v1
+      - uses: mfinelli/setup-shfmt@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with: { components: rustfmt }
+      - uses: oven-sh/setup-bun@v2
+      - run: bun i -g tombi just sort-package-json svgo
 
-      # Setup Node.js environment
-      - name: Setup Node.js
-        uses: actions/setup-node@v6
+      - run: dprint config update
 
-      # Install Node.js dependencies if package.json exists
-      - name: Install Node.js dependencies (if any)
-        run: |
-          if [ -f package.json ]; then
-            npm ci
-          fi
+        # autofix-ci will fail if the .github directory is touched
+      - run: dprint fmt --config configs/dprint.jsonc --allow-no-files --diff --excludes ".github"
 
-      # Run Prettier to format code
-      - name: Run Prettier
-        run: npx prettier . "!**/.github/**" --write
-
-      - name: Check for Python files
-        id: python_files_check
-        run: |
-          python_files=$(find . -type f -name "*.py" ! -path "./.github/*")
-          if [ -z "$python_files" ]; then
-            echo "py_found=false" >> $GITHUB_ENV
-          else
-            echo "py_found=true" >> $GITHUB_ENV
-          fi
-
-      # Setup uv for consistent Python tooling
-      - name: Setup uv
-        uses: astral-sh/setup-uv@v7
-        if: env.py_found == 'true'
-        with:
-          version: "latest"
-
-      # Run Ruff to fix lint errors
-      - name: Fix Python lint errors
-        if: env.py_found == 'true'
-        run: uvx ruff check --fix-only . --exclude .github
-
-      # Format Python code with Ruff
-      - name: Format Python code
-        if: env.py_found == 'true'
-        run: uvx ruff format . --exclude .github
-
-      # Commit and push any autofixes
-      - name: Commit autofixes
-        uses: autofix-ci/action@v1
+      - uses: autofix-ci/action@v1
