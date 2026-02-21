@@ -1,11 +1,11 @@
 # Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on: {}
-  # # Schedule updates every 8 hours
-  # schedule:
-  #   - cron: '0 */8 * * *'
-  # # Allow manual workflow runs
-  # workflow_dispatch:
+# # Schedule updates every 8 hours
+# schedule:
+#   - cron: '0 */8 * * *'
+# # Allow manual workflow runs
+# workflow_dispatch:
 concurrency:
   group: metrics
   cancel-in-progress: false
