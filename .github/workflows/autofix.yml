@@ -1,15 +1,15 @@
 ---
 name: autofix.ci
 on: { workflow_dispatch: {},  pull_request: {},  push: { branches: ["master"] } }
-permissions: { contents: write }
 jobs:
   autofix:
     runs-on: ubuntu-latest
     env: { DPRINT_CONFIG_DISCOVERY: global, DPRINT_CONFIG_DIR: ./configs }
+    permissions: { contents: read }
     steps:
       - uses: actions/checkout@v6
       - uses: kjanat/install-dprint@v1
-      - uses: mfinelli/setup-shfmt@v4
+      - run: go install mvdan.cc/sh/v3/cmd/shfmt@latest
       - uses: dtolnay/rust-toolchain@stable
         with: { components: rustfmt }
       - uses: oven-sh/setup-bun@v2
