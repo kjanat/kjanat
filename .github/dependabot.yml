@@ -21,10 +21,10 @@ updates:
     directory: "/"
     patterns: ["*"]
     multi-ecosystem-group: "all-dependencies"
-    open-pull-requests-limit: 1
+    open-pull-requests-limit: 0
 
   - package-ecosystem: "docker"
     directory: "/"
     patterns: ["*"]
     multi-ecosystem-group: "all-dependencies"
-    open-pull-requests-limit: 1
+    open-pull-requests-limit: 0
