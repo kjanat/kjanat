@@ -1,0 +1,4 @@
+{
+  "$schema": "https://dprint.dev/schemas/v0.json",
+  "extends": ["configs/dprint.remote.json", "configs/dprint.exec.json"]
+}

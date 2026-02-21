@@ -4,7 +4,7 @@ on: { workflow_dispatch: {},  pull_request: {},  push: { branches: ["master"] } 
 jobs:
   autofix:
     runs-on: ubuntu-latest
-    env: { DPRINT_CONFIG_DISCOVERY: global, DPRINT_CONFIG_DIR: ./configs }
+    # env: { DPRINT_CONFIG_DISCOVERY: global, DPRINT_CONFIG_DIR: ./configs }
     permissions: { contents: read }
     steps:
       - uses: actions/checkout@v6
@@ -15,7 +15,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - run: bun i -g tombi just sort-package-json svgo --trust
 
-      - run: dprint config update --global
+      - run: dprint config update --recursive
       - run: dprint fmt --allow-no-files --diff --excludes ".github"
 
       - uses: autofix-ci/action@v1
