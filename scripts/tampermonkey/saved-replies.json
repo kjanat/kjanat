@@ -1,62 +1,62 @@
 [
-  {
-    "name": "Duplicate Issue",
-    "body": "Thanks for your report! This issue is already being tracked in #XXXX. Please follow the discussion there and add a 👍 to help us prioritize."
-  },
-  {
-    "name": "Needs More Info",
-    "body": "Thanks for opening this. Can you please provide more details according to the issue template? We're closing this for now — feel free to reopen once updated."
-  },
-  {
-    "name": "Not a Bug / Usage Question",
-    "body": "This looks like a support or usage question rather than a bug. Please check the documentation or open a discussion thread instead."
-  },
-  {
-    "name": "Out of Scope",
-    "body": "Thanks for the suggestion. This isn’t something we plan to support at this time, as it’s outside the scope of this project."
-  },
-  {
-    "name": "Missing Tests / Incomplete PR",
-    "body": "Thanks for the PR! Could you add the necessary tests and make sure all CI checks pass?"
-  },
-  {
-    "name": "Needs Rebase / Conflicts",
-    "body": "This branch is out of sync with `main`. Please rebase or merge and resolve the conflicts so we can proceed with the review."
-  },
-  {
-    "name": "Too Big — Split It",
-    "body": "This PR is doing too much at once. Please break it into smaller, logically separate pull requests so we can review effectively."
-  },
-  {
-    "name": "LGTM & Merged",
-    "body": "Thanks for the contribution! Everything looks good — merging now 🚀"
-  },
-  {
-    "name": "Stale",
-    "body": "This has been inactive for a while. We’re closing this for now — feel free to reopen if there are updates."
-  },
-  {
-    "name": "Off-topic / Spam",
-    "body": "Closing. This is off-topic or not relevant to the project."
-  },
-  {
-    "name": "Thanks for Reporting",
-    "body": "Thanks for taking the time to report this! We appreciate your effort and will look into it as soon as possible."
-  },
-  {
-    "name": "Thanks for Contributing",
-    "body": "Big thanks for the PR — always great to see contributions from the community!"
-  },
-  {
-    "name": "Code of Conduct Reminder",
-    "body": "Reminder: Please keep discussions respectful and on-topic, per our Code of Conduct."
-  },
-  {
-    "name": "Run Locally Instructions",
-    "body": "To run this project locally:\n\n```bash\ngit clone https://github.com/kjanat/!!!REPO!!!\ncd YOUR-REPO\nnpm install\nnpm run dev\n```\n\nSee the [README](README.md) for more details."
-  },
-  {
-    "name": "Troubleshooting",
-    "body": "If something isn’t working, try the following:\n- `npm install` again\n- Delete `node_modules` and `package-lock.json`\n- Clear any local caches (`npm cache clean --force`)\n- Ensure you're using the correct Node version (`nvm use`)"
-  }
+	{
+		"name": "Duplicate Issue",
+		"body": "Thanks for your report! This issue is already being tracked in #XXXX. Please follow the discussion there and add a 👍 to help us prioritize."
+	},
+	{
+		"name": "Needs More Info",
+		"body": "Thanks for opening this. Can you please provide more details according to the issue template? We're closing this for now — feel free to reopen once updated."
+	},
+	{
+		"name": "Not a Bug / Usage Question",
+		"body": "This looks like a support or usage question rather than a bug. Please check the documentation or open a discussion thread instead."
+	},
+	{
+		"name": "Out of Scope",
+		"body": "Thanks for the suggestion. This isn’t something we plan to support at this time, as it’s outside the scope of this project."
+	},
+	{
+		"name": "Missing Tests / Incomplete PR",
+		"body": "Thanks for the PR! Could you add the necessary tests and make sure all CI checks pass?"
+	},
+	{
+		"name": "Needs Rebase / Conflicts",
+		"body": "This branch is out of sync with `main`. Please rebase or merge and resolve the conflicts so we can proceed with the review."
+	},
+	{
+		"name": "Too Big — Split It",
+		"body": "This PR is doing too much at once. Please break it into smaller, logically separate pull requests so we can review effectively."
+	},
+	{
+		"name": "LGTM & Merged",
+		"body": "Thanks for the contribution! Everything looks good — merging now 🚀"
+	},
+	{
+		"name": "Stale",
+		"body": "This has been inactive for a while. We’re closing this for now — feel free to reopen if there are updates."
+	},
+	{
+		"name": "Off-topic / Spam",
+		"body": "Closing. This is off-topic or not relevant to the project."
+	},
+	{
+		"name": "Thanks for Reporting",
+		"body": "Thanks for taking the time to report this! We appreciate your effort and will look into it as soon as possible."
+	},
+	{
+		"name": "Thanks for Contributing",
+		"body": "Big thanks for the PR — always great to see contributions from the community!"
+	},
+	{
+		"name": "Code of Conduct Reminder",
+		"body": "Reminder: Please keep discussions respectful and on-topic, per our Code of Conduct."
+	},
+	{
+		"name": "Run Locally Instructions",
+		"body": "To run this project locally:\n\n```bash\ngit clone https://github.com/kjanat/!!!REPO!!!\ncd YOUR-REPO\nnpm install\nnpm run dev\n```\n\nSee the [README](README.md) for more details."
+	},
+	{
+		"name": "Troubleshooting",
+		"body": "If something isn’t working, try the following:\n- `npm install` again\n- Delete `node_modules` and `package-lock.json`\n- Clear any local caches (`npm cache clean --force`)\n- Ensure you're using the correct Node version (`nvm use`)"
+	}
 ]
