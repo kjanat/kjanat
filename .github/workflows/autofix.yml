@@ -5,7 +5,7 @@ permissions: { contents: write }
 jobs:
   autofix:
     runs-on: ubuntu-latest
-    env: { DPRINT_CONFIG_DISCOVERY: global, DPRINT_CONFIG_DIR: configs }
+    env: { DPRINT_CONFIG_DISCOVERY: global, DPRINT_CONFIG_DIR: ./configs }
     steps:
       - uses: actions/checkout@v6
       - uses: kjanat/install-dprint@v1
@@ -13,11 +13,9 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
         with: { components: rustfmt }
       - uses: oven-sh/setup-bun@v2
-      - run: bun i -g tombi just sort-package-json svgo
+      - run: bun i -g tombi just sort-package-json svgo --trust
 
-      - run: dprint config update
-
-        # autofix-ci will fail if the .github directory is touched
+      - run: dprint config update --global
       - run: dprint fmt --allow-no-files --diff --excludes ".github"
 
       - uses: autofix-ci/action@v1
