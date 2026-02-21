@@ -5,6 +5,7 @@ permissions: { contents: write }
 jobs:
   autofix:
     runs-on: ubuntu-latest
+    env: { DPRINT_CONFIG_DISCOVERY: global, DPRINT_CONFIG_DIR: configs }
     steps:
       - uses: actions/checkout@v6
       - uses: kjanat/install-dprint@v1
@@ -17,6 +18,6 @@ jobs:
       - run: dprint config update
 
         # autofix-ci will fail if the .github directory is touched
-      - run: dprint fmt --config configs/dprint.jsonc --allow-no-files --diff --excludes ".github"
+      - run: dprint fmt --allow-no-files --diff --excludes ".github"
 
       - uses: autofix-ci/action@v1
