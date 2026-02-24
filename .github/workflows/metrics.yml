@@ -24,7 +24,7 @@ jobs:
       branch: ${{ steps.branch.outputs.name }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -89,7 +89,7 @@ jobs:
 
       - name: Upload profile metrics artifact
         if: success()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: metrics-profile
           path: /metrics_renders/metrics-profile.svg
@@ -162,7 +162,7 @@ jobs:
 
       - name: Upload contributions metrics artifact
         if: success()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: metrics-contributions
           path: /metrics_renders/metrics-contributions.svg
@@ -234,7 +234,7 @@ jobs:
 
       - name: Upload community metrics artifact
         if: success()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: metrics-community
           path: /metrics_renders/metrics-community.svg
@@ -251,13 +251,13 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout metrics branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ needs.setup.outputs.branch }}
           fetch-depth: 0
 
       - name: Download all artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           path: /tmp/metrics
 
