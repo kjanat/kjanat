@@ -24,9 +24,8 @@ jobs:
       branch: ${{ steps.branch.outputs.name }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v6
+        with: { fetch-depth: 0 }
 
       - name: Create metrics branch
         id: branch
@@ -89,7 +88,7 @@ jobs:
 
       - name: Upload profile metrics artifact
         if: success()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: metrics-profile
           path: /metrics_renders/metrics-profile.svg
@@ -162,7 +161,7 @@ jobs:
 
       - name: Upload contributions metrics artifact
         if: success()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: metrics-contributions
           path: /metrics_renders/metrics-contributions.svg
@@ -234,7 +233,7 @@ jobs:
 
       - name: Upload community metrics artifact
         if: success()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: metrics-community
           path: /metrics_renders/metrics-community.svg
@@ -251,15 +250,12 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout metrics branch
-        uses: actions/checkout@v5
-        with:
-          ref: ${{ needs.setup.outputs.branch }}
-          fetch-depth: 0
+        uses: actions/checkout@v6
+        with: { ref: "${{ needs.setup.outputs.branch }}", fetch-depth: 0 }
 
       - name: Download all artifacts
-        uses: actions/download-artifact@v6
-        with:
-          path: /tmp/metrics
+        uses: actions/download-artifact@v8
+        with: { path: /tmp/metrics }
 
       - name: Move metrics to correct location
         run: |
@@ -321,13 +317,11 @@ jobs:
             --body "Automated metrics update from workflow run #${{ github.run_number }}"
 
           echo "✅ PR merged successfully"
-        env:
-          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        env: { GH_TOKEN: "${{ secrets.METRICS_TOKEN }}" }
 
       - name: Cleanup on failure
         if: failure() || steps.commit.outputs.has_changes == 'false'
         run: |
           echo "🧹 Cleaning up branch ${{ needs.setup.outputs.branch }}"
           git push origin --delete ${{ needs.setup.outputs.branch }} || true
-        env:
-          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        env: { GH_TOKEN: "${{ secrets.METRICS_TOKEN }}" }
