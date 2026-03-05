@@ -9,7 +9,8 @@
 			"**/.zed/*.json",
 			"**/tsconfig*.json",
 			"!**/biome.jsonc"
-		]
+		],
+		"associations": ["*.json", "*.jsonc", "!**/.openclaw/*.json*"]
 	},
 	"markdown": { "textWrap": "maintain", "emphasisKind": "asterisks", "lineWidth": 8000 },
 	"dockerfile": { "associations": ["Dockerfile", "Dockerfile.*"] },
