@@ -1,6 +1,11 @@
 ---
 name: autofix.ci
-on: { workflow_dispatch: {}, pull_request: {}, push: { branches: ["master"] } }
+on:
+  schedule: [ cron: "0 0 */7 * *" ]
+  push: { branches: ["master"] }
+  workflow_dispatch:
+  pull_request:
+concurrency: autofix-${{ github.ref }}
 jobs:
   autofix:
     runs-on: ubuntu-latest
