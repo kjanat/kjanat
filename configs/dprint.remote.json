@@ -22,7 +22,21 @@
 	},
 	"jupyter": {},
 	"malva": {},
-	"markup": { "html.void.selfClosing": false, "formatComments": true, "associations": ["!**/*.svg"] },
+	"markup": {
+		"html.void.selfClosing": false,
+		"formatComments": true,
+		"associations": ["!**/*.svg"],
+		"useTabs": true,
+		"formatComments": true,
+		"scriptIndent": true,
+		"styleIndent": true,
+		"doctypeKeywordCase": "upper",
+		"strictSvelteAttr": false,
+		"svelteAttrShorthand": true,
+		"svelteDirectiveShorthand": true
+		"ignoreCommentDirective": "dprint-ignore",
+		"ignoreFileCommentDirective": "dprint-ignore-file"
+	},
 	"yaml": { "printWidth": 160 },
 	"graphql": {},
 	"excludes": ["**/node_modules", "**/*-lock.json", "**/.venv", "**/bun.lock*", "**/worker-configuration.d.ts"],
