@@ -8,8 +8,8 @@
 		"lineWidth": "120"
 	},
 	"typescript": {
- 	   "associations": ["!**/*.*{ts,js}"]
-	}
+		"associations": ["!**/*.*{ts,js}"]
+	},
 	"excludes": ["**/node_modules", "**/*-lock.json", "**/.venv", "**/bun.lock*", "**/worker-configuration.d.ts"],
 	"plugins": [
 		"https://plugins.dprint.dev/biome-0.12.2.wasm",
