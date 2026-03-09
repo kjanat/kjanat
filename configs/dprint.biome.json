@@ -2,15 +2,14 @@
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
-	"biome": { "quoteStyle": "single", "indentStyle": "tab", "lineWidth": "120" },
-	"typescript": {
-		"importDeclaration.sortNamedImports": "maintain",
-		"exportDeclaration.sortNamedExports": "maintain",
-		"module.sortImportDeclarations": "maintain",
-		"module.sortExportDeclarations": "maintain",
-		"exportDeclaration.sortNamedExports": "maintain",
-		"quoteStyle": "preferSingle"
+	"biome": {
+		"quoteStyle": "single",
+		"indentStyle": "tab",
+		"lineWidth": "120"
 	},
+	"typescript": {
+ 	   "associations": ["!**/*.*{ts,js}"]
+	}
 	"excludes": ["**/node_modules", "**/*-lock.json", "**/.venv", "**/bun.lock*", "**/worker-configuration.d.ts"],
 	"plugins": [
 		"https://plugins.dprint.dev/biome-0.12.2.wasm",
