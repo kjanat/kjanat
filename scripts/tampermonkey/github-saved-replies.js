@@ -7,19 +7,19 @@
 // @grant        none
 // ==/UserScript==
 
-(async function() {
-	"use strict";
+(async function () {
+	'use strict';
 
 	const JSON_SOURCE_URL =
-		"https://raw.githubusercontent.com/kjanat/kjanat/refs/heads/master/scripts/tampermonkey/saved-replies.json";
+		'https://raw.githubusercontent.com/kjanat/kjanat/refs/heads/master/scripts/tampermonkey/saved-replies.json';
 
 	const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 	const getExistingReplies = () => {
-		const items = document.querySelectorAll(".js-saved-reply-list-item");
+		const items = document.querySelectorAll('.js-saved-reply-list-item');
 		return [...items].map((el) => {
-			const name = el.querySelector(".listgroup-item-title span")?.innerText?.trim() || "";
-			const body = el.querySelector(".listgroup-item-body span")?.innerText?.trim() || "";
+			const name = el.querySelector('.listgroup-item-title span')?.innerText?.trim() || '';
+			const body = el.querySelector('.listgroup-item-body span')?.innerText?.trim() || '';
 			return { name, body };
 		});
 	};
@@ -27,8 +27,8 @@
 	const simulateInput = (el, val) => {
 		el.focus();
 		el.value = val;
-		el.dispatchEvent(new Event("input", { bubbles: true }));
-		el.dispatchEvent(new Event("change", { bubbles: true }));
+		el.dispatchEvent(new Event('input', { bubbles: true }));
+		el.dispatchEvent(new Event('change', { bubbles: true }));
 		el.blur();
 	};
 
@@ -44,27 +44,21 @@
 	};
 
 	const importNextReply = async (replies) => {
-		const index = parseInt(
-			localStorage.getItem("savedReplyImportIndex") || "0",
-			10,
-		);
+		const index = parseInt(localStorage.getItem('savedReplyImportIndex') || '0', 10);
 		const existing = getExistingReplies();
 
 		let current = 0;
 		for (let i = 0; i < replies.length; i++) {
 			const r = replies[i];
 			const exists = existing.some(
-				(e) =>
-					e.name === r.name
-					&& e.body.replace(/\s+/g, " ").trim()
-						=== r.body.replace(/\s+/g, " ").trim(),
+				(e) => e.name === r.name && e.body.replace(/\s+/g, ' ').trim() === r.body.replace(/\s+/g, ' ').trim(),
 			);
 			if (!exists) {
 				if (current === index) {
-					const form = await waitFor("form[action=\"/settings/replies\"]");
-					const titleInput = form.querySelector("input[name=\"title\"]");
-					const bodyArea = form.querySelector("textarea[name=\"body\"]");
-					const submitBtn = form.querySelector("button[type=\"submit\"]");
+					const form = await waitFor('form[action="/settings/replies"]');
+					const titleInput = form.querySelector('input[name="title"]');
+					const bodyArea = form.querySelector('textarea[name="body"]');
+					const submitBtn = form.querySelector('button[type="submit"]');
 
 					console.log(`⏳ Importing [${i + 1}/${replies.length}]: ${r.name}`);
 					simulateInput(titleInput, r.name);
@@ -78,7 +72,7 @@
 					}
 
 					if (!submitBtn.disabled) {
-						localStorage.setItem("savedReplyImportIndex", current + 1);
+						localStorage.setItem('savedReplyImportIndex', current + 1);
 						submitBtn.click();
 
 						// Wait for GitHub to save it
@@ -87,10 +81,7 @@
 							await delay(500);
 							const updated = getExistingReplies();
 							const nowExists = updated.some(
-								(e) =>
-									e.name === r.name
-									&& e.body.replace(/\s+/g, " ").trim()
-										=== r.body.replace(/\s+/g, " ").trim(),
+								(e) => e.name === r.name && e.body.replace(/\s+/g, ' ').trim() === r.body.replace(/\s+/g, ' ').trim(),
 							);
 							if (nowExists) break;
 						}
@@ -106,17 +97,17 @@
 			}
 		}
 
-		localStorage.removeItem("savedReplyImportIndex");
-		console.info("✅ All saved replies are present.");
+		localStorage.removeItem('savedReplyImportIndex');
+		console.info('✅ All saved replies are present.');
 	};
 
 	const fetchReplies = async () => {
 		try {
 			const res = await fetch(JSON_SOURCE_URL);
-			if (!res.ok) throw new Error("Failed to fetch replies JSON");
+			if (!res.ok) throw new Error('Failed to fetch replies JSON');
 			return await res.json();
 		} catch (e) {
-			console.error("❌ Failed to load external replies:", e);
+			console.error('❌ Failed to load external replies:', e);
 			return [];
 		}
 	};
@@ -128,27 +119,24 @@
 		const existing = getExistingReplies();
 		const missing = replies.filter((reply) => {
 			return !existing.some(
-				(e) =>
-					e.name === reply.name
-					&& e.body.replace(/\s+/g, " ").trim()
-						=== reply.body.replace(/\s+/g, " ").trim(),
+				(e) => e.name === reply.name && e.body.replace(/\s+/g, ' ').trim() === reply.body.replace(/\s+/g, ' ').trim(),
 			);
 		});
 
 		if (missing.length === 0) return; // no buttons, no alerts, just silently bail out
 
 		// Only trigger import chain if in progress
-		if (localStorage.getItem("savedReplyImportIndex")) {
+		if (localStorage.getItem('savedReplyImportIndex')) {
 			await importNextReply(replies);
 			return;
 		}
 
 		// UI trigger button (only if needed)
-		const container = document.querySelector(".Layout-main");
+		const container = document.querySelector('.Layout-main');
 		if (!container) return;
 
-		const btn = document.createElement("button");
-		btn.textContent = "📥 Auto-Import Missing Saved Replies";
+		const btn = document.createElement('button');
+		btn.textContent = '📥 Auto-Import Missing Saved Replies';
 		btn.style = `
 		margin:1em;
 		padding:0.6em 1.4em;
@@ -161,7 +149,7 @@
 		font-weight:600;
 	  `;
 		btn.onclick = () => {
-			localStorage.setItem("savedReplyImportIndex", "0");
+			localStorage.setItem('savedReplyImportIndex', '0');
 			location.reload();
 		};
 
