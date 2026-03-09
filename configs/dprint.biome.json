@@ -3,6 +3,16 @@
 	"indentWidth": 2,
 	"newLineKind": "lf",
 	"biome": { "quoteStyle": "single", "indentStyle": "tab", "lineWidth": "120" },
+	"typescript": {
+		"importDeclaration.sortNamedImports": "maintain",
+		"exportDeclaration.sortNamedExports": "maintain",
+		"module.sortImportDeclarations": "maintain",
+		"module.sortExportDeclarations": "maintain",
+		"exportDeclaration.sortNamedExports": "maintain"
+	}
 	"excludes": ["**/node_modules", "**/*-lock.json", "**/.venv", "**/bun.lock*", "**/worker-configuration.d.ts"],
-	"plugins": ["https://plugins.dprint.dev/biome-0.12.2.wasm"]
+	"plugins": [
+		"https://plugins.dprint.dev/biome-0.12.2.wasm",
+		"https://plugins.dprint.dev/typescript-0.95.15.wasm"
+	]
 }
