@@ -1,0 +1,8 @@
+{
+	"useTabs": true,
+	"indentWidth": 2,
+	"newLineKind": "lf",
+	"biome": { "quoteStyle": "single", "indentStyle": "tab", "lineWidth": "120" },
+	"excludes": ["**/node_modules", "**/*-lock.json", "**/.venv", "**/bun.lock*", "**/worker-configuration.d.ts"],
+	"plugins": ["https://plugins.dprint.dev/biome-0.12.2.wasm"]
+}
