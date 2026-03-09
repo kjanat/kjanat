@@ -33,7 +33,7 @@
 		"doctypeKeywordCase": "upper",
 		"strictSvelteAttr": false,
 		"svelteAttrShorthand": true,
-		"svelteDirectiveShorthand": true
+		"svelteDirectiveShorthand": true,
 		"ignoreCommentDirective": "dprint-ignore",
 		"ignoreFileCommentDirective": "dprint-ignore-file"
 	},
