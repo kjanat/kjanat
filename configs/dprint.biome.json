@@ -1,4 +1,5 @@
 {
+	"extends": "https://raw.githubusercontent.com/kjanat/kjanat/refs/heads/master/configs/dprint.remote.json",
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
