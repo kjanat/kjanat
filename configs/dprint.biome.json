@@ -10,7 +10,7 @@
 		"module.sortExportDeclarations": "maintain",
 		"exportDeclaration.sortNamedExports": "maintain",
 		"quoteStyle": "preferSingle"
-	}
+	},
 	"excludes": ["**/node_modules", "**/*-lock.json", "**/.venv", "**/bun.lock*", "**/worker-configuration.d.ts"],
 	"plugins": [
 		"https://plugins.dprint.dev/biome-0.12.2.wasm",
