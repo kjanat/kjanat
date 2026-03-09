@@ -8,7 +8,8 @@
 		"exportDeclaration.sortNamedExports": "maintain",
 		"module.sortImportDeclarations": "maintain",
 		"module.sortExportDeclarations": "maintain",
-		"exportDeclaration.sortNamedExports": "maintain"
+		"exportDeclaration.sortNamedExports": "maintain",
+		"quoteStyle": "preferSingle"
 	}
 	"excludes": ["**/node_modules", "**/*-lock.json", "**/.venv", "**/bun.lock*", "**/worker-configuration.d.ts"],
 	"plugins": [
