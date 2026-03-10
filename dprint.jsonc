@@ -1,4 +1,8 @@
 {
 	"$schema": "https://dprint.dev/schemas/v0.json",
-	"extends": ["configs/dprint.remote.json", "configs/dprint.exec.json", "configs/dprint.biome.json"],
+	"extends": [
+		"https://raw.githubusercontent.com/kjanat/kjanat/refs/heads/master/configs/dprint.remote.json",
+		"https://raw.githubusercontent.com/kjanat/kjanat/refs/heads/master/configs/dprint.biome.json",
+		"configs/dprint.exec.json",
+	],
 }
