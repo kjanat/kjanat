@@ -9,18 +9,16 @@ concurrency: autofix-${{ github.ref }}
 jobs:
   autofix:
     runs-on: ubuntu-latest
-    # env: { DPRINT_CONFIG_DISCOVERY: global, DPRINT_CONFIG_DIR: ./configs }
     permissions: { contents: read }
     steps:
-      - { uses: actions/checkout@v6 }
-      - { uses: oven-sh/setup-bun@v2 }
-      - { uses: kjanat/install-dprint@v1 }
+      - uses: actions/checkout@v6
+      - uses: oven-sh/setup-bun@v2
+      - uses: kjanat/install-dprint@v1
+      - uses: kjanat/install-shfmt@v1
       # - { uses: dtolnay/rust-toolchain@stable, with: { components: rustfmt } }
-
-      - run: go install mvdan.cc/sh/v3/cmd/shfmt@latest
       - run: bun i -g tombi just sort-package-json svgo --trust
 
-      - run: dprint config update --recursive
+      - run: bash .github/scripts/dprint-update.sh
       - run: dprint fmt --allow-no-files --diff --excludes ".github"
 
       - uses: autofix-ci/action@v1
