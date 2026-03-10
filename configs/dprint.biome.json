@@ -4,17 +4,42 @@
 	"indentWidth": 2,
 	"newLineKind": "lf",
 	"biome": {
-		"quoteStyle": "single",
 		"indentStyle": "tab",
-		"lineWidth": "120"
+		"lineWidth": "120",
+		"quoteStyle": "single"
+	},
+	"markup": {
+		"useTabs": true,
+		"html.void.selfClosing": false,
+		"formatComments": true,
+		"scriptIndent": true,
+		"scriptFormatter": "biome",
+		"styleIndent": true,
+		"doctypeKeywordCase": "upper",
+		"strictSvelteAttr": false,
+		"svelteAttrShorthand": true,
+		"svelteDirectiveShorthand": true,
+		"ignoreCommentDirective": "dprint-ignore",
+		"ignoreFileCommentDirective": "dprint-ignore-file",
+		"associations": [
+			"!**/*.svg"
+		]
 	},
 	"typescript": {
-		"associations": ["!**/*.*{ts,js}"]
+		"associations": [
+			"!**/*.*{ts,js}"
+		]
 	},
-	"markup": { "scriptFormatter": "biome" },
-	"excludes": ["**/node_modules", "**/*-lock.json", "**/.venv", "**/bun.lock*", "**/worker-configuration.d.ts"],
 	"plugins": [
 		"https://plugins.dprint.dev/biome-0.12.2.wasm",
-		"https://plugins.dprint.dev/typescript-0.95.15.wasm"
+		"https://plugins.dprint.dev/typescript-0.95.15.wasm",
+		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.26.0.wasm"
+	],
+	"excludes": [
+		"**/.venv",
+		"**/*-lock.json",
+		"**/bun.lock*",
+		"**/node_modules",
+		"**/worker-configuration.d.ts"
 	]
 }
