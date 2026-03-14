@@ -1,20 +1,17 @@
-<svg viewBox="0 0 2000 2000" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
-  <title id="title">KJANAT Nextcloud Logo</title>
-  <desc>
-    The letter K in black inside a white circle, with the orange Nextcloud cloud icon clipped to the
+<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" viewBox="0 0 2000 2000">
+	<title>KJANAT Nextcloud Logo</title>
+	<desc>
+		The letter K in black inside a white circle, with the orange Nextcloud cloud icon clipped to the
     circle boundary
-  </desc>
-  <defs>
-    <clipPath id="badge-clip">
-      <circle cx="50%" cy="50%" r="950.39807" />
-    </clipPath>
-  </defs>
-  <circle cx="50%" cy="50%" r="950.39807" fill="#ffffff" stroke="#000000" stroke-width="99.205" />
-  <path fill="#000000" d="m 476,1330 v -275 l 378,419 v 275 z" />
-  <path fill="#000000" d="M 476,970 V 820 l 378,418 v 150 z" />
-  <path fill="#000000" d="M 476,740 V 270 h 378 v 280 l 269,-280 h 477 l -538,560 418,454 v 566.1 z" />
-  <g clip-path="url(#badge-clip)">
-    <path fill="#ff5d20"
-      d="m 1685.3,1332.9 c 0,3 1,4 4,4 253.8,42.3 310.7024,230.7977 310.7,310.1 -0,154.3156 -104.8,353.1 -364.7,353 H 339.3 C 114.3,2000 0.00312203,1809.1 0,1649 c -0.00267293,-137.0701 76.5,-277.9 247.2,-351.2 0.9,-0.4 2,-2 2,-4 12.5614,-219.8246 268.48261,-314.35545 411.3,-188.4 3.74997,3.3072 6,2 8,-2 232.83053,-475.78412 1016.8,-296.91511 1016.8,229.4 z" />
-  </g>
+	</desc>
+	<defs>
+		<clipPath id="a">
+			<circle cx="50%" cy="50%" r="950.398"/>
+		</clipPath>
+	</defs>
+	<circle cx="50%" cy="50%" r="950.398" fill="#fff" stroke="#000" stroke-width="99.205"/>
+	<path d="M476 1330v-275l378 419v275zM476 970V820l378 418v150zM476 740V270h378v280l269-280h477l-538 560 418 454v566.1z"/>
+	<g clip-path="url(#a)">
+		<path fill="#ff5d20" d="M1685.3 1332.9c0 3 1 4 4 4 253.8 42.3 310.702 230.798 310.7 310.1 0 154.316-104.8 353.1-364.7 353h-1296C114.3 2000 .003 1809.1 0 1649c-.003-137.07 76.5-277.9 247.2-351.2.9-.4 2-2 2-4 12.561-219.825 268.483-314.355 411.3-188.4 3.75 3.307 6 2 8-2 232.83-475.784 1016.8-296.915 1016.8 229.4z"/>
+	</g>
 </svg>
