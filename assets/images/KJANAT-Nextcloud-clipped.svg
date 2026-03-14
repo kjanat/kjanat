@@ -1,66 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-		 aria-labelledby="title"
-		 viewBox="0 0 2000 2000"
-		 overlay="cloud">
+<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" viewBox="0 0 2000 2000">
 	<title>KJANAT Nextcloud Logo</title>
-	<copyright>Copyright (c) 2026 KJANAT</copyright>
 	<desc>
 		The letter K in black inside a white circle, with the orange Nextcloud cloud icon clipped to the
-		circle boundary. Set overlay="ring" or overlay="cloud" on the root SVG to choose stacking.
+		circle boundary. Set overlay=&quot;ring&quot; or overlay=&quot;cloud&quot; on the root SVG to choose stacking.
 	</desc>
-
-	<style>
-		.ring-bottom, .ring-top,
-		.cloud-bottom, .cloud-top {
-			display: none;
-		}
-
-		svg[overlay="ring"] .ring-top { display: inline; }
-		svg[overlay="ring"] .cloud-bottom { display: inline; }
-
-		svg[overlay="cloud"] .ring-bottom { display: inline; }
-		svg[overlay="cloud"] .cloud-top { display: inline; }
-	</style>
-
 	<defs>
-		<!-- Outer visible boundary -->
-		<clipPath id="contentClip">
+		<path id="c" d="M476 1330v-275l378 419v275zm0-360V820l378 418v150zm0-230V270h378v280l269-280h477l-538 560 418 454v566.1z"/>
+		<path id="d" d="M1685.3 1332.9c0 3 1 4 4 4 253.8 42.3 310.702 230.798 310.7 310.1 0 154.316-104.8 353.1-364.7 353h-1296C114.3 2000 .003 1809.1 0 1649c-.003-137.07 76.5-277.9 247.2-351.2.9-.4 2-2 2-4 12.561-219.825 268.483-314.355 411.3-188.4 3.75 3.307 6 2 8-2 232.83-475.784 1016.8-296.915 1016.8 229.4z"/>
+		<clipPath id="b">
 			<circle cx="50%" cy="50%" r="47.5%"/>
 		</clipPath>
-
-		<!-- Ring centerline -->
-		<circle id="ringCircle" cx="50%" cy="50%" r="47.5%"/>
-
-		<path id="kShape" d="M476 1330v-275l378 419v275zm0-360V820l378 418v150zm0-230V270h378v280l269-280h477l-538 560 418 454v566.1z"/>
-
-		<path id="cloudShape" d="M1685.3 1332.9c0 3 1 4 4 4 253.8 42.3 310.702 230.798 310.7 310.1 0 154.316-104.8 353.1-364.7 353h-1296C114.3 2000 .003 1809.1 0 1649c-.003-137.07 76.5-277.9 247.2-351.2.9-.4 2-2 2-4 12.561-219.825 268.483-314.355 411.3-188.4 3.75 3.307 6 2 8-2 232.83-475.784 1016.8-296.915 1016.8 229.4z"/>
+		<circle id="a" cx="50%" cy="50%" r="47.5%"/>
 	</defs>
-
-	<!-- base white disc -->
-	<use href="#ringCircle" fill="#fff"/>
-
-	<!-- ring below cloud -->
-	<use href="#ringCircle"
-			 class="ring-bottom"
-			 fill="none"
-			 stroke="#000"
-			 stroke-width="5%"/>
-
-	<!-- clipped content -->
-	<g clip-path="url(#contentClip)">
-		<use href="#kShape" fill="#000"/>
-		<use class="cloud-bottom" href="#cloudShape" fill="#ff5d20"/>
+	<use fill="#fff" href="#a"/>
+	<use fill="none" stroke="#000" stroke-width="5%" href="#a" style="display:inline"/>
+	<g clip-path="url(#b)">
+		<use href="#c"/>
 	</g>
-
-	<!-- cloud above ring -->
-	<g class="cloud-top" clip-path="url(#contentClip)">
-		<use href="#cloudShape" fill="#ff5d20"/>
+	<g clip-path="url(#b)" style="display:inline">
+		<use fill="#ff5d20" href="#d"/>
 	</g>
-
-	<!-- ring above cloud -->
-	<use href="#ringCircle"
-			 class="ring-top"
-			 fill="none"
-			 stroke="#000"
-			 stroke-width="5%"/>
 </svg>
