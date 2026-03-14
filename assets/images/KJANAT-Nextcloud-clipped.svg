@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" viewBox="0 0 2000 2000">
-	<title>KJANAT Nextcloud Logo</title>
-	<desc>
-		The letter K in black inside a white circle, with the orange Nextcloud cloud icon clipped to the
+  <title>KJANAT Nextcloud Logo</title>
+  <desc>
+    The letter K in black inside a white circle, with the orange Nextcloud cloud icon clipped to the
     circle boundary
-	</desc>
-	<defs>
-		<clipPath id="a">
-			<circle cx="50%" cy="50%" r="950.398"/>
-		</clipPath>
-	</defs>
-	<circle cx="50%" cy="50%" r="950.398" fill="#fff" stroke="#000" stroke-width="99.205"/>
-	<path d="M476 1330v-275l378 419v275zM476 970V820l378 418v150zM476 740V270h378v280l269-280h477l-538 560 418 454v566.1z"/>
-	<g clip-path="url(#a)">
-		<path fill="#ff5d20" d="M1685.3 1332.9c0 3 1 4 4 4 253.8 42.3 310.702 230.798 310.7 310.1 0 154.316-104.8 353.1-364.7 353h-1296C114.3 2000 .003 1809.1 0 1649c-.003-137.07 76.5-277.9 247.2-351.2.9-.4 2-2 2-4 12.561-219.825 268.483-314.355 411.3-188.4 3.75 3.307 6 2 8-2 232.83-475.784 1016.8-296.915 1016.8 229.4z"/>
-	</g>
+  </desc>
+  <defs>
+    <clipPath id="a">
+      <circle cx="50%" cy="50%" r="950.398" />
+    </clipPath>
+  </defs>
+  <circle cx="50%" cy="50%" r="45%" fill="#fff" stroke="#000" stroke-width="99.205" />
+  <path
+    d="M476 1330v-275l378 419v275zM476 970V820l378 418v150zM476 740V270h378v280l269-280h477l-538 560 418 454v566.1z" />
+  <g clip-path="url(#a)">
+    <path fill="#ff5d20"
+      d="M1685.3 1332.9c0 3 1 4 4 4 253.8 42.3 310.702 230.798 310.7 310.1 0 154.316-104.8 353.1-364.7 353h-1296C114.3 2000 .003 1809.1 0 1649c-.003-137.07 76.5-277.9 247.2-351.2.9-.4 2-2 2-4 12.561-219.825 268.483-314.355 411.3-188.4 3.75 3.307 6 2 8-2 232.83-475.784 1016.8-296.915 1016.8 229.4z" />
+  </g>
 </svg>
