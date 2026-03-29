@@ -24,7 +24,7 @@ for config in "${CONFIGS[@]}"; do
 	(
 		start=$SECONDS
 		echo -e "  [${start}s] Updating: ${config}..."
-		if dprint config update -c="${config}" >/dev/null 2>&1; then
+		if dprint config update --yes -c="${config}" >/dev/null 2>&1; then
 			echo -e "  ${GREEN}[✓] Finished: ${config} ($((SECONDS - start))s)${NC}"
 		else
 			echo -e "  ${RED}[✗] Failed: ${config} ($((SECONDS - start))s)${NC}"
