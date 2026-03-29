@@ -31,9 +31,9 @@
 		]
 	},
 	"plugins": [
-		"https://plugins.dprint.dev/biome-0.12.3.wasm",
+		"https://plugins.dprint.dev/biome-0.12.5.wasm",
 		"https://plugins.dprint.dev/typescript-0.95.15.wasm",
-		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.26.0.wasm"
+		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.27.0.wasm"
 	],
 	"excludes": [
 		"**/.venv",
