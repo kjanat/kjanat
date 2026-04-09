@@ -21,24 +21,19 @@
 		"svelteDirectiveShorthand": true,
 		"ignoreCommentDirective": "dprint-ignore",
 		"ignoreFileCommentDirective": "dprint-ignore-file",
-		"associations": [
-			"!**/*.svg"
-		]
+		"associations": ["!**/*.svg"]
 	},
 	"typescript": {
-		"associations": [
-			"!**/*.*{ts,js}"
-		]
+		"associations": ["!**/*.*{ts,js}"]
 	},
 	"plugins": [
-		"https://plugins.dprint.dev/biome-0.12.5.wasm",
+		"https://plugins.dprint.dev/biome-0.12.6.wasm",
 		"https://plugins.dprint.dev/typescript-0.95.15.wasm",
 		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.27.0.wasm"
 	],
 	"excludes": [
 		"**/.venv",
-		"**/*-lock.json",
-		"**/bun.lock*",
+		"**/{*-,bun}lock(.*)?",
 		"**/node_modules",
 		"**/worker-configuration.d.ts"
 	]
