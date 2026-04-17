@@ -50,8 +50,8 @@
 		"https://plugins.dprint.dev/json-0.21.3.wasm",
 		"https://plugins.dprint.dev/jupyter-0.2.2.wasm",
 		"https://plugins.dprint.dev/markdown-0.21.1.wasm",
-		"https://plugins.dprint.dev/ruff-0.7.8.wasm",
+		"https://plugins.dprint.dev/ruff-0.7.10.wasm",
 		"https://plugins.dprint.dev/typescript-0.95.15.wasm",
-		"https://plugins.dprint.dev/kjanat/svg-v0.2.6.wasm"
+		"https://plugins.dprint.dev/kjanat/svg-v0.2.7.wasm"
 	]
 }
