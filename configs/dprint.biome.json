@@ -27,7 +27,7 @@
 		"associations": ["!**/*.*{ts,js}"]
 	},
 	"plugins": [
-		"https://plugins.dprint.dev/biome-0.12.8.wasm",
+		"https://plugins.dprint.dev/biome-0.12.9.wasm",
 		"https://plugins.dprint.dev/typescript-0.95.15.wasm",
 		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.27.0.wasm"
 	],
