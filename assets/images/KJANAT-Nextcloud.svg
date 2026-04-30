@@ -1,26 +1,43 @@
-<svg
-	xmlns="http://www.w3.org/2000/svg"
-	viewBox="0 0 2000 2000"
-	aria-labelledby="logo-title logo-desc"
-	xml:space="preserve">
+<svg viewBox="0 0 2000 2000"
+     aria-labelledby="logo-title logo-desc" xml:space="preserve"
+     xmlns="http://www.w3.org/2000/svg">
 	<title>
 		KJANAT Nextcloud Logo
 	</title>
 	<desc>
 		The letter K in black inside a white circle, overlaid with an orange Nextcloud cloud icon in the lower right
 	</desc>
-	<circle
-		cx="50%"
-		cy="50%"
-		r="950.398"
-		style="fill:#fff;fill-rule:nonzero;stroke:#000;stroke-width:99.205;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
-	<path
-		d="M476 1330v-275l378 419v275zm0-360V820l378 418v150zm0-230V270h378v280l269-280h477l-538 560 418 454v566.1z"
-		style="display:inline;opacity:1;fill:#000;fill-opacity:1;fill-rule:nonzero;stroke:#000;stroke-width:0;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
-	<path
-		d="M1685.3 1332.9c0 3 1 4 4 4 253.8 42.3 310.702 230.798 310.7 310.1 0 154.316-104.8 353.1-364.7 353h-1296C114.3 2000 .003 1809.1 0 1649c-.003-137.07 76.5-277.9 247.2-351.2.9-.4 2-2 2-4 12.561-219.825 268.483-314.355 411.3-188.4 3.75 3.307 6 2 8-2 232.83-475.784 1016.8-296.915 1016.8 229.4z"
-		fill="#ff5d20"
-		style="display:inline;stroke-width:1.0013;image-rendering:auto">
+	<circle cx="50%" cy="50%" r="950.398"
+	        fill="#fff"
+	        stroke="#000"
+	        stroke-width="99.205"
+	        fill-rule="nonzero"
+	        paint-order="normal"
+	        stroke-dasharray="none"
+	        stroke-miterlimit="0"
+	        stroke-opacity="1" />
+	<path d="M476 1330 v-275 l378 419 v275 z m0-360 V820 l378 418 v150 z
+	         m0-230 V270 h378 v280 l269-280 h477 l-538 560 418 454 v566.1 z"
+	      fill="#000"
+	      stroke="#000"
+	      stroke-width="0"
+	      opacity="1"
+	      display="inline"
+	      fill-opacity="1"
+	      fill-rule="nonzero"
+	      paint-order="normal"
+	      stroke-dasharray="none"
+	      stroke-miterlimit="0"
+	      stroke-opacity="1" />
+	<path d="M1685.3 1332.9
+	         c0 3 1 4 4 4 253.8 42.3 310.702 230.798 310.7 310.1 0 154.316-104.8 353.1-364.7 353 h-1296
+	         C114.3 2000 .003 1809.1 0 1649
+	         c-.003-137.07 76.5-277.9 247.2-351.2.9-.4 2-2 2-4 12.561-219.825 268.483-314.355 411.3-188.4 3.75 3.307 6 2 8-2 232.83-475.784 1016.8-296.915 1016.8 229.4
+	         z"
+	      fill="#ff5d20"
+	      stroke-width="1.0013"
+	      display="inline"
+	      image-rendering="auto">
 		<title>
 			Orange Cloud
 		</title>
