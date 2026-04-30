@@ -1,9 +1,8 @@
-<svg
-	xmlns="http://www.w3.org/2000/svg"
-	class="themed-logo"
-	viewBox="0 0 2000 2000"
-	style="color:#000"
-	xml:space="preserve">
+<svg class="themed-logo"
+     viewBox="0 0 2000 2000"
+     color="#000"
+     xml:space="preserve"
+     xmlns="http://www.w3.org/2000/svg">
 	<title>
 		KJANAT
 	</title>
@@ -17,13 +16,9 @@
 			}
 		}
 	</style>
-	<circle
-		cx="1000"
-		cy="1000"
-		r="950.398"
-		stroke-width="99.205"
-		style="fill:#fff;stroke:currentColor" />
-	<path
-		d="M438 1269.95v-275l378 419v275zm0-360v-150l378 418v150zm0-230v-470h378v280l269-280h477l-538 560 418 454v566.1z"
-		style="fill:currentColor" />
+	<circle cx="1000" cy="1000" r="950.398"
+	        fill="#fff" stroke="currentColor" stroke-width="99.205" />
+	<path d="M438 1269.95 v-275 l378 419 v275 z m0-360 v-150 l378 418 v150 z
+	         m0-230 v-470 h378 v280 l269-280 h477 l-538 560 418 454 v566.1 z"
+	      fill="currentColor" />
 </svg>
