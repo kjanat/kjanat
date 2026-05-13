@@ -14,7 +14,6 @@ jobs:
       - uses: actions/checkout@v6
       - uses: oven-sh/setup-bun@v2
       - uses: kjanat/install-dprint@v1
-      - uses: kjanat/install-shfmt@v1
       # - { uses: dtolnay/rust-toolchain@stable, with: { components: rustfmt } }
       - run: bun i -g tombi just sort-package-json svgo --trust
 
