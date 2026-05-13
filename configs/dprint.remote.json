@@ -57,7 +57,7 @@
 		"https://plugins.dprint.dev/markdown-0.21.1.wasm",
 		"https://plugins.dprint.dev/ruff-0.7.11.wasm",
 		"https://plugins.dprint.dev/typescript-0.96.0.wasm",
-		"https://plugins.dprint.dev/kjanat/shfmt-0.0.6.wasm",
+		"https://plugins.dprint.dev/kjanat/shfmt-0.0.7.wasm",
 		"https://plugins.dprint.dev/kjanat/svg-v0.4.0.wasm",
 		"https://plugins.dprint.dev/kjanat/sortpackagejson-0.2.1.wasm"
 	]
