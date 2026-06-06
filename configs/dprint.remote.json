@@ -55,10 +55,11 @@
 		"https://plugins.dprint.dev/json-0.21.3.wasm",
 		"https://plugins.dprint.dev/jupyter-0.2.3.wasm",
 		"https://plugins.dprint.dev/markdown-0.22.1.wasm",
-		"https://plugins.dprint.dev/ruff-0.7.14.wasm",
+		"https://plugins.dprint.dev/ruff-0.7.15.wasm",
 		"https://plugins.dprint.dev/typescript-0.96.1.wasm",
 		"https://plugins.dprint.dev/kjanat/shfmt-1.0.0.wasm",
 		"https://plugins.dprint.dev/kjanat/svg-v0.4.1.wasm",
-		"https://plugins.dprint.dev/kjanat/sortpackagejson-0.2.1.wasm"
+		"https://plugins.dprint.dev/kjanat/sortpackagejson-0.2.1.wasm",
+		"https://plugins.dprint.dev/kachick/typstyle-0.4.1.wasm"
 	]
 }
