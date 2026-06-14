@@ -10,15 +10,19 @@ jobs:
   autofix:
     runs-on: ubuntu-latest
     permissions: { contents: read }
-    timeout-minutes: 2
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v6
-      - uses: oven-sh/setup-bun@v2
-      - uses: kjanat/install-dprint@v1
-      # - { uses: dtolnay/rust-toolchain@stable, with: { components: rustfmt } }
-      - run: bun i -g tombi just sort-package-json svgo --trust
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: |
+            just
+            tombi
+            dprint
+            rust+rustfmt
 
       - run: bash .github/scripts/dprint-update.sh
+      - run: bash .github/scripts/dprint-sort.sh
       - run: dprint fmt --allow-no-files --diff --excludes ".github"
 
       - uses: autofix-ci/action@v1

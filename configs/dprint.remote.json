@@ -1,52 +1,24 @@
 {
+	"$schema": "https://dprint.dev/schemas/v0.json",
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
-	"typescript": {
-		"quoteStyle": "preferSingle"
-	},
+	"jsonSchemaSort": { "associations": ["**/schema.json", "**/*.schema.json"] },
+	"shfmt": { "useTabs": true, "binaryNextLine": true, "switchCaseIndent": true },
+	"texFmt": { "wrap": false, "wraplen": 100, "tabsize": 2, "tabchar": "tab" },
+	"dockerfile": { "associations": ["Dockerfile", "Dockerfile.*"] },
 	"json": {
-		"jsonTrailingCommaFiles": [
-			"!**/biome.json*",
-			"**/.vscode/*.json",
-			"**/.zed/*.json",
-			"**/tsconfig*.json"
-		],
-		"associations": [
-			"!**/.openclaw/*.json*",
-			"*.json",
-			"*.jsonc"
-		]
+		"jsonTrailingCommaFiles": ["!**/biome.json*", "**/.vscode/*.json", "**/.zed/*.json", "**/tsconfig*.json"],
+		"associations": ["!**/.openclaw/*.json*", "*.json", "*.jsonc"]
 	},
+	"jupyter": {},
+	"malva": {},
 	"markdown": {
 		"textWrap": "maintain",
 		"emphasisKind": "asterisks",
 		"lineWidth": 8000,
-		"associations": [
-			".rules",
-			"*.md",
-			"*.markdown"
-		]
+		"associations": [".rules", "*.md", "*.markdown"]
 	},
-	"dockerfile": {
-		"associations": [
-			"Dockerfile",
-			"Dockerfile.*"
-		]
-	},
-	"ruff": {
-		"preview": true,
-		"lineLength": 88,
-		"indentWidth": 4,
-		"indentStyle": "space"
-	},
-	"shfmt": {
-		"useTabs": true,
-		"binaryNextLine": true,
-		"switchCaseIndent": true
-	},
-	"jupyter": {},
-	"malva": {},
 	"markup": {
 		"useTabs": true,
 		"html.void.selfClosing": false,
@@ -59,20 +31,11 @@
 		"svelteDirectiveShorthand": true,
 		"ignoreCommentDirective": "dprint-ignore",
 		"ignoreFileCommentDirective": "dprint-ignore-file",
-		"associations": [
-			"!**/*.svg"
-		]
+		"associations": ["!**/*.svg"]
 	},
-	"yaml": {
-		"printWidth": 160
-	},
-	"graphql": {},
-	"jsonSchemaSort": {
-		"associations": [
-			"**/schema.json",
-			"**/*.schema.json"
-		]
-	},
+	"ruff": { "preview": true, "lineLength": 88, "indentWidth": 4, "indentStyle": "space" },
+	"typescript": { "quoteStyle": "preferSingle" },
+	"yaml": { "printWidth": 160 },
 	"excludes": [
 		"**/.venv",
 		"**/{*-,bun}lock(.*)?",
@@ -82,18 +45,18 @@
 		"**/.skills"
 	],
 	"plugins": [
-		"https://plugins.dprint.dev/dockerfile-0.4.0.wasm",
-		"https://plugins.dprint.dev/g-plane/malva-v0.16.0.wasm",
-		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.27.3.wasm",
-		"https://plugins.dprint.dev/g-plane/pretty_graphql-v0.2.3.wasm",
-		"https://plugins.dprint.dev/g-plane/pretty_yaml-v0.6.0.wasm",
-		"https://plugins.dprint.dev/json-0.21.3.wasm",
-		"https://plugins.dprint.dev/jupyter-0.2.3.wasm",
-		"https://plugins.dprint.dev/kachick/typstyle-0.4.1.wasm",
 		"https://plugins.dprint.dev/kjanat/json-schema-sort-0.1.2.wasm",
 		"https://plugins.dprint.dev/kjanat/shfmt-1.0.0.wasm",
 		"https://plugins.dprint.dev/kjanat/sortpackagejson-0.2.1.wasm",
 		"https://plugins.dprint.dev/kjanat/svg-v0.4.1.wasm",
+		"https://plugins.dprint.dev/kjanat/tex-fmt-0.1.1.wasm",
+		"https://plugins.dprint.dev/dockerfile-0.4.0.wasm",
+		"https://plugins.dprint.dev/g-plane/malva-v0.16.0.wasm",
+		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.27.3.wasm",
+		"https://plugins.dprint.dev/g-plane/pretty_yaml-v0.6.0.wasm",
+		"https://plugins.dprint.dev/json-0.21.3.wasm",
+		"https://plugins.dprint.dev/jupyter-0.2.3.wasm",
+		"https://plugins.dprint.dev/kachick/typstyle-0.4.1.wasm",
 		"https://plugins.dprint.dev/markdown-0.22.1.wasm",
 		"https://plugins.dprint.dev/ruff-0.7.16.wasm",
 		"https://plugins.dprint.dev/typescript-0.96.1.wasm"
