@@ -1,6 +1,6 @@
 {
 	"$schema": "https://dprint.dev/schemas/v0.json",
-	"extends": "https://github.com/kjanat/kjanat/raw/e65a0b39fe82848b7cc66f27137bb298a973f26f/configs/dprint.remote.json",
+	"extends": "https://github.com/kjanat/kjanat/raw/9c3457f3/configs/dprint.remote.json",
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
