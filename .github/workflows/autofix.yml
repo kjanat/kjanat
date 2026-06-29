@@ -1,28 +1,30 @@
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
 ---
 name: autofix.ci
 on:
-  schedule: [cron: "0 0 */1 * *"]
+  schedule: [cron: "0 8 * * *"]
   push: { branches: ["master"] }
   workflow_dispatch:
   pull_request:
 concurrency: autofix-${{ github.ref }}
+permissions: { contents: read }
+
 jobs:
   autofix:
     runs-on: ubuntu-latest
-    permissions: { contents: read }
     timeout-minutes: 5
+    if: ${{ github.actor == github.repository_owner || contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: taiki-e/install-action@v2
-        with:
-          tool: |
-            just
-            tombi
-            dprint
-            rust+rustfmt
-
-      - run: bash .github/scripts/dprint-update.sh
+        with: { tool: "just,tombi,dprint,rust+rustfmt" }
+      - run: dprint config update -yr -c dprint.jsonc
+      - run: dprint fmt --allow-no-files --diff --excludes .github
       - run: bash .github/scripts/dprint-sort.sh
-      - run: dprint fmt --allow-no-files --diff --excludes ".github"
+      - run: |
+          git ls-remote "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" HEAD \
+            | awk '{print substr($1, 1, 8)}' \
+            | xargs -r -I{} sed -i -E 's#(github\.com/kjanat/kjanat/raw/)[0-9a-zA-Z]{4,40}(/configs/dprint\.remote\.json)#\1{}\2#g' \
+              configs/dprint.biome.json
 
       - uses: autofix-ci/action@v1
