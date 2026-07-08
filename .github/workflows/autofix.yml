@@ -18,9 +18,15 @@ jobs:
       - uses: actions/checkout@v7
       - uses: taiki-e/install-action@v2
         with: { tool: "just,tombi,dprint,rust+rustfmt" }
-      - run: dprint config update -yr -c dprint.jsonc
+      - run: |
+          dprint config update -yr -c=dprint.jsonc
+          dprint config update -yr -c=configs/dprint.exec.json
+          dprint config update -yr -c=configs/dprint.biome.json
+          dprint config update -yr -c=configs/dprint.remote.json
+
       - run: dprint fmt --allow-no-files --diff --excludes .github
       - run: bash .github/scripts/dprint-sort.sh
+
       - run: |
           git ls-remote "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" HEAD \
             | awk '{print substr($1, 1, 8)}' \
