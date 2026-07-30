@@ -3,41 +3,18 @@
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
-	"sortPackageJson": {
-		"associations": ["package.json"]
-	},
-	"jsonSchemaSort": {
-		"associations": ["**/schema.json", "**/*.schema.json"]
-	},
-	"shfmt": {
-		"useTabs": true,
-		"binaryNextLine": true,
-		"switchCaseIndent": true
-	},
-	"texFmt": {
-		"wrap": false,
-		"wraplen": 100,
-		"tabsize": 2,
-		"tabchar": "tab"
-	},
-	"dockerfile": {
-		"associations": ["Dockerfile", "Dockerfile.*"]
-	},
+	"jsonSchemaSort": { "associations": ["**/schema.json", "**/*.schema.json"] },
+	"shfmt": { "useTabs": true, "binaryNextLine": true, "switchCaseIndent": true },
+	"sortPackageJson": { "associations": ["package.json"] },
+	"texFmt": { "wrap": false, "wraplen": 100, "tabsize": 2, "tabchar": "tab" },
+	"dockerfile": { "associations": ["Dockerfile", "Dockerfile.*"] },
 	"json": {
-		"jsonTrailingCommaFiles": [
-			"**/.vscode/*.json",
-			"**/.zed/{settings,tasks,debug}.json",
-			"**/tsconfig*.json"
-		],
+		"jsonTrailingCommaFiles": ["**/.vscode/*.json", "**/.zed/{settings,tasks,debug}.json", "**/tsconfig*.json"],
 		"associations": ["package.json"]
 	},
 	"jupyter": {},
 	"malva": {},
-	"markdown": {
-		"textWrap": "maintain",
-		"emphasisKind": "asterisks",
-		"associations": [".rules"]
-	},
+	"markdown": { "textWrap": "maintain", "emphasisKind": "asterisks", "associations": [".rules"] },
 	"markup": {
 		"useTabs": true,
 		"html.void.selfClosing": false,
@@ -52,18 +29,9 @@
 		"ignoreFileCommentDirective": "dprint-ignore-file",
 		"associations": ["!**/*.svg"]
 	},
-	"ruff": {
-		"preview": true,
-		"lineLength": 88,
-		"indentWidth": 4,
-		"indentStyle": "space"
-	},
-	"typescript": {
-		"quoteStyle": "preferSingle"
-	},
-	"yaml": {
-		"printWidth": 160
-	},
+	"ruff": { "preview": true, "lineLength": 88, "indentWidth": 4, "indentStyle": "space" },
+	"typescript": { "quoteStyle": "preferSingle" },
+	"yaml": { "printWidth": 160 },
 	"excludes": [
 		"**/.venv",
 		"**/{*-,bun}lock(.*)?",
