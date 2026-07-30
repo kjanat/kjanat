@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 👋 Hello, my peeps!
+# 👋 Hello, my peeps! <!-- markdownlint-disable-line MD026 -->
 
 [![CI](https://github.com/kjanat/kjanat/actions/workflows/metrics.yml/badge.svg?branch=master)][CI: Metrics Workflow]
 [![Profile Views](https://komarev.com/ghpvc/?username=kjanat&color=brightgreen&style=flat)][My Profile]
