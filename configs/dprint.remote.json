@@ -3,21 +3,40 @@
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
-	"jsonSchemaSort": { "associations": ["**/schema.json", "**/*.schema.json"] },
-	"shfmt": { "useTabs": true, "binaryNextLine": true, "switchCaseIndent": true },
-	"texFmt": { "wrap": false, "wraplen": 100, "tabsize": 2, "tabchar": "tab" },
-	"dockerfile": { "associations": ["Dockerfile", "Dockerfile.*"] },
+	"sortPackageJson": {
+		"associations": ["package.json"]
+	},
+	"jsonSchemaSort": {
+		"associations": ["**/schema.json", "**/*.schema.json"]
+	},
+	"shfmt": {
+		"useTabs": true,
+		"binaryNextLine": true,
+		"switchCaseIndent": true
+	},
+	"texFmt": {
+		"wrap": false,
+		"wraplen": 100,
+		"tabsize": 2,
+		"tabchar": "tab"
+	},
+	"dockerfile": {
+		"associations": ["Dockerfile", "Dockerfile.*"]
+	},
 	"json": {
-		"jsonTrailingCommaFiles": ["!**/biome.json*", "**/.vscode/*.json", "**/.zed/*.json", "**/tsconfig*.json"],
-		"associations": ["!**/.openclaw/*.json*", "*.json", "*.jsonc"]
+		"jsonTrailingCommaFiles": [
+			"**/.vscode/*.json",
+			"**/.zed/{settings,tasks,debug}.json",
+			"**/tsconfig*.json"
+		],
+		"associations": ["package.json"]
 	},
 	"jupyter": {},
 	"malva": {},
 	"markdown": {
 		"textWrap": "maintain",
 		"emphasisKind": "asterisks",
-		"lineWidth": 8000,
-		"associations": [".rules", "*.md", "*.markdown"]
+		"associations": [".rules"]
 	},
 	"markup": {
 		"useTabs": true,
@@ -33,9 +52,18 @@
 		"ignoreFileCommentDirective": "dprint-ignore-file",
 		"associations": ["!**/*.svg"]
 	},
-	"ruff": { "preview": true, "lineLength": 88, "indentWidth": 4, "indentStyle": "space" },
-	"typescript": { "quoteStyle": "preferSingle" },
-	"yaml": { "printWidth": 160 },
+	"ruff": {
+		"preview": true,
+		"lineLength": 88,
+		"indentWidth": 4,
+		"indentStyle": "space"
+	},
+	"typescript": {
+		"quoteStyle": "preferSingle"
+	},
+	"yaml": {
+		"printWidth": 160
+	},
 	"excludes": [
 		"**/.venv",
 		"**/{*-,bun}lock(.*)?",

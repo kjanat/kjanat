@@ -29,10 +29,10 @@ jobs:
       - run: dprint fmt --allow-no-files --diff --excludes .github
       - run: bash .github/scripts/dprint-sort.sh
 
-      - run: |
-          git ls-remote "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" HEAD \
-            | awk '{print substr($1, 1, 8)}' \
-            | xargs -r -I{} sed -i -E 's#(github\.com/kjanat/kjanat/raw/)[0-9a-zA-Z]{4,40}(/configs/dprint\.remote\.json)#\1{}\2#g' \
-              configs/dprint.biome.json
+      # - run: |
+      #     git ls-remote "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" HEAD \
+      #       | awk '{print substr($1, 1, 8)}' \
+      #       | xargs -r -I{} sed -i -E 's#(github\.com/kjanat/kjanat/raw/)[0-9a-zA-Z]{4,40}(/configs/dprint\.remote\.json)#\1{}\2#g' \
+      #         configs/dprint.biome.json
 
       - uses: autofix-ci/action@v1
