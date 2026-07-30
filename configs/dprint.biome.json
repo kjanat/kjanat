@@ -1,10 +1,14 @@
 {
 	"$schema": "https://dprint.dev/schemas/v0.json",
-	"extends": "https://github.com/kjanat/kjanat/raw/0fe9777c/configs/dprint.remote.json",
+	"extends": "https://github.com/kjanat/kjanat/raw/HEAD/configs/dprint.remote.json",
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
-	"biome": { "indentStyle": "tab", "lineWidth": "120", "quoteStyle": "single" },
+	"biome": {
+		"indentStyle": "tab",
+		"lineWidth": "120",
+		"quoteStyle": "single"
+	},
 	"markup": {
 		"useTabs": true,
 		"html.void.selfClosing": false,
@@ -20,11 +24,17 @@
 		"ignoreFileCommentDirective": "dprint-ignore-file",
 		"associations": ["!**/*.svg"]
 	},
-	"typescript": { "associations": ["!**/*.*{ts,js}"] },
+	"typescript": {
+		"associations": ["!**/*.*{ts,js}"],
+		"module.sortImportDeclarations": "maintain",
+		"module.sortExportDeclarations": "maintain",
+		"exportDeclaration.sortNamedExports": "maintain",
+		"exportDeclaration.sortTypeOnlyExports": "none",
+		"importDeclaration.sortNamedImports": "maintain",
+		"importDeclaration.sortTypeOnlyImports": "none"
+	},
 	"excludes": ["**/.venv", "**/{*-,bun}lock(.*)?", "**/node_modules", "**/worker-configuration.d.ts"],
 	"plugins": [
-		"https://plugins.dprint.dev/biome-0.13.4.wasm",
-		"https://plugins.dprint.dev/g-plane/markup_fmt-v0.27.3.wasm",
-		"https://plugins.dprint.dev/typescript-0.96.1.wasm"
+		"https://plugins.dprint.dev/biome-0.13.4.wasm"
 	]
 }

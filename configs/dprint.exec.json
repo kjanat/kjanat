@@ -1,6 +1,7 @@
 {
 	"$schema": "https://dprint.dev/schemas/v0.json",
 	"exec": {
+		"cwd": "${configDir}",
 		"commands": [
 			{ "command": "tombi format - --stdin-filename {{file_path}}", "exts": ["toml"] },
 			{ "command": "just --dump --justfile {{file_path}}", "fileNames": ["justfile"] },
