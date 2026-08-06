@@ -30,5 +30,5 @@
 		"importDeclaration.sortTypeOnlyImports": "none"
 	},
 	"excludes": ["**/.venv", "**/{*-,bun}lock(.*)?", "**/node_modules", "**/worker-configuration.d.ts"],
-	"plugins": ["https://plugins.dprint.dev/biome-0.13.4.wasm"]
+	"plugins": ["https://plugins.dprint.dev/biome-0.13.5.wasm"]
 }

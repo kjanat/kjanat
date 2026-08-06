@@ -20,11 +20,7 @@ jobs:
       - uses: taiki-e/install-action@v2
         with: { tool: "just,tombi,rust+rustfmt" }
       - timeout-minutes: 2
-        run: |
-          # dprint config update -yr -c=dprint.jsonc
-          dprint config update -yr -c=configs/dprint.exec.json
-          dprint config update -yr -c=configs/dprint.biome.json
-          dprint config update -yr -c=configs/dprint.remote.json
+        run: bash .github/scripts/dprint-update.sh
 
       - run: dprint fmt --allow-no-files --diff --excludes .github
       - run: bash .github/scripts/dprint-sort.sh
