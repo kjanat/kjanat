@@ -5,7 +5,14 @@
 		"commands": [
 			{ "command": "tombi format - --stdin-filename {{file_path}}", "exts": ["toml"] },
 			{ "command": "just --dump --justfile {{file_path}}", "fileNames": ["justfile"] },
-			{ "command": "rustfmt --edition 2024", "exts": ["rs"] }
+			{ "command": "rustfmt --edition 2024", "exts": ["rs"] },
+			{ "command": "sort-package-json --stdin", "fileNames": ["package.json"] },
+			{ "command": "gofmt -s", "exts": ["go"] },
+			{
+				"command": "pwsh -NoProfile -NonInteractive -NoLogo -Command \"\\$ErrorActionPreference='Stop';try{\\$source=[Console]::In.ReadToEnd();\\$formatted=PSScriptAnalyzer\\Invoke-Formatter -ScriptDefinition:\\$source;[Console]::Out.Write(\\$formatted)}catch{[Console]::Error.WriteLine(\\$_.Exception.Message); exit 1}\"",
+				"exts": ["ps1", "psm1"],
+				"setupCommand": "pwsh -NoProfile -NonInteractive -NoLogo -Command \"\\$ErrorActionPreference='Stop';(Get-Module -Name PSScriptAnalyzer).Version -ne \\$null || try{Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser}catch{[Console]::Error.WriteLine(\\$_.Exception.Message); exit 1}\""
+			}
 		]
 	},
 	"plugins": [
