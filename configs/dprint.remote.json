@@ -3,6 +3,14 @@
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
+	"powershell": {
+		"braceStyle": "sameLine",
+		"useTabs": true,
+		"correctKeywordCasing": true,
+		"spaceAroundOperators": true,
+		"spaceAroundPipe": true,
+		"spaceAfterSeparator": true
+	},
 	"jsonSchemaSort": { "associations": ["**/schema.json", "**/*.schema.json"] },
 	"shfmt": { "useTabs": true, "binaryNextLine": true, "switchCaseIndent": true },
 	"sortPackageJson": { "associations": ["package.json"] },
