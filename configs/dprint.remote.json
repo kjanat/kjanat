@@ -3,6 +3,7 @@
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
+	"jsonSchemaSort": { "associations": ["**/schema.json", "**/*.schema.json"] },
 	"powershell": {
 		"braceStyle": "sameLine",
 		"useTabs": true,
@@ -11,7 +12,6 @@
 		"spaceAroundPipe": true,
 		"spaceAfterSeparator": true
 	},
-	"jsonSchemaSort": { "associations": ["**/schema.json", "**/*.schema.json"] },
 	"shfmt": { "useTabs": true, "binaryNextLine": true, "switchCaseIndent": true },
 	"sortPackageJson": { "associations": ["package.json"] },
 	"texFmt": { "wrap": false, "wraplen": 100, "tabsize": 2, "tabchar": "tab" },
