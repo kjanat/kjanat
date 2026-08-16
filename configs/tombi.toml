@@ -2,7 +2,7 @@
 #:tombi toml-version = "v1.1.0"
 # Full structure example: https://tombi-toml.github.io/tombi/docs/configuration#full-structure
 #
-# curl -fsSLo "${OUT:-tombi.toml}" https://github.com/kjanat/kjanat/raw/HEAD/configs/tombi.toml
+# curl -fsSLo "${OUT:-tombi.toml}" https://raw.githubusercontent.com/kjanat/kjanat/HEAD/configs/tombi.toml
 
 toml-version = "v1.0.0"
 
