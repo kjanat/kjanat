@@ -4,11 +4,11 @@
 	"indentWidth": 2,
 	"newLineKind": "lf",
 	"jsonSchemaSort": { "associations": ["**/schema.json", "**/*.schema.json"] },
-	"powershell": {
+	"pwsh": {
 		"braceStyle": "sameLine",
 		"useTabs": true,
-		"correctKeywordCasing": true,
-		"spaceAroundOperators": true,
+		"keywordCasing": true,
+		"spaceAroundOperator": true,
 		"spaceAroundPipe": true,
 		"spaceAfterSeparator": true
 	},
@@ -49,8 +49,8 @@
 		"**/.skills"
 	],
 	"plugins": [
-		"https://plugins.dprint.dev/kjanat/PSScriptAnalyzer-0.1.0.wasm",
 		"https://plugins.dprint.dev/kjanat/json-schema-sort-0.1.2.wasm",
+		"https://plugins.dprint.dev/kjanat/pwsh-0.2.0.wasm",
 		"https://plugins.dprint.dev/kjanat/shfmt-1.0.0.wasm",
 		"https://plugins.dprint.dev/kjanat/sortpackagejson-0.2.1.wasm",
 		"https://plugins.dprint.dev/kjanat/svg-v0.4.1.wasm",
