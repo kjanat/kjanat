@@ -1,21 +1,28 @@
 # yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
 ---
-name: autofix.ci
+name: autofix
 on:
   schedule: [cron: "0 8 * * *"]
   push: { branches: ["master"] }
   workflow_dispatch:
-  pull_request:
-concurrency: autofix-${{ github.ref }}
+concurrency: { group: "autofix-${{ github.ref }}", cancel-in-progress: true }
 permissions: { contents: read }
+
+env:
+  BRANCH: autofix/dprint
 
 jobs:
   autofix:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     if: ${{ github.actor == github.repository_owner || contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) }}
+    permissions:
+      contents: write # push the autofix branch
+      pull-requests: write # open or update the autofix PR
+      id-token: write # mint the OIDC token the signing service authenticates
     steps:
       - uses: actions/checkout@v7
+        with: { fetch-depth: 0 }
       - uses: kjanat/install-dprint@v2
       - uses: taiki-e/install-action@v2
         with: { tool: "just,tombi,rust+rustfmt" }
@@ -25,10 +32,71 @@ jobs:
       - run: dprint fmt --allow-no-files --diff --excludes .github
       - run: bash .github/scripts/dprint-sort.sh
 
-      # - run: |
-      #     git ls-remote "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git" HEAD \
-      #       | awk '{print substr($1, 1, 8)}' \
-      #       | xargs -r -I{} sed -i -E 's#(github\.com/kjanat/kjanat/raw/)[0-9a-zA-Z]{4,40}(/configs/dprint\.remote\.json)#\1{}\2#g' \
-      #         configs/dprint.biome.json
+      # Formatting drift is the normal state, not a failure: it opens a PR
+      # rather than failing the run or pushing straight to master.
+      - id: drift
+        run: |
+          if git diff --quiet; then
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::no formatting drift"
+          else
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            git diff --stat | tail -1
+          fi
 
-      - uses: autofix-ci/action@v1
+      - name: commit fixes
+        if: steps.drift.outputs.found == 'true'
+        run: |
+          git config user.name "Kaj Kowalski"
+          git config user.email "info@kajkowalski.nl"
+          git checkout -B "${BRANCH}"
+          git commit -am "style: apply dprint formatting"
+
+      # The signing service is reachable only from a run that can mint an OIDC
+      # token for it. Without the vars configured there is nothing to call, so
+      # the PR still opens - unsigned - instead of failing the run.
+      - name: check signing config
+        id: signing
+        if: steps.drift.outputs.found == 'true'
+        env:
+          URL: ${{ vars.SIGNING_SERVICE_URL }}
+          KEY: ${{ vars.SIGNING_SERVICE_KEY_ID }}
+        run: |
+          if [[ -n "${URL}" && -n "${KEY}" ]]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::SIGNING_SERVICE_URL or SIGNING_SERVICE_KEY_ID unset; opening the PR unsigned"
+          fi
+
+      - uses: ./.github/actions/sign-commits
+        if: steps.drift.outputs.found == 'true' && steps.signing.outputs.configured == 'true'
+        with:
+          signing-service-version: v1.1.2
+          signing-service-url: ${{ vars.SIGNING_SERVICE_URL }}
+          oidc-audience: gpg-signing-service
+          key-id: ${{ vars.SIGNING_SERVICE_KEY_ID }}
+          default-branch: ${{ github.event.repository.default_branch }}
+          base: ${{ github.event.repository.default_branch }}
+
+      - name: push branch
+        if: steps.drift.outputs.found == 'true'
+        run: git push origin "HEAD:refs/heads/${BRANCH}" --force-with-lease
+
+      - name: open or update pull request
+        if: steps.drift.outputs.found == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE: ${{ github.event.repository.default_branch }}
+        run: |
+          existing="$(gh pr list --head "${BRANCH}" --state open --json number --jq '.[0].number // empty')"
+          if [[ -n "${existing}" ]]; then
+            echo "::notice::refreshed existing PR #${existing}"
+          else
+            gh pr create \
+              --base "${BASE}" \
+              --head "${BRANCH}" \
+              --title "style: apply dprint formatting" \
+              --body "Formatting drift picked up by the scheduled \`dprint fmt\` run. Merge or close; the branch is force-updated on each run." \
+              || echo "::warning::branch pushed but PR not opened - enable Settings > Actions > 'Allow GitHub Actions to create and approve pull requests'"
+          fi
