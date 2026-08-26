@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
+---
+name: sign-commits
+on:
+  workflow_dispatch:
+    inputs:
+      base:
+        description: Sign every commit after this ref (exclusive). Blank uses the merge base with master, or the last verified commit when run on master.
+        type: string
+        required: false
+      allow_resign:
+        description: Permit rewriting commits that already carry a signature
+        type: boolean
+        required: false
+        default: false
+      sign_others:
+        description: Attach the signing key to commits committed by other identities
+        type: boolean
+        required: false
+        default: false
+      scan_limit:
+        description: Stop looking for the last signed commit after this many commits. Blank searches the whole history.
+        type: number
+        required: false
+permissions:
+  contents: write # rewritten commits are force-pushed back to the branch
+  id-token: write # mint the OIDC token the signing service authenticates
+concurrency: { group: "sign-commits-${{ github.ref }}", cancel-in-progress: false }
+jobs:
+  sign:
+    name: sign
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with: { fetch-depth: 0 }
+
+      - uses: ./.github/actions/sign-commits
+        with:
+          signing-service-version: v1.1.2
+          signing-service-url: ${{ vars.SIGNING_SERVICE_URL }}
+          oidc-audience: gpg-signing-service
+          key-id: ${{ vars.SIGNING_SERVICE_KEY_ID }}
+          default-branch: ${{ github.event.repository.default_branch }}
+          base: ${{ inputs.base }}
+          allow-resign: ${{ inputs.allow_resign }}
+          sign-others: ${{ inputs.sign_others }}
+          scan-limit: ${{ inputs.scan_limit }}
+
+      - name: push signed commits
+        run: git push origin HEAD:${{ github.ref_name }} --force-with-lease

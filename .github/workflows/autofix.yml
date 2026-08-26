@@ -44,17 +44,9 @@ jobs:
             git diff --stat | tail -1
           fi
 
-      - name: commit fixes
-        if: steps.drift.outputs.found == 'true'
-        run: |
-          git config user.name "Kaj Kowalski"
-          git config user.email "info@kajkowalski.nl"
-          git checkout -B "${BRANCH}"
-          git commit -am "style: apply dprint formatting"
-
       # The signing service is reachable only from a run that can mint an OIDC
-      # token for it. Without the vars configured there is nothing to call, so
-      # the PR still opens - unsigned - instead of failing the run.
+      # token for it. Without the vars there is nothing to call, so the PR
+      # still opens - unsigned - instead of failing the run.
       - name: check signing config
         id: signing
         if: steps.drift.outputs.found == 'true'
@@ -69,20 +61,57 @@ jobs:
             echo "::warning::SIGNING_SERVICE_URL or SIGNING_SERVICE_KEY_ID unset; opening the PR unsigned"
           fi
 
-      # sign-commits calls fail() - a hard exit - when the service rejects the
-      # OIDC subject, when key-id is not 16 hex characters, or when /sign
-      # errors. None of those should turn this run red: the PR still opens,
-      # unsigned, and the step's annotation says why.
-      - uses: ./.github/actions/sign-commits
+      - name: install signing client
         if: steps.drift.outputs.found == 'true' && steps.signing.outputs.configured == 'true'
-        continue-on-error: true
+        uses: kjanat/gpg-signing-service@cbcb8600547bd6799cdca0b339e8dad044481435
+        with: { version: v1.1.2 }
+
+      - name: mint OIDC token
+        id: oidc
+        if: steps.drift.outputs.found == 'true' && steps.signing.outputs.configured == 'true'
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9
         with:
-          signing-service-version: v1.1.2
-          signing-service-url: ${{ vars.SIGNING_SERVICE_URL }}
-          oidc-audience: gpg-signing-service
-          key-id: ${{ vars.SIGNING_SERVICE_KEY_ID }}
-          default-branch: ${{ github.event.repository.default_branch }}
-          base: ${{ github.sha }}
+          script: |
+            const token = await core.getIDToken('gpg-signing-service');
+            core.setSecret(token);
+            core.setOutput('token', token);
+
+      # Sign everything, always: commits, amends (commit.gpgsign covers both),
+      # tags, and signed pushes. gpg.program routes git's signing calls to the
+      # service, so nothing this job creates can be left unsigned by accident.
+      - name: configure git to sign everything
+        if: steps.drift.outputs.found == 'true' && steps.signing.outputs.configured == 'true'
+        env:
+          GPG_SIGN_URL: ${{ vars.SIGNING_SERVICE_URL }}
+          GPG_SIGN_KEY_ID: ${{ vars.SIGNING_SERVICE_KEY_ID }}
+          GPG_SIGN_TOKEN: ${{ steps.oidc.outputs.token }}
+        run: |
+          {
+            echo "GPG_SIGN_URL=${GPG_SIGN_URL}"
+            echo "GPG_SIGN_KEY_ID=${GPG_SIGN_KEY_ID}"
+            echo "GPG_SIGN_TOKEN=${GPG_SIGN_TOKEN}"
+          } >> "$GITHUB_ENV"
+
+          git config --global gpg.format openpgp
+          git config --global gpg.program "${GITHUB_WORKSPACE}/.github/actions/sign-commits/git-gpg-shim.sh"
+          git config --global user.signingkey "${GPG_SIGN_KEY_ID}"
+          git config --global commit.gpgsign true
+          git config --global tag.gpgSign true
+          git config --global push.gpgSign if-asked
+
+      - name: commit fixes
+        if: steps.drift.outputs.found == 'true'
+        run: |
+          git config --global user.name "Kaj Kowalski"
+          git config --global user.email "info@kajkowalski.nl"
+          git checkout -B "${BRANCH}"
+          # A signing refusal must not strand the fixes: fall back to an
+          # unsigned commit and say so, rather than failing the run.
+          if ! git commit -am "style: apply dprint formatting"; then
+            echo "::warning::signed commit failed; retrying unsigned"
+            git commit --no-gpg-sign -am "style: apply dprint formatting"
+          fi
+          git log -1 --format='%h %an <%ae> signature=%G?'
 
       - name: push branch
         if: steps.drift.outputs.found == 'true'
