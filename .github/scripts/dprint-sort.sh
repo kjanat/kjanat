@@ -36,8 +36,8 @@ kjanat_config_keys() {
 		printf '[]'
 		return 0
 	fi
-	resolved="$(dprint output-resolved-config --config-discovery=false --plugins "${urls[@]}" </dev/null 2>/dev/null)" ||
-		{
+	resolved="$(dprint output-resolved-config --config-discovery=false --plugins "${urls[@]}" </dev/null 2>/dev/null)" \
+		|| {
 			echo "  [!] could not resolve kjanat plugins for $f" >&2
 			return 1
 		}
@@ -82,8 +82,8 @@ for f in "${FILES[@]}"; do
 		continue
 	}
 	tmp="$(mktemp)"
-	jq -c --arg schemaUrl "$SCHEMA_URL" --argjson kjanat "$kjanat" "$REORDER" "$f" |
-		dprint fmt --stdin "$f" >"$tmp"
+	jq -c --arg schemaUrl "$SCHEMA_URL" --argjson kjanat "$kjanat" "$REORDER" "$f" \
+		| dprint fmt --stdin "$f" >"$tmp"
 	if cmp -s "$f" "$tmp"; then
 		echo -e "  ${DIM}[=] already sorted: ${f}${NC}"
 		rm -f "$tmp"
