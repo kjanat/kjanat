@@ -22,7 +22,20 @@
 	},
 	"jupyter": {},
 	"malva": {},
-	"markdown": { "textWrap": "maintain", "emphasisKind": "asterisks", "associations": [".rules"] },
+	"markdown": {
+		"associations": [".rules"],
+		"emphasisKind": "asterisks",
+		"lineWidth": 100,
+		"textWrap": "maintainAndWrap",
+		"wrapUnspacedScripts": false,
+		"overrides": [
+			{
+				"files": ["**/AGENTS.md", "**/CLAUDE.md", "**/CHANGELOG.md", "**/.rules"],
+				"lineWidth": 9999,
+				"textWrap": "never"
+			}
+		]
+	},
 	"markup": {
 		"useTabs": true,
 		"html.void.selfClosing": false,
