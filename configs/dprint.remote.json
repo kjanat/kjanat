@@ -63,7 +63,7 @@
 	"plugins": [
 		"https://plugins.dprint.dev/kjanat/json-schema-sort-0.1.2.wasm",
 		"https://plugins.dprint.dev/kjanat/pwsh-0.2.0.wasm",
-		"https://plugins.dprint.dev/kjanat/shfmt-1.0.0.wasm",
+		"https://plugins.dprint.dev/kjanat/shfmt-1.1.0.wasm",
 		"https://plugins.dprint.dev/kjanat/sortpackagejson-0.2.1.wasm",
 		"https://plugins.dprint.dev/kjanat/svg-v0.4.1.wasm",
 		"https://plugins.dprint.dev/kjanat/tex-fmt-0.1.1.wasm",
