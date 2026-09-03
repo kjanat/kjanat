@@ -105,3 +105,7 @@ include = ["**/helix/languages.toml", "**/.helix/languages.toml"]
 [[schemas]]
 path    = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/helix-config.schema.json"
 include = ["**/helix/config.toml", "**/.helix/config.toml"]
+
+[[schemas]]
+path    = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/helix-theme.schema.json"
+include = ["**/helix/themes/*.toml", "**/runtime/themes/*.toml"]
