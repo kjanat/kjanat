@@ -99,5 +99,9 @@ include = [".codex/config.toml", "**/.codex/config.toml"]
 
 # Helix
 [[schemas]]
-path    = "https://gist.github.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/helix-languages.schema.json"
+path    = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/helix-languages.schema.json"
 include = ["**/helix/languages.toml", "**/.helix/languages.toml"]
+
+[[schemas]]
+path    = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/helix-config.schema.json"
+include = ["**/helix/config.toml", "**/.helix/config.toml"]
