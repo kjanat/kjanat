@@ -72,7 +72,7 @@
 		"npm:@dprint/json@0.23.0",
 		"npm:@dprint/jupyter@0.3.1",
 		"npm:@dprint/markdown@0.23.3",
-		"npm:@dprint/ruff@0.8.5",
+		"npm:@dprint/ruff@0.8.6",
 		"npm:@dprint/typescript@0.96.1",
 		"npm:dprint-plugin-malva@0.16.0",
 		"npm:dprint-plugin-markup@0.27.3",
