@@ -27,6 +27,9 @@
 		"emphasisKind": "asterisks",
 		"lineWidth": 100,
 		"textWrap": "maintain",
+		"codeBlock.useTabs": false,
+		"codeBlock.preserveIndentation": true,
+		"html.useTabs": false,
 		"overrides": [
 			{
 				"files": ["**/AGENTS.md", "**/CLAUDE.md", "**/CHANGELOG.md", "**/.rules"],
