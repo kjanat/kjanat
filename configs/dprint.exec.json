@@ -23,10 +23,7 @@
 				"fileNames": ["package.json"],
 				"setupCommand": "node -e \"try { require('child_process').execSync('sort-package-json --version', {stdio:'ignore'}); } catch { require('child_process').execSync('npm i -g sort-package-json', {stdio:'inherit'}); }\""
 			},
-			{
-				"command": "gofmt -s",
-				"exts": ["go"]
-			},
+			{ "command": "gofmt -s", "exts": ["go"] },
 			{
 				"command": "pwsh -NoProfile -NonInteractive -NoLogo -Command \"\\$ErrorActionPreference='Stop';try{\\$source=[Console]::In.ReadToEnd();\\$formatted=PSScriptAnalyzer\\Invoke-Formatter -ScriptDefinition:\\$source;[Console]::Out.Write(\\$formatted)}catch{[Console]::Error.WriteLine(\\$_.Exception.Message); exit 1}\"",
 				"exts": ["ps1", "psm1"],
