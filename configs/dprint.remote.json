@@ -70,7 +70,7 @@
 		"https://plugins.dprint.dev/kjanat/sortpackagejson-0.2.1.wasm",
 		"https://plugins.dprint.dev/kjanat/svg-v0.4.1.wasm",
 		"https://plugins.dprint.dev/kjanat/tex-fmt-0.1.1.wasm",
-		"https://plugins.dprint.dev/kachick/typstyle-0.4.1.wasm",
+		"https://plugins.dprint.dev/kachick/typstyle-0.5.0.wasm",
 		"npm:@dprint/dockerfile@0.6.0",
 		"npm:@dprint/json@0.24.0",
 		"npm:@dprint/jupyter@0.3.1",
