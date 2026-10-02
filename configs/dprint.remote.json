@@ -73,7 +73,7 @@
 		"npm:@dprint/dockerfile@0.6.0",
 		"npm:@dprint/json@0.25.1",
 		"npm:@dprint/jupyter@0.4.0",
-		"npm:@dprint/markdown@0.24.0",
+		"npm:@dprint/markdown@0.25.0",
 		"npm:@dprint/ruff@0.9.1",
 		"npm:@dprint/typescript@0.96.1",
 		"npm:@kachick/dprint-plugin-typstyle@0.5.1",
