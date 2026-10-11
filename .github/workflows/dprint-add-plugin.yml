@@ -28,13 +28,11 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7
-      - uses: kjanat/install-dprint@v2
+      - { uses: kjanat/dprint-check@v3.1, with: { install-only: true } }
 
       - name: Resolve target config
         id: target
-        env:
-          PLUGIN: ${{ inputs.plugin }}
-          CONFIG: ${{ inputs.config }}
+        env: { PLUGIN: "${{ inputs.plugin }}", CONFIG: "${{ inputs.config }}" }
         run: |
           set -euo pipefail
           # Slug for a safe git branch name (URLs contain ':' and '//').
@@ -61,9 +59,7 @@ jobs:
           echo "config=${target}" >> "${GITHUB_OUTPUT}"
 
       - name: Add plugin
-        env:
-          PLUGIN: ${{ inputs.plugin }}
-          CONFIG: ${{ steps.target.outputs.config }}
+        env: { PLUGIN: "${{ inputs.plugin }}", CONFIG: "${{ steps.target.outputs.config }}" }
         run: |
           dprint config add -c "${CONFIG}" "${PLUGIN}" </dev/null
           # Re-sort: kjanat plugins first, then alphabetical; keys canonicalised.
