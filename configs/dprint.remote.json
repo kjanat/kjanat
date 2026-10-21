@@ -12,7 +12,6 @@
 		"spaceAroundPipe": true,
 		"spaceAfterSeparator": true
 	},
-	"shfmt": { "useTabs": true, "binaryNextLine": true, "switchCaseIndent": true },
 	"sortPackageJson": { "associations": ["package.json"] },
 	"texFmt": { "wrap": false, "wraplen": 100, "tabsize": 2, "tabchar": "tab" },
 	"dockerfile": { "associations": ["Dockerfile", "Dockerfile.*"] },
@@ -53,6 +52,7 @@
 		"associations": ["!**/*.svg"]
 	},
 	"ruff": { "preview": true, "lineLength": 88, "indentWidth": 4, "indentStyle": "space" },
+	"shfmt": { "useTabs": true, "binaryNextLine": true, "switchCaseIndent": true },
 	"typescript": { "quoteStyle": "preferSingle" },
 	"yaml": { "printWidth": 160 },
 	"excludes": [
@@ -66,15 +66,15 @@
 	"plugins": [
 		"https://plugins.dprint.dev/kjanat/json-schema-sort-0.1.2.wasm",
 		"https://plugins.dprint.dev/kjanat/pwsh-0.2.0.wasm",
-		"https://plugins.dprint.dev/kjanat/shfmt-1.1.1.wasm",
 		"https://plugins.dprint.dev/kjanat/sortpackagejson-0.2.1.wasm",
 		"https://plugins.dprint.dev/kjanat/svg-v0.4.1.wasm",
 		"https://plugins.dprint.dev/kjanat/tex-fmt-0.1.1.wasm",
 		"npm:@dprint/dockerfile@0.7.0",
 		"npm:@dprint/json@0.25.2",
 		"npm:@dprint/jupyter@0.5.0",
-		"npm:@dprint/markdown@0.26.0",
+		"npm:@dprint/markdown@0.27.1",
 		"npm:@dprint/ruff@0.11.1",
+		"npm:@dprint/shfmt@0.1.1",
 		"npm:@dprint/typescript@0.96.1",
 		"npm:@kachick/dprint-plugin-nix@0.1.1",
 		"npm:@kachick/dprint-plugin-typstyle@0.5.2",
