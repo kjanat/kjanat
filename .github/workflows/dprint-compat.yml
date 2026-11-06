@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
+---
+name: dprint compatibility
+on:
+  pull_request:
+    paths:
+      - configs/**
+      - .github/workflows/dprint-compat.yml
+  workflow_dispatch:
+concurrency: { group: "dprint-compat-${{ github.ref }}", cancel-in-progress: true }
+permissions: { contents: read }
+
+jobs:
+  consumers:
+    name: ${{ matrix.repository }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        repository:
+          - kjanat/actionlint-plugin-ruff
+          - kjanat/actionlint-plugin-shellcheck
+          - kjanat/actionlint-registry
+          - kjanat/beepboop
+          - kjanat/fujo
+          - kjanat/shellcheck-rs
+          - kjanat/tree-sitter-ldap-schema
+          - kjanat/tree-sitter-ldif
+          - kjanat/vw
+          - kjanat/zed-ldap
+    steps:
+      - uses: actions/checkout@v7
+        with: { path: shared }
+      - uses: actions/checkout@v7
+        with: { repository: "${{ matrix.repository }}", path: consumer }
+      - uses: jdx/mise-action@v5
+        with:
+          cache: false
+          mise_toml: |
+            [tools]
+            "github:kjanat/kprint" = "latest"
+
+      - name: point the consumer at this revision of the shared configs
+        working-directory: consumer
+        run: |
+          shared="${GITHUB_WORKSPACE}/shared/configs/"
+          found=0
+          for file in dprint.toml dprint.json dprint.jsonc .dprint.json .dprint.jsonc; do
+            [[ -f "${file}" ]] || continue
+            sed -i -E "s#https://raw\.githubusercontent\.com/kjanat/kjanat/[^\"' ]*/configs/#${shared}#g" "${file}"
+            git diff --stat -- "${file}"
+            found=1
+          done
+          if [[ "${found}" == 0 ]]; then
+            echo "::error::${{ matrix.repository }} has no dprint config at its root"
+            exit 1
+          fi
+
+      # Resolving the config initializes every plugin with the consumer's
+      # options and formats nothing, so drift and missing external formatters
+      # cannot fail it. An invalid option value or a plugin that will not load
+      # makes every format run in that repository fail.
+      - name: load every plugin with the consumer's options
+        working-directory: consumer
+        run: |
+          kprint="$(cd "${GITHUB_WORKSPACE}" && mise which kprint)"
+          "${kprint}" output-resolved-config > "${RUNNER_TEMP}/resolved-config.json"
+          wc -l "${RUNNER_TEMP}/resolved-config.json"
