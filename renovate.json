@@ -2,5 +2,31 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
 		"config:recommended"
+	],
+	"customManagers": [
+		{
+			"customType": "regex",
+			"description": "dprint plugins published to npm",
+			"managerFilePatterns": [
+				"/^configs/dprint\\..+\\.json$/"
+			],
+			"matchStrings": [
+				"\"npm:(?<depName>(?:@[^/\"]+/)?[^@/\"]+)@(?<currentValue>[0-9][^@/\"]*)\""
+			],
+			"datasourceTemplate": "npm"
+		},
+		{
+			"customType": "regex",
+			"description": "dprint plugins released by kjanat",
+			"managerFilePatterns": [
+				"/^configs/dprint\\..+\\.json$/"
+			],
+			"matchStrings": [
+				"https://plugins\\.dprint\\.dev/kjanat/(?<plugin>[a-z0-9-]+?)-v?(?<currentValue>\\d+\\.\\d+\\.\\d+)\\.wasm"
+			],
+			"depNameTemplate": "kjanat/dprint-plugin-{{{plugin}}}",
+			"datasourceTemplate": "github-releases",
+			"extractVersionTemplate": "^v?(?<version>.+)$"
+		}
 	]
 }
