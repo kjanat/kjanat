@@ -24,7 +24,7 @@ concurrency: dprint-add-plugin-${{ github.ref }}
 jobs:
   add-plugin:
     runs-on: ubuntu-latest
-    permissions: { contents: write, pull-requests: write }
+    permissions: { contents: read, id-token: write }
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7
@@ -65,9 +65,18 @@ jobs:
           # Re-sort: kjanat plugins first, then alphabetical; keys canonicalised.
           bash .github/scripts/dprint-sort.sh "${CONFIG}"
 
+      - name: Authenticate as Beepboop
+        id: beepboop
+        uses: kjanat/beepboop/actions/token@v1
+        with: { permission-contents: write, permission-pull-requests: write }
+
       - name: Create pull request
         uses: peter-evans/create-pull-request@v8
         with:
+          token: ${{ steps.beepboop.outputs.token }}
+          sign-commits: true
+          author: ${{ steps.beepboop.outputs.bot-login }} <${{ steps.beepboop.outputs.bot-email }}>
+          committer: ${{ steps.beepboop.outputs.bot-login }} <${{ steps.beepboop.outputs.bot-email }}>
           commit-message: "chore: add dprint plugin ${{ inputs.plugin }} to ${{ steps.target.outputs.config }}"
           title: "chore: add dprint plugin `${{ inputs.plugin }}`"
           body: |
