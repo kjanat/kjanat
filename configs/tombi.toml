@@ -114,3 +114,7 @@ include = ["**/helix/themes/*.toml", "**/runtime/themes/*.toml"]
 [[schemas]]
 path    = "https://mise.jdx.dev/schema/mise.json"
 include = ["mise.toml", ".mise.toml"]
+
+[[schemas]]  # https://learn.chatgpt.com/docs/config-file/config-reference
+path    = "https://learn.chatgpt.com/docs/config-schema.json"
+include = ["**/.codex/config.toml", "**/.codex/config*.toml", "codex.toml"]

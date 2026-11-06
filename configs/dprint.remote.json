@@ -27,6 +27,7 @@
 		"emphasisKind": "asterisks",
 		"lineWidth": 100,
 		"textWrap": "maintain",
+		"wrapCodeSpans": false,
 		"codeBlock.useTabs": false,
 		"codeBlock.preserveIndentation": true,
 		"html.useTabs": false,
