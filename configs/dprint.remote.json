@@ -77,7 +77,7 @@
 		"npm:@dprint/jupyter@0.6.0",
 		"npm:@dprint/markdown@0.29.0",
 		"npm:@dprint/ruff@0.12.1",
-		"npm:@dprint/typescript@0.98.0",
+		"npm:@dprint/typescript@0.99.1",
 		"npm:@kachick/dprint-plugin-nix@0.1.1",
 		"npm:@kachick/dprint-plugin-typstyle@0.5.2",
 		"npm:dprint-plugin-malva@0.16.0",
