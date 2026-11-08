@@ -18,7 +18,7 @@
 	"dockerfile": { "associations": ["Dockerfile", "Dockerfile.*"] },
 	"json": {
 		"jsonTrailingCommaFiles": ["**/.vscode/*.json", "**/.zed/{settings,tasks,debug}.json", "**/tsconfig*.json"],
-		"associations": ["package.json"]
+		"associations": ["package.json", "!beepboop.json"],
 	},
 	"jupyter": {},
 	"malva": {},
