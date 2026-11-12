@@ -71,7 +71,7 @@
 		"https://plugins.dprint.dev/kjanat/sortpackagejson-0.2.1.wasm",
 		"https://plugins.dprint.dev/kjanat/svg-v0.4.1.wasm",
 		"https://plugins.dprint.dev/kjanat/tex-fmt-0.1.1.wasm",
-		"https://plugins.dprint.dev/kjanat/tombi-0.1.1.wasm",
+		"https://plugins.dprint.dev/kjanat/tombi-0.1.3.wasm",
 		"npm:@dprint/dockerfile@0.8.0",
 		"npm:@dprint/json@0.26.0",
 		"npm:@dprint/jupyter@0.6.0",
