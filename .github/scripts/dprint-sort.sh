@@ -18,7 +18,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/../../" || exit 1
 
-SCHEMA_URL="https://dprint.dev/schemas/v0.json"
+SCHEMA_URL="https://raw.githubusercontent.com/kjanat/kjanat/master/schemas/dprint.schema.json"
 
 GREEN='\033[0;32m'
 DIM='\033[0;90m'

@@ -5,12 +5,25 @@ on:
   pull_request:
     paths:
       - configs/**
+      - schemas/**
+      - dprint.jsonc
+      - .github/scripts/dprint-schema.sh
       - .github/workflows/dprint-compat.yml
   workflow_dispatch:
 concurrency: { group: "dprint-compat-${{ github.ref }}", cancel-in-progress: true }
 permissions: { contents: read }
 
 jobs:
+  schema:
+    name: generate shared schema
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - { uses: kjanat/dprint-check@v3.1, with: { install-only: true } }
+      # Missing plugin schemas must fail here, before dependency updates merge.
+      - run: bash .github/scripts/dprint-schema.sh
+
   consumers:
     name: ${{ matrix.repository }}
     runs-on: ubuntu-latest

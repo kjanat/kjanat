@@ -64,6 +64,7 @@ jobs:
           dprint config add -c "${CONFIG}" "${PLUGIN}" </dev/null
           # Re-sort: kjanat plugins first, then alphabetical; keys canonicalised.
           bash .github/scripts/dprint-sort.sh "${CONFIG}"
+          bash .github/scripts/dprint-schema.sh
 
       - name: Authenticate as Beepboop
         id: beepboop

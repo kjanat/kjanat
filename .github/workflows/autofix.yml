@@ -12,7 +12,6 @@ jobs:
   autofix:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    if: ${{ github.actor == github.repository_owner || contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) }}
     permissions:
       contents: read
       id-token: write # Beepboop issues the App token against the run's OIDC identity
@@ -26,6 +25,8 @@ jobs:
 
       - run: dprint fmt --allow-no-files --diff --excludes .github
       - run: bash .github/scripts/dprint-sort.sh
+      - name: regenerate the shared configuration schema
+        run: bash .github/scripts/dprint-schema.sh
 
       - name: authenticate as Beepboop
         id: beepboop
@@ -41,6 +42,6 @@ jobs:
           author: ${{ steps.beepboop.outputs.bot-login }} <${{ steps.beepboop.outputs.bot-email }}>
           committer: ${{ steps.beepboop.outputs.bot-login }} <${{ steps.beepboop.outputs.bot-email }}>
           branch: autofix/dprint
-          commit-message: "style: apply dprint formatting"
-          title: "style: apply dprint formatting"
-          body: Formatting drift picked up by the scheduled `dprint fmt` run. Merge or close; the branch is force-updated on each run.
+          commit-message: "chore: sync dprint configs, schema, and formatting"
+          title: "chore: sync dprint configs, schema, and formatting"
+          body: Shared plugin updates, their generated schema, and formatting drift picked up after master changes or by the daily run. Merge or close; the branch is force-updated on each run.

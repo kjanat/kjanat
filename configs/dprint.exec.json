@@ -1,5 +1,5 @@
 {
-	"$schema": "https://dprint.dev/schemas/v0.json",
+	"$schema": "https://raw.githubusercontent.com/kjanat/kjanat/master/schemas/dprint.schema.json",
 	"exec": {
 		"cwd": "${configDir}",
 		"commands": [
