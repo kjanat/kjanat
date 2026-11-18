@@ -47,12 +47,8 @@ jobs:
         with: { path: shared }
       - uses: actions/checkout@v7
         with: { repository: "${{ matrix.repository }}", path: consumer }
-      - uses: jdx/mise-action@v5
-        with:
-          cache: false
-          mise_toml: |
-            [tools]
-            "github:kjanat/kprint" = "latest"
+      - uses: kjanat/dprint-check@v3.2
+        with: { install-only: true }
 
       - name: point the consumer at this revision of the shared configs
         id: config
@@ -81,6 +77,5 @@ jobs:
       - name: load every plugin with the consumer's options
         working-directory: consumer
         run: |
-          kprint="$(cd "${GITHUB_WORKSPACE}" && mise which kprint)"
-          "${kprint}" output-resolved-config --config "${{ steps.config.outputs.path }}" > "${RUNNER_TEMP}/resolved-config.json"
+          dprint output-resolved-config --config "${{ steps.config.outputs.path }}" > "${RUNNER_TEMP}/resolved-config.json"
           wc -l "${RUNNER_TEMP}/resolved-config.json"
