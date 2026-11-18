@@ -7204,7 +7204,7 @@
       ]
     },
     "plugin:toml": {
-      "$id": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json",
+      "$id": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json",
       "$defs": {
         "ArrayBracketSpaceWidth": {
           "type": "integer",
@@ -7888,16 +7888,16 @@
           ],
           "properties": {
             "arrayBracketSpaceWidth": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/arrayBracketSpaceWidth"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/arrayBracketSpaceWidth"
             },
             "arrayCommaSpaceWidth": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/arrayCommaSpaceWidth"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/arrayCommaSpaceWidth"
             },
             "commentStyle": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/commentStyle"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/commentStyle"
             },
             "dateTimeDelimiter": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/dateTimeDelimiter"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/dateTimeDelimiter"
             },
             "embedded": {
               "description": "The plugins that format the code the plugin hands back to dprint for the files, by the code's file extension, in order. An empty array leaves that code as it is.",
@@ -7928,58 +7928,58 @@
               ]
             },
             "groupBlankLinesLimit": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/groupBlankLinesLimit"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/groupBlankLinesLimit"
             },
             "indentStyle": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/indentStyle"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/indentStyle"
             },
             "indentSubTables": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/indentSubTables"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/indentSubTables"
             },
             "indentTableKeyValuePairs": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/indentTableKeyValuePairs"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/indentTableKeyValuePairs"
             },
             "indentWidth": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/indentWidth"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/indentWidth"
             },
             "inlineTableBraceSpaceWidth": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/inlineTableBraceSpaceWidth"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/inlineTableBraceSpaceWidth"
             },
             "inlineTableCommaSpaceWidth": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/inlineTableCommaSpaceWidth"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/inlineTableCommaSpaceWidth"
             },
             "keyQuoteStyle": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/keyQuoteStyle"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/keyQuoteStyle"
             },
             "keyValueEqualsSignAlignment": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/keyValueEqualsSignAlignment"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/keyValueEqualsSignAlignment"
             },
             "keyValueEqualsSignSpaceWidth": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/keyValueEqualsSignSpaceWidth"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/keyValueEqualsSignSpaceWidth"
             },
             "lineEnding": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/lineEnding"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/lineEnding"
             },
             "lineWidth": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/lineWidth"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/lineWidth"
             },
             "schemas": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/schemas"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/schemas"
             },
             "stringQuoteStyle": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/stringQuoteStyle"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/stringQuoteStyle"
             },
             "tableBlankLines": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/tableBlankLines"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/tableBlankLines"
             },
             "tomlVersion": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/tomlVersion"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/tomlVersion"
             },
             "trailingCommentAlignment": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/trailingCommentAlignment"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/trailingCommentAlignment"
             },
             "trailingCommentSpaceWidth": {
-              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/properties/trailingCommentSpaceWidth"
+              "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/properties/trailingCommentSpaceWidth"
             }
           },
           "allOf": [
@@ -8282,12 +8282,12 @@
               "description": "Overrides of a plugin's configuration, one or more.",
               "anyOf": [
                 {
-                  "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/$defs/dprint-override"
+                  "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/$defs/dprint-override"
                 },
                 {
                   "type": "array",
                   "items": {
-                    "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/$defs/dprint-override"
+                    "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/$defs/dprint-override"
                   }
                 }
               ]
@@ -14787,12 +14787,12 @@
               "description": "Overrides of a plugin's configuration, one or more.",
               "anyOf": [
                 {
-                  "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/$defs/dprint-override"
+                  "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/$defs/dprint-override"
                 },
                 {
                   "type": "array",
                   "items": {
-                    "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json#/$defs/dprint-override"
+                    "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json#/$defs/dprint-override"
                   }
                 }
               ]
@@ -14805,7 +14805,7 @@
       },
       "allOf": [
         {
-          "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.0/schema.json"
+          "$ref": "https://plugins.dprint.dev/kjanat/tombi/0.2.1/schema.json"
         }
       ]
     },
