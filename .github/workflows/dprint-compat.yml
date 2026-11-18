@@ -55,20 +55,24 @@ jobs:
             "github:kjanat/kprint" = "latest"
 
       - name: point the consumer at this revision of the shared configs
+        id: config
         working-directory: consumer
         run: |
           shared="${GITHUB_WORKSPACE}/shared/configs/"
-          found=0
+          config=""
           for file in dprint.toml dprint.json dprint.jsonc .dprint.json .dprint.jsonc kprint.toml kprint.json kprint.jsonc .kprint.json .kprint.jsonc; do
             [[ -f "${file}" ]] || continue
             sed -i -E "s#https://raw\.githubusercontent\.com/kjanat/kjanat/[^\"' ]*/configs/#${shared}#g" "${file}"
             git diff --stat -- "${file}"
-            found=1
+            if [[ -z "${config}" ]]; then
+              config="${file}"
+            fi
           done
-          if [[ "${found}" == 0 ]]; then
+          if [[ -z "${config}" ]]; then
             echo "::error::${{ matrix.repository }} has no dprint or kprint config at its root"
             exit 1
           fi
+          echo "path=${config}" >> "$GITHUB_OUTPUT"
 
       # Resolving the config initializes every plugin with the consumer's
       # options and formats nothing, so drift and missing external formatters
@@ -78,5 +82,5 @@ jobs:
         working-directory: consumer
         run: |
           kprint="$(cd "${GITHUB_WORKSPACE}" && mise which kprint)"
-          "${kprint}" output-resolved-config > "${RUNNER_TEMP}/resolved-config.json"
+          "${kprint}" output-resolved-config --config "${{ steps.config.outputs.path }}" > "${RUNNER_TEMP}/resolved-config.json"
           wc -l "${RUNNER_TEMP}/resolved-config.json"
