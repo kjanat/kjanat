@@ -28,7 +28,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7
-      - { uses: kjanat/dprint-check@v3.1, with: { install-only: true } }
+      - { uses: kjanat/dprint-check@v3.2, with: { install-only: true } }
 
       - name: Resolve target config
         id: target
