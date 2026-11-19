@@ -39,6 +39,9 @@
 			}
 		]
 	},
+	"toml": {
+		"configFile": "tombi.toml"
+	},
 	"markup": {
 		"useTabs": true,
 		"html.void.selfClosing": false,
