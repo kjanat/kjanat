@@ -40,5 +40,9 @@ DPRINT=kprint bash .github/scripts/dprint-schema.sh
 
 Generation reads plugin pins from the checkout, fails if any plugin schema is
 unavailable, and replaces the published file only after generation succeeds.
+It reports generation and formatting separately, with a 60-second limit for
+each formatter invocation. On failure it prints the formatter's debug log,
+including download URLs. Set `DPRINT_SCHEMA_TIMEOUT` to override the limit in
+seconds when running locally.
 If a project adds plugins outside the shared configs, generate a project-specific
 schema to get their configuration completions too.
