@@ -343,25 +343,6 @@
             }
           }
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "css.cssModules": {
           "description": "Enable CSS modules support (enables `:local` and `:global` selectors).",
           "default": false,
@@ -1084,25 +1065,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -1616,25 +1578,6 @@
             ]
           }
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "cwd": {
           "description": "The working directory to run the commands in. Defaults to the current working directory.",
           "type": [
@@ -1929,25 +1872,6 @@
               "true": "{\n  // the port to listen on\n  \"port\": 8080\n}\n"
             }
           }
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
         },
         "deno": {
           "description": "Top level configuration that sets the configuration to what is used in Deno.",
@@ -2328,25 +2252,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -2458,25 +2363,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -2817,25 +2703,6 @@
             {
               "description": "Selector will be put on one line as possible. Once it exceeds `printWidth`, line break will be inserted where the code exceeds `printWidth`.",
               "const": "wrap"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
             }
           ]
         },
@@ -3722,25 +3589,6 @@
         "codeBlock.useTabs": {
           "$ref": "#/definitions/codeBlock.useTabs"
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "deno": {
           "$ref": "#/definitions/deno"
         },
@@ -4546,25 +4394,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "default.vSlotStyle": {
           "description": "Control Vue `v-slot` directive style for default slot.",
           "default": null,
@@ -5107,25 +4936,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -5437,25 +5247,6 @@
           "default": true,
           "type": "boolean"
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -5615,7 +5406,7 @@
       }
     },
     "plugin:ruff": {
-      "$id": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json",
+      "$id": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json",
       "$defs": {
         "dprint-override": {
           "type": "object",
@@ -5625,10 +5416,10 @@
           ],
           "properties": {
             "docstringCodeFormat": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/docstringCodeFormat"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/docstringCodeFormat"
             },
             "docstringCodeLineWidth": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/docstringCodeLineWidth"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/docstringCodeLineWidth"
             },
             "embedded": {
               "description": "The plugins that format the code the plugin hands back to dprint for the files, by the code's file extension, in order. An empty array leaves that code as it is.",
@@ -5659,34 +5450,34 @@
               ]
             },
             "fixLintErrors": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/fixLintErrors"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/fixLintErrors"
             },
             "indentStyle": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/indentStyle"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/indentStyle"
             },
             "indentWidth": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/indentWidth"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/indentWidth"
             },
             "lineEnding": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/lineEnding"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/lineEnding"
             },
             "lineLength": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/lineLength"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/lineLength"
             },
             "nestedStringQuoteStyle": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/nestedStringQuoteStyle"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/nestedStringQuoteStyle"
             },
             "preview": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/preview"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/preview"
             },
             "quoteStyle": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/quoteStyle"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/quoteStyle"
             },
             "skipMagicTrailingComma": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/skipMagicTrailingComma"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/skipMagicTrailingComma"
             },
             "targetVersion": {
-              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/properties/targetVersion"
+              "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/properties/targetVersion"
             }
           }
         }
@@ -5707,25 +5498,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -5932,12 +5704,12 @@
               "description": "Overrides of a plugin's configuration, one or more.",
               "anyOf": [
                 {
-                  "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/$defs/dprint-override"
+                  "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/$defs/dprint-override"
                 },
                 {
                   "type": "array",
                   "items": {
-                    "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/$defs/dprint-override"
+                    "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/$defs/dprint-override"
                   }
                 }
               ]
@@ -6192,25 +5964,6 @@
           "default": false,
           "type": "boolean"
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -6398,25 +6151,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -6797,25 +6531,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -7054,25 +6769,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -10922,25 +10618,6 @@
         "conditionalType.useNestedIndentation": {
           "$ref": "#/definitions/useNestedIndentation"
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "constructSignature.spaceAfterNewKeyword": {
           "$ref": "#/definitions/constructSignature.spaceAfterNewKeyword"
         },
@@ -12534,25 +12211,6 @@
           "minimum": 0,
           "format": "uint32"
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -12753,25 +12411,6 @@
           "description": "Control whether whitespace should be inserted between brackets or not.",
           "default": false,
           "type": "boolean"
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
         },
         "dashSpacing": {
           "description": "Control the whitespace behavior of block compact map in block sequence value. This option is only effective when `indentWidth` is greater than 2.",
@@ -13097,25 +12736,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -13183,25 +12803,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -13287,25 +12888,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -13448,25 +13030,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -13542,25 +13105,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -13628,25 +13172,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -13738,25 +13263,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -13832,25 +13338,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -13918,25 +13405,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -14059,25 +13527,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -14163,25 +13612,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -14257,25 +13687,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -14303,12 +13714,12 @@
               "description": "Overrides of a plugin's configuration, one or more.",
               "anyOf": [
                 {
-                  "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/$defs/dprint-override"
+                  "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/$defs/dprint-override"
                 },
                 {
                   "type": "array",
                   "items": {
-                    "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json#/$defs/dprint-override"
+                    "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json#/$defs/dprint-override"
                   }
                 }
               ]
@@ -14321,7 +13732,7 @@
       },
       "allOf": [
         {
-          "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.2/schema.json"
+          "$ref": "https://plugins.dprint.dev/dprint/dprint-plugin-ruff/0.12.3/schema.json"
         }
       ]
     },
@@ -14357,25 +13768,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -14459,25 +13851,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -14553,25 +13926,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -14639,25 +13993,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -14835,25 +14170,6 @@
             }
           ]
         },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
         "embedded": {
           "description": "The plugins that format the code this plugin hands back to dprint (ex. markdown's code blocks), by the code's file extension (ex. \"cs\": [\"exec\"]), in order. An empty array leaves that code as it is.",
           "type": [
@@ -14921,25 +14237,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
@@ -15022,25 +14319,6 @@
                   "items": {
                     "type": "string"
                   }
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "configFile": {
-          "description": "The plugin's configuration file, as a local path or HTTP(S) URL. Paths in remote configurations resolve against that configuration's URL. Local paths resolve from the main kprint configuration's directory. Append a dotted section after # to select part of a file, such as pyproject.toml#tool.tombi. Omit this setting to use the first file the plugin declares that exists, or set it to false to disable discovery.",
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "type": "string",
-                  "minLength": 1
-                },
-                {
-                  "const": false
                 }
               ]
             },
