@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/kjanat/kjanat/master/schemas/dprint.schema.json",
+	"$schema": "../schemas/dprint.schema.json",
 	"useTabs": true,
 	"indentWidth": 2,
 	"newLineKind": "lf",
@@ -84,5 +84,11 @@
 		"npm:dprint-plugin-malva@0.16.1",
 		"npm:dprint-plugin-markup@0.28.0",
 		"npm:dprint-plugin-yaml@0.6.0"
-	]
+	],
+	"exec": {
+		"commands": [{
+			"command": "rustfmt",
+			"exts": ["rs"],
+		}]
+	}
 }

@@ -6,9 +6,9 @@ on:
     paths:
       - configs/**
       - schemas/**
-      - '**/*print.toml'
-      - '**/*print.json'
-      - '**/*print.jsonc'
+      - "**/*print.toml"
+      - "**/*print.json"
+      - "**/*print.jsonc"
       - .github/scripts/dprint-schema.sh
       - .github/workflows/dprint-compat.yml
   workflow_dispatch:
