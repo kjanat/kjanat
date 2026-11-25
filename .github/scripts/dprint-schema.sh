@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/../../"
 
-DPRINT="${DPRINT:-dprint}"
+DPRINT="${DPRINT:-kprint}"
 TIMEOUT_SECS="${DPRINT_SCHEMA_TIMEOUT:-60}"
 tmp="$(mktemp -d)"
 trap 'rm -rf "$tmp"' EXIT
@@ -33,7 +33,7 @@ run_formatter() {
 
 # Read plugin pins directly from this checkout. Following biome's remote
 # extends would also load master and could conceal a plugin update in a PR.
-jq -s '{plugins: ([.[].plugins[]] | unique)}' configs/dprint.*.json >"$tmp/config.json"
+jq -s '{plugins: ([.[] | .plugins[]?] | unique)}' configs/dprint.*.json >"$tmp/config.json"
 run_formatter "Generate plugin schemas" schema --config "$tmp/config.json" >"$tmp/generated.json"
 jq --arg id 'https://raw.githubusercontent.com/kjanat/kjanat/master/schemas/dprint.schema.json' \
 	'. + {"$id": $id}' "$tmp/generated.json" >"$tmp/with-id.json"

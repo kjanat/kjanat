@@ -81,37 +81,45 @@ include = ["pyproject.toml"]
 
 # Runner
 [[schemas]]
-path    = "https://kjanat.github.io/runner/schemas/runner.toml.schema.json"
-include = ["runner.toml", ".runner.toml"]
+toml-version = "v1.1.0"
+path         = "https://kjanat.github.io/runner/schemas/runner.toml.schema.json"
+include      = ["runner.toml", ".runner.toml"]
 
 # Zed Editor
 [[schemas]]
-path    = "https://raw.githubusercontent.com/kjanat/zed-editor/feature/extension-toml-schema/crates/extension_api/schemas/language-config.schema.json"
-include = ["**/languages/*/config.toml"]
+toml-version = "v1.1.0"
+path         = "https://raw.githubusercontent.com/kjanat/zed-editor/feature/extension-toml-schema/crates/extension_api/schemas/language-config.schema.json"
+include      = ["**/languages/*/config.toml"]
 
 [[schemas]]
-path    = "https://raw.githubusercontent.com/kjanat/zed-editor/feature/extension-toml-schema/crates/extension_api/schemas/extension.schema.json"
-include = ["**/zed-*/extension.toml", "**/*-zed/extension.toml"]
+toml-version = "v1.1.0"
+path         = "https://raw.githubusercontent.com/kjanat/zed-editor/feature/extension-toml-schema/crates/extension_api/schemas/extension.schema.json"
+include      = ["**/zed-*/extension.toml", "**/*-zed/extension.toml"]
 
 # AI Stuff
 [[schemas]]  # https://learn.chatgpt.com/docs/config-file/config-reference
-path    = "https://learn.chatgpt.com/docs/config-schema.json"
-include = ["**/.codex/config.toml", "**/.codex/config*.toml", "codex.toml"]
+toml-version = "v1.1.0"
+path         = "https://learn.chatgpt.com/docs/config-schema.json"
+include      = ["**/.codex/config.toml", "**/.codex/config*.toml", "codex.toml"]
 
 # Helix
 [[schemas]]
-path    = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/6416240a9d34ebfa96db922fb7aebd9628262bea/helix-languages.schema.json"
-include = ["**/helix/languages.toml", "**/.helix/languages.toml"]
+toml-version = "v1.1.0"
+path         = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/6416240a9d34ebfa96db922fb7aebd9628262bea/helix-languages.schema.json"
+include      = ["**/helix/languages.toml", "**/.helix/languages.toml"]
 
 [[schemas]]
-path    = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/6416240a9d34ebfa96db922fb7aebd9628262bea/helix-config.schema.json"
-include = ["**/helix/config.toml", "**/.helix/config.toml"]
+toml-version = "v1.1.0"
+path         = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/6416240a9d34ebfa96db922fb7aebd9628262bea/helix-config.schema.json"
+include      = ["**/helix/config.toml", "**/.helix/config.toml"]
 
 [[schemas]]
-path    = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/6416240a9d34ebfa96db922fb7aebd9628262bea/helix-theme.schema.json"
-include = ["**/helix/themes/*.toml", "**/runtime/themes/*.toml"]
+toml-version = "v1.1.0"
+path         = "https://gist.githubusercontent.com/kjanat/8b6206f3780eedbaa422fbc9b2ec5ceb/raw/6416240a9d34ebfa96db922fb7aebd9628262bea/helix-theme.schema.json"
+include      = ["**/helix/themes/*.toml", "**/runtime/themes/*.toml"]
 
 # Mise
 [[schemas]]
-path    = "https://mise.jdx.dev/schema/mise.json"
-include = ["mise.toml", ".mise.toml"]
+toml-version = "v1.1.0"
+path         = "https://mise.jdx.dev/schema/mise.json"
+include      = ["mise.toml", ".mise.toml"]

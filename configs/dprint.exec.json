@@ -1,7 +1,8 @@
 {
-	"$schema": "https://raw.githubusercontent.com/kjanat/kjanat/master/schemas/dprint.schema.json",
+	"$schema": "../schemas/dprint.schema.json",
 	"exec": {
 		"cwd": "${configDir}",
+		"playWithFire": true,
 		"commands": [
 			{
 				"command": "tombi format - --stdin-filename {{file_path}}",
@@ -30,6 +31,5 @@
 				"setupCommand": "pwsh -NoProfile -NonInteractive -NoLogo -Command \"\\$ErrorActionPreference='Stop';(Get-Module -Name PSScriptAnalyzer).Version -ne \\$null || try{Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser}catch{[Console]::Error.WriteLine(\\$_.Exception.Message); exit 1}\""
 			}
 		]
-	},
-	"plugins": ["npm:@dprint/exec@0.7.3/plugin.json@704701df449dd7e942a71144773778ac529d68c2e4657bfc236d393b898b9a67"]
+	}
 }

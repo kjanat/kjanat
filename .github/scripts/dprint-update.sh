@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Updates each dprint config's plugins in parallel.
-# Each `dprint config update` invocation is killed if it runs longer than
+# Each `kprint config update` invocation is killed if it runs longer than
 # DPRINT_UPDATE_TIMEOUT seconds and retried up to DPRINT_UPDATE_ATTEMPTS times.
 
 set -uo pipefail
@@ -24,6 +24,7 @@ CONFIGS=(
 )
 
 # Per-invocation wall-clock budget and retry count (overridable via env).
+DPRINT="${DPRINT:-kprint}"
 TIMEOUT_SECS="${DPRINT_UPDATE_TIMEOUT:-15}"
 MAX_ATTEMPTS="${DPRINT_UPDATE_ATTEMPTS:-4}"
 KILL_GRACE="5s"
@@ -41,7 +42,7 @@ update_config() {
 		# no else) yields 0, so `$?` after `fi` would not reflect the real code.
 		rc=0
 		timeout --kill-after="${KILL_GRACE}" "${TIMEOUT_SECS}s" \
-			dprint config update --yes -c="${config}" >/dev/null 2>&1 || rc=$?
+			"$DPRINT" config update --yes -c="${config}" >/dev/null 2>&1 || rc=$?
 		if [[ $rc -eq 0 ]]; then
 			echo -e "  ${GREEN}[✓] Finished: ${config} ($((SECONDS - start))s, attempt ${attempt}/${MAX_ATTEMPTS})${NC}"
 			return 0

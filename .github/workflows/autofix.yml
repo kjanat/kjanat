@@ -5,42 +5,27 @@ on:
   schedule: [cron: "0 8 * * *"]
   push: { branches: [master] }
   workflow_dispatch:
-concurrency: { group: "autofix-${{ github.ref }}", cancel-in-progress: true }
+concurrency: autofix/dprint
 permissions: { contents: read }
 
 jobs:
   autofix:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 10
-    permissions:
-      contents: read
-      id-token: write # Beepboop issues the App token against the run's OIDC identity
+    permissions: { contents: read, id-token: write }
     steps:
-      - { uses: actions/checkout@v7, with: { fetch-depth: 0 } }
-      - { uses: kjanat/dprint-check@v3, with: { install-only: true } }
-      - uses: kjanat/setup-tombi@master
-      - { uses: taiki-e/install-action@v2, with: { tool: "just,rust+rustfmt" } }
-      - timeout-minutes: 2
-        run: bash .github/scripts/dprint-update.sh
-
-      - run: dprint fmt --allow-no-files --diff --excludes .github
-      - run: bash .github/scripts/dprint-sort.sh
-      - name: regenerate the shared configuration schema
-        run: bash .github/scripts/dprint-schema.sh
-
-      - name: authenticate as Beepboop
-        id: beepboop
-        uses: kjanat/beepboop/actions/token@v1
-        with: { permission-contents: write, permission-pull-requests: write }
+      - uses: actions/checkout@v7
+        with: { fetch-depth: 0 }
+      - uses: kjanat/mise-action@v6
+      - cancel-timeout-minutes: 5
+        run: mise run "kprint:update"
+        continue-on-error: true
+      - run: mise run "fmt:autofix"
 
       # Formatting drift is the normal state, not a failure: it opens a PR
       # rather than failing the run or pushing straight to master.
-      - uses: peter-evans/create-pull-request@v8
+      - uses: kjanat/beepboop/actions/pull-request@v1
         with:
-          token: ${{ steps.beepboop.outputs.token }}
-          sign-commits: true
-          author: ${{ steps.beepboop.outputs.bot-login }} <${{ steps.beepboop.outputs.bot-email }}>
-          committer: ${{ steps.beepboop.outputs.bot-login }} <${{ steps.beepboop.outputs.bot-email }}>
           branch: autofix/dprint
           commit-message: "chore: sync dprint configs, schema, and formatting"
           title: "chore: sync dprint configs, schema, and formatting"

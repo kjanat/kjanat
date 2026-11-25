@@ -1,0 +1,27 @@
+#:schema https://mise.jdx.dev/schema/mise.json
+#:tombi toml-version = "v1.1.0"
+
+[tools]
+tombi      = "latest"
+just       = "latest"
+kprint     = { version = "latest", filter_bins = ["kprint"] }
+dprint     = { version = "latest", filter_bins = ["dprint"] }
+rust       = "latest"
+runner-run = "latest"
+
+[tool_alias]
+kprint     = "github:kjanat/kprint"
+dprint     = "github:dprint/dprint"
+tombi      = "aqua:tombi-toml/tombi"
+runner-run = "github:kjanat/runner"
+
+[tasks]
+"kprint:fmt"    = { run = "kprint fmt", alias = ["fmt", "f", "format", "kfmt"] }
+"kprint:update" = {
+  file         = ".github/scripts/dprint-update.sh",
+  timeout      = "2m",
+  depends_post = [{ task = "kprint:schema" }, { task = "kprint:sort" }]
+}
+"kprint:schema" = { file = ".github/scripts/dprint-schema.sh", hide = true }
+"kprint:sort"   = { file = ".github/scripts/dprint-sort.sh", hide = true }
+"fmt:autofix"   = { run = "kprint fmt --allow-no-files --diff --excludes .github" }

@@ -10,7 +10,7 @@
 #                  each group alphabetical)
 #
 # Key order and plugin order are set with jq, then the file is re-formatted
-# through `dprint fmt` so the result matches dprint's canonical layout (short
+# through `kprint fmt` so the result matches the canonical layout (short
 # arrays/objects collapsed onto one line). Idempotent. Usage:
 #   dprint-sort.sh [config.json ...]   (defaults to the three configs/ files)
 
@@ -18,6 +18,7 @@ set -euo pipefail
 
 cd "$(dirname "$0")/../../" || exit 1
 
+DPRINT="${DPRINT:-kprint}"
 SCHEMA_URL="https://raw.githubusercontent.com/kjanat/kjanat/master/schemas/dprint.schema.json"
 
 GREEN='\033[0;32m'
@@ -26,7 +27,7 @@ NC='\033[0m'
 
 # Derive the config keys of kjanat-authored plugins from a config's own plugin
 # list: resolve only the kjanat (URL contains "kjanat") plugins and read back
-# their configKeys. dprint owns the URL->configKey mapping, so nothing is
+# their configKeys. The formatter owns the URL->configKey mapping, so nothing is
 # hardcoded — add a kjanat plugin and its block sorts to the top automatically.
 kjanat_config_keys() {
 	local f="$1" resolved
@@ -36,7 +37,7 @@ kjanat_config_keys() {
 		printf '[]'
 		return 0
 	fi
-	resolved="$(dprint output-resolved-config --config-discovery=false --plugins "${urls[@]}" </dev/null 2>/dev/null)" \
+	resolved="$("$DPRINT" output-resolved-config --config-discovery=false --plugins "${urls[@]}" </dev/null 2>/dev/null)" \
 		|| {
 			echo "  [!] could not resolve kjanat plugins for $f" >&2
 			return 1
@@ -83,7 +84,7 @@ for f in "${FILES[@]}"; do
 	}
 	tmp="$(mktemp)"
 	jq -c --arg schemaUrl "$SCHEMA_URL" --argjson kjanat "$kjanat" "$REORDER" "$f" \
-		| dprint fmt --stdin "$f" >"$tmp"
+		| "$DPRINT" fmt --stdin "$f" >"$tmp"
 	if cmp -s "$f" "$tmp"; then
 		echo -e "  ${DIM}[=] already sorted: ${f}${NC}"
 		rm -f "$tmp"

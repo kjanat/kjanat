@@ -19,7 +19,7 @@ on:
           - configs/dprint.exec.json
           - configs/dprint.biome.json
 
-concurrency: dprint-add-plugin-${{ github.ref }}
+concurrency: dprint-add-plugin
 
 jobs:
   add-plugin:
@@ -28,7 +28,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v7
-      - { uses: kjanat/dprint-check@v3.2, with: { install-only: true } }
+      - { uses: kjanat/mise-action@v6, with: { install_args: kprint } }
 
       - name: Resolve target config
         id: target
@@ -47,7 +47,7 @@ jobs:
           # target by extension: *.wasm → remote.json, *.json → exec.json.
           probe="$(mktemp -d)/probe.json"
           echo '{}' > "${probe}"
-          dprint config add -c "${probe}" "${PLUGIN}" </dev/null
+          kprint config add -c "${probe}" "${PLUGIN}" </dev/null
           url="$(jq -r '.plugins[-1]' "${probe}")"
           echo "Resolved '${PLUGIN}' -> ${url}"
           case "${url%@*}" in
@@ -61,27 +61,17 @@ jobs:
       - name: Add plugin
         env: { PLUGIN: "${{ inputs.plugin }}", CONFIG: "${{ steps.target.outputs.config }}" }
         run: |
-          dprint config add -c "${CONFIG}" "${PLUGIN}" </dev/null
+          kprint config add -c "${CONFIG}" "${PLUGIN}" </dev/null
           # Re-sort: kjanat plugins first, then alphabetical; keys canonicalised.
-          bash .github/scripts/dprint-sort.sh "${CONFIG}"
-          bash .github/scripts/dprint-schema.sh
-
-      - name: Authenticate as Beepboop
-        id: beepboop
-        uses: kjanat/beepboop/actions/token@v1
-        with: { permission-contents: write, permission-pull-requests: write }
+          mise run "kprint:sort" "${CONFIG}"
+          mise run "kprint:schema"
 
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v8
+        uses: kjanat/beepboop/actions/pull-request@v1
         with:
-          token: ${{ steps.beepboop.outputs.token }}
-          sign-commits: true
-          author: ${{ steps.beepboop.outputs.bot-login }} <${{ steps.beepboop.outputs.bot-email }}>
-          committer: ${{ steps.beepboop.outputs.bot-login }} <${{ steps.beepboop.outputs.bot-email }}>
           commit-message: "chore: add dprint plugin ${{ inputs.plugin }} to ${{ steps.target.outputs.config }}"
           title: "chore: add dprint plugin `${{ inputs.plugin }}`"
           body: |
             Adds `${{ inputs.plugin }}` to `${{ steps.target.outputs.config }}`
-            via `dprint config add` (config input: `${{ inputs.config }}`).
+            via `kprint config add` (config input: `${{ inputs.config }}`).
           branch: dprint-add/${{ steps.target.outputs.slug }}
-          delete-branch: true

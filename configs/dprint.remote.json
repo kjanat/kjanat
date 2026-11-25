@@ -19,7 +19,7 @@
 	"dockerfile": { "associations": ["Dockerfile", "Dockerfile.*"] },
 	"json": {
 		"jsonTrailingCommaFiles": ["**/.vscode/*.json", "**/.zed/{settings,tasks,debug}.json", "**/tsconfig*.json"],
-		"associations": ["package.json", "!beepboop.json"]
+		"associations": ["package.json"]
 	},
 	"jupyter": {},
 	"malva": {},
@@ -63,7 +63,8 @@
 		"**/node_modules",
 		"**/worker-configuration.d.ts",
 		"**/.agents",
-		"**/.skills"
+		"**/.skills",
+		"**/beepboop.json"
 	],
 	"plugins": [
 		"https://plugins.dprint.dev/kjanat/json-schema-sort-0.1.2.wasm",
@@ -79,16 +80,17 @@
 		"npm:@dprint/markdown@0.29.0",
 		"npm:@dprint/ruff@0.12.3",
 		"npm:@dprint/typescript@0.101.0",
-		"npm:@kachick/dprint-plugin-nix@0.1.1",
-		"npm:@kachick/dprint-plugin-typstyle@0.5.2",
+		"npm:@dprint/nix@0.2.0",
+		"npm:@dprint/typstyle@0.6.1",
 		"npm:dprint-plugin-malva@0.16.1",
 		"npm:dprint-plugin-markup@0.28.0",
 		"npm:dprint-plugin-yaml@0.6.0"
 	],
 	"exec": {
+		"playWithFire": true,
 		"commands": [{
 			"command": "rustfmt",
-			"exts": ["rs"],
+			"exts": ["rs"]
 		}]
 	}
 }
