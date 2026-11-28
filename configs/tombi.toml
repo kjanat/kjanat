@@ -122,4 +122,4 @@ include      = ["**/helix/themes/*.toml", "**/runtime/themes/*.toml"]
 [[schemas]]
 toml-version = "v1.1.0"
 path         = "https://mise.jdx.dev/schema/mise.json"
-include      = ["mise.toml", ".mise.toml"]
+include      = ["mise.toml", ".mise.toml", "**/mise*.toml", "**/mise/conf.d/*.toml"]
